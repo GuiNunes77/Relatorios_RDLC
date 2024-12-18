@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" Condition="Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0459E592-1C63-45C4-87FA-B716C48F950B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Relatorios_RDLC</RootNamespace>
+    <AssemblyName>Relatorios_RDLC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="csiDataSet.cs">
+      <DependentUpon>csiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="csiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>csiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExibirRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExibirRelatorio.Designer.cs">
+      <DependentUpon>ExibirRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExibirRelatorio.resx">
+      <DependentUpon>ExibirRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Relatorios_RDLC.ExibirRelatorio.resources" />
+    <EmbeddedResource Include="obj\Debug\Relatorios_RDLC.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Relatórios\1003\FAT010.rdlc" />
+    <EmbeddedResource Include="Relatórios\1003\FAT111.rdlc" />
+    <EmbeddedResource Include="Relatórios\1003\FAT112.rdlc" />
+    <EmbeddedResource Include="Relatórios\1003\FAT113.rdlc" />
+    <EmbeddedResource Include="Relatórios\1003\FINM050.rdlc" />
+    <EmbeddedResource Include="Relatórios\1003\FINM050SUB.rdlc" />
+    <EmbeddedResource Include="Relatórios\1003\FINM051.rdlc" />
+    <EmbeddedResource Include="Relatórios\1003\FINM051SUB.rdlc" />
+    <EmbeddedResource Include="Relatórios\1009\FAT040.rdlc" />
+    <EmbeddedResource Include="Relatórios\1009\FAT112.rdlc" />
+    <EmbeddedResource Include="Relatórios\1009\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\1011\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\1025\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\1025\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\1025\CXA008.rdlc" />
+    <EmbeddedResource Include="Relatórios\1025\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\1025\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\1031\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\1032\FAT010.rdlc" />
+    <EmbeddedResource Include="Relatórios\1032\FAT111.rdlc" />
+    <EmbeddedResource Include="Relatórios\1032\FAT123.rdlc" />
+    <EmbeddedResource Include="Relatórios\1032\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\1032\Fch005_gui.rdlc" />
+    <EmbeddedResource Include="Relatórios\1037\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\1037\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\1037\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\1059\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\105\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\105\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\105\FAT010.rdlc" />
+    <EmbeddedResource Include="Relatórios\1063\FAT006.rdlc" />
+    <EmbeddedResource Include="Relatórios\1063\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\1070\CXA009.rdlc" />
+    <EmbeddedResource Include="Relatórios\1070\CXA009_old.rdlc" />
+    <EmbeddedResource Include="Relatórios\1070\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\1070\Etq001_.rdlc" />
+    <EmbeddedResource Include="Relatórios\1070\Etq001_old.rdlc" />
+    <EmbeddedResource Include="Relatórios\1070\Etq001_x.rdlc" />
+    <EmbeddedResource Include="Relatórios\1076\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\1076\Fch005_old.rdlc" />
+    <EmbeddedResource Include="Relatórios\1082\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\1082\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\1082\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\199\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\199\Etq002_servidor.rdlc" />
+    <EmbeddedResource Include="Relatórios\199\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\216\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\216\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\216\Etq003.rdlc" />
+    <EmbeddedResource Include="Relatórios\216\FAT013.rdlc" />
+    <EmbeddedResource Include="Relatórios\389\AGD005.rdlc" />
+    <EmbeddedResource Include="Relatórios\389\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\389\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\389\Etq003.rdlc" />
+    <EmbeddedResource Include="Relatórios\389\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\CXA002.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\CXA007.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\EST021.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\FAT040.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\GuitissD30.rdlc" />
+    <EmbeddedResource Include="Relatórios\404\REC010.rdlc" />
+    <EmbeddedResource Include="Relatórios\46\AGD001.rdlc" />
+    <EmbeddedResource Include="Relatórios\46\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\46\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\46\FAT123.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\CAD020.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\REC010.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\AGD005.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\AGD011.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\CXA007.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\FAT007.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\FAT023.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\FAT029.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\FAT029_Servidor.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\FAT061.rdlc" />
+    <EmbeddedResource Include="Relatórios\524\Relatorios\PGM004.rdlc" />
+    <EmbeddedResource Include="Relatórios\545\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\545\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\545\Atestado_old.rdlc" />
+    <EmbeddedResource Include="Relatórios\545\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\546\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\566\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\566\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\566\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\763\CXA002.rdlc" />
+    <EmbeddedResource Include="Relatórios\763\CXA008.rdlc" />
+    <EmbeddedResource Include="Relatórios\763\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Divergencia na impressão\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Fch005_gui.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\AGD002.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\EEX003.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\FAT008.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\Fch005_old.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\Fch005_old4.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\ORC001.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\Personalizacao\RCP009.rdlc" />
+    <EmbeddedResource Include="Relatórios\774\RCP009.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\AGD001.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\AGD016.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\AGD018.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\FAT038.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\FAT064.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\FAT069.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\FAT111.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\FAT123.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\FAT125.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\780\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\781\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Etq001_servidor.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\FAT011.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\FAT034.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\FINM079.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Personalizacao original\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Personalizacao original\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Personalizacao original\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Personalizacao original\FAT009.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Personalizacao original\FAT012.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Personalizacao original\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\Personalizacao original\RCP002.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\REC001.rdlc" />
+    <EmbeddedResource Include="Relatórios\794\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\794\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\794\Fch009.rdlc" />
+    <EmbeddedResource Include="Relatórios\794\Fch010.rdlc" />
+    <EmbeddedResource Include="Relatórios\794\Fch011.rdlc" />
+    <EmbeddedResource Include="Relatórios\794\Fch012.rdlc" />
+    <EmbeddedResource Include="Relatórios\808\FAT003.rdlc" />
+    <EmbeddedResource Include="Relatórios\808\Fch011.rdlc" />
+    <EmbeddedResource Include="Relatórios\812\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\812\Etq001_gui.rdlc" />
+    <EmbeddedResource Include="Relatórios\812\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\812\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\AGD005.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\AGD010.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\AGD016.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\CRD003.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\CTQ007.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\DIG003.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\FAT106.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\FAT121.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Guilherme\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Guilherme\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Guilherme\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Guilherme\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\LDO007.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\AGD018.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\CAD011.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\EST006.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\EST017.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\EST039.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FAT037.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINC001.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINM002.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINM007.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINM011.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINM052.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINM053.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINM054.rdlc" />
+    <EmbeddedResource Include="Relatórios\830\Novo CS Imagem\FINM055.rdlc" />
+    <EmbeddedResource Include="Relatórios\839\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\857\AGD016.rdlc" />
+    <EmbeddedResource Include="Relatórios\857\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\857\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\857\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\857\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\864\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\864\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\864\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\864\Fch005 - Cópia .rdlc" />
+    <EmbeddedResource Include="Relatórios\864\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\884\FAT013.rdlc" />
+    <EmbeddedResource Include="Relatórios\884\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\884\RCP002.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\AGD005.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\CRD003.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\CRD006.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\CRD006_original.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\908\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\917\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\917\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\917\Fch005_pro.rdlc" />
+    <EmbeddedResource Include="Relatórios\957\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\965\AGD005.rdlc" />
+    <EmbeddedResource Include="Relatórios\965\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\965\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\965\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\965\FAT007.rdlc" />
+    <EmbeddedResource Include="Relatórios\965\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\965\Fch005_servidor.rdlc" />
+    <EmbeddedResource Include="Relatórios\979\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\982\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\982\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\982\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\982\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\991\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\991\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\991\CXA010.rdlc" />
+    <EmbeddedResource Include="Relatórios\996\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD001.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD002.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD003.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD004.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD005.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD006.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD007.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD008.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD009.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD010.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD011.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD012.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD013.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD014.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD015.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD016.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD017.rdlc" />
+    <EmbeddedResource Include="Relatórios\Agenda\AGD018.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ001.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ002.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ010.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ011.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ012.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ013.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ014.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ015.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ016.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ017.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ026.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ027.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ028.rdlc" />
+    <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ029.rdlc" />
+    <EmbeddedResource Include="Relatórios\Faturamento\FAT030.rdlc" />
+    <EmbeddedResource Include="Relatórios\Faturamento\FAT052.rdlc" />
+    <EmbeddedResource Include="Relatórios\Financeiro\CXA007.rdlc" />
+    <EmbeddedResource Include="Relatórios\Financeiro\CXA010.rdlc" />
+    <EmbeddedResource Include="Relatórios\Financeiro\FAT112.rdlc" />
+    <EmbeddedResource Include="Relatórios\Financeiro\Fat124.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\Fch001.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\Fch002.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\Fch003.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\Fch004.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\Fch009.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\GuitissD30.rdlc" />
+    <None Include="csiDataSet.xsc">
+      <DependentUpon>csiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="csiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>csiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="csiDataSet.xss">
+      <DependentUpon>csiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="obj\Debug\.AssemblyReference.cache" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\RdlCompile.cache" />
+    <None Include="obj\Debug\RdlCompile.compiled" />
+    <None Include="obj\Debug\Relatorios_RDLC.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\Relatorios_RDLC.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Relatorios_RDLC.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Relatorios_RDLC.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="obj\Debug\Relatorios_RDLC.exe.config" />
+    <None Include="packages.config" />
+    <None Include="packages\Microsoft.Report.Viewer.11.0.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.Report.Viewer.11.0.0.0\Microsoft.Report.Viewer.11.0.0.0.nupkg" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\.signature.p7s" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\license\License_ReportViewer.rtf" />
+    <None Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0.nupkg" />
+    <None Include="packages\Microsoft.SqlServer.Types.160.1000.6\.signature.p7s" />
+    <None Include="packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" />
+    <None Include="packages\Microsoft.SqlServer.Types.160.1000.6\license.md" />
+    <None Include="packages\Microsoft.SqlServer.Types.160.1000.6\Microsoft.SqlServer.Types.160.1000.6.nupkg" />
+    <None Include="Properties\DataSources\csiDataSet.datasource" />
+    <None Include="Properties\DataSources\Relatorios_RDLC.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Relatórios\774\Divergencia na impressão\etiqueta laudo 3.pdf" />
+    <None Include="Relatórios\774\Divergencia na impressão\Scan2024-10-07_103417.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="obj\Debug\Relatorios_RDLC.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\csi10DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\csi29DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\csiDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\csiDataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\csiDataSet2.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\csiDataSet21.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\csiguDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\csimagemproDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL" />
+    <Content Include="packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\license\ThirdPartyNotices_ReportViewer.txt" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\de\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\es\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\fr\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\it\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\ja\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\ko\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\pt\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\ru\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\zh-Hans\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\zh-Hant\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\de\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\es\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\fr\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\it\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\ja\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\ko\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\Microsoft.SqlServer.Types.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\pt-BR\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\ru\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\zh-Hans\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\lib\netstandard2.1\zh-Hant\Microsoft.SqlServer.Types.resources.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\runtimes\win-x64\native\SqlServerSpatial160.dll" />
+    <Content Include="packages\Microsoft.SqlServer.Types.160.1000.6\runtimes\win-x86\native\SqlServerSpatial160.dll" />
+    <Content Include="Relatórios\830\logo.JPG" />
+    <Content Include="Relatórios\839\QR_PortalResultados.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\de\" />
+    <Folder Include="bin\Debug\es\" />
+    <Folder Include="bin\Debug\fr\" />
+    <Folder Include="bin\Debug\it\" />
+    <Folder Include="bin\Debug\ja\" />
+    <Folder Include="bin\Debug\ko\" />
+    <Folder Include="bin\Debug\pt-BR\" />
+    <Folder Include="bin\Debug\pt\" />
+    <Folder Include="bin\Debug\ru\" />
+    <Folder Include="bin\Debug\SqlServerTypes\x64\" />
+    <Folder Include="bin\Debug\SqlServerTypes\x86\" />
+    <Folder Include="bin\Debug\zh-CHS\" />
+    <Folder Include="bin\Debug\zh-CHT\" />
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props'))" />
+  </Target>
+</Project>
