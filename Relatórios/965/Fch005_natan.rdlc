@@ -947,7 +947,7 @@
                                                         </Style>
                                                       </TextRun>
                                                       <TextRun>
-                                                        <Value xml:space="preserve">                   </Value>
+                                                        <Value xml:space="preserve">   </Value>
                                                         <Style>
                                                           <FontFamily>noto sans</FontFamily>
                                                           <FontSize>9pt</FontSize>
@@ -972,31 +972,37 @@
                                                   </Border>
                                                 </Style>
                                               </Textbox>
-                                              <ColSpan>3</ColSpan>
                                             </CellContents>
                                           </TablixCell>
-                                          <TablixCell />
-                                          <TablixCell />
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox8">
-                                                <CanGrow>true</CanGrow>
+                                              <Textbox Name="Textbox70">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>Sexo: </Value>
                                                         <Style>
                                                           <FontFamily>noto sans</FontFamily>
                                                           <FontSize>9pt</FontSize>
+                                                          <Format>d</Format>
+                                                        </Style>
+                                                      </TextRun>
+                                                      <TextRun>
+                                                        <Value>=IIf(Fields!Sexo.Value = "M", "Masculino", "Feminino")</Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                          <Format>d</Format>
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox8</rd:DefaultName>
+                                                <rd:DefaultName>Textbox39</rd:DefaultName>
+                                                <ZIndex>11</ZIndex>
                                                 <Style>
                                                   <Border>
                                                     <Style>None</Style>
@@ -1007,14 +1013,27 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox7">
-                                                <CanGrow>true</CanGrow>
+                                              <Textbox Name="Textbox71">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>Altura: </Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                      <TextRun>
+                                                        <Value>=Fields!Altura.Value</Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                      <TextRun>
+                                                        <Value xml:space="preserve"> </Value>
                                                         <Style>
                                                           <FontFamily>noto sans</FontFamily>
                                                           <FontSize>9pt</FontSize>
@@ -1024,7 +1043,82 @@
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox7</rd:DefaultName>
+                                                <rd:DefaultName>Textbox39</rd:DefaultName>
+                                                <ZIndex>12</ZIndex>
+                                                <Style>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
+                                                </Style>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="Textbox73">
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>Peso: </Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                      <TextRun>
+                                                        <Value>=Fields!Peso.Value</Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
+                                                    <Style />
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox39</rd:DefaultName>
+                                                <ZIndex>13</ZIndex>
+                                                <Style>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
+                                                </Style>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="Textbox81">
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>DUM: </Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                      <TextRun>
+                                                        <Value>=Fields!DUM.Value</Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                          <Format>dd/MM/yyyy</Format>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
+                                                    <Style />
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox39</rd:DefaultName>
+                                                <ZIndex>14</ZIndex>
+                                                <Visibility>
+                                                  <Hidden>=IIF(Fields!Sexo.Value = "F", False, True)</Hidden>
+                                                </Visibility>
                                                 <Style>
                                                   <Border>
                                                     <Style>None</Style>
@@ -1241,7 +1335,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Sexo. . . . . . . . . . . . . . . . .</Value>
+                                                        <Value>Número da Guia. . . . . .  .</Value>
                                                         <Style>
                                                           <FontFamily>noto sans</FontFamily>
                                                           <FontSize>9pt</FontSize>
@@ -1276,7 +1370,7 @@
                                                         </Style>
                                                       </TextRun>
                                                       <TextRun>
-                                                        <Value>=IIf(Fields!Sexo.Value = "M", "Masculino", "Feminino")</Value>
+                                                        <Value>=Fields!Guia.Value</Value>
                                                         <Style>
                                                           <FontFamily>noto sans</FontFamily>
                                                           <FontSize>9pt</FontSize>
@@ -1300,14 +1394,20 @@
                                           <TablixCell />
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox6">
-                                                <CanGrow>true</CanGrow>
+                                              <Textbox Name="Textbox85">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>Número da matrícula: </Value>
+                                                        <Style>
+                                                          <FontFamily>noto sans</FontFamily>
+                                                          <FontSize>9pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                      <TextRun>
+                                                        <Value>=Fields!Matricula.Value</Value>
                                                         <Style>
                                                           <FontFamily>noto sans</FontFamily>
                                                           <FontSize>9pt</FontSize>
@@ -1317,7 +1417,8 @@
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox6</rd:DefaultName>
+                                                <rd:DefaultName>Textbox39</rd:DefaultName>
+                                                <ZIndex>4</ZIndex>
                                                 <Style>
                                                   <Border>
                                                     <Style>None</Style>
@@ -1664,218 +1765,6 @@
                         </TablixCell>
                       </TablixCells>
                     </TablixRow>
-                    <TablixRow>
-                      <Height>7.21368cm</Height>
-                      <TablixCells>
-                        <TablixCell>
-                          <CellContents>
-                            <Rectangle Name="Rectangle1">
-                              <ReportItems>
-                                <Textbox Name="Textbox15">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>Para retirada dos exames online, aponte a câmera do seu celular para o QRCode ou acesse nosso site:</Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!Site.Value</Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>Clique em </Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                        <TextRun>
-                                          <Value>Meus Resultados</Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                        <TextRun>
-                                          <Value> e digite:</Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>Login: </Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                        <TextRun>
-                                          <Value>=Fields!IDLogin.Value</Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>Senha: </Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                        <TextRun>
-                                          <Value>=Fields!Pwd_IDLogin.Value</Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value />
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value />
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value />
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value />
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>RETIRAR PRESENCIALMENTE ____/____/_______ A PARTIR DAS 14HRS ATÉ AS 17HRS</Value>
-                                          <Style>
-                                            <FontFamily>noto sans</FontFamily>
-                                            <FontSize>12pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                            <Format>g</Format>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>Textbox15</rd:DefaultName>
-                                  <Top>0.32745cm</Top>
-                                  <Left>0.02748cm</Left>
-                                  <Height>6.70984cm</Height>
-                                  <Width>19.75801cm</Width>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Image Name="imageQrCode3">
-                                  <Source>Database</Source>
-                                  <Value>=System.Convert.FromBase64String(Parameters!qrCodeBase64.Value)</Value>
-                                  <MIMEType>image/png</MIMEType>
-                                  <Sizing>FitProportional</Sizing>
-                                  <Top>1.03256cm</Top>
-                                  <Left>13.81892cm</Left>
-                                  <Height>3.85369cm</Height>
-                                  <Width>4.18465cm</Width>
-                                  <ZIndex>1</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                  </Style>
-                                </Image>
-                              </ReportItems>
-                              <KeepTogether>true</KeepTogether>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Rectangle>
-                            <ColSpan>3</ColSpan>
-                          </CellContents>
-                        </TablixCell>
-                        <TablixCell />
-                        <TablixCell />
-                      </TablixCells>
-                    </TablixRow>
                   </TablixRows>
                 </TablixBody>
                 <TablixColumnHierarchy>
@@ -1902,9 +1791,6 @@
                         <TablixMember />
                       </TablixMembers>
                     </TablixMember>
-                    <TablixMember>
-                      <KeepWithGroup>Before</KeepWithGroup>
-                    </TablixMember>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <KeepTogether>true</KeepTogether>
@@ -1919,7 +1805,7 @@
                   </Filter>
                 </Filters>
                 <Left>0.07719cm</Left>
-                <Height>12.20255cm</Height>
+                <Height>4.98887cm</Height>
                 <Width>19.96071cm</Width>
                 <Style>
                   <Border>
@@ -1930,7 +1816,7 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>0.07056cm</Top>
-            <Height>12.20255cm</Height>
+            <Height>4.98887cm</Height>
             <Width>20.0379cm</Width>
             <Style>
               <Border>
@@ -1939,7 +1825,7 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>12.27311cm</Height>
+        <Height>11.00227cm</Height>
         <Style />
       </Body>
       <Width>20.0379cm</Width>
@@ -1956,7 +1842,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>PROTOCOLO PARA RETIRADA DE EXAMES</Value>
+                      <Value>FICHA DE ATENDIMENTO</Value>
                       <Style>
                         <FontFamily>noto sans</FontFamily>
                         <FontSize>16pt</FontSize>
@@ -2004,7 +1890,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.92348cm</Height>
+          <Height>7.53156cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -2012,16 +1898,650 @@
               <Source>Embedded</Source>
               <Value>BrenoLoboRodape2</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>0.3175cm</Top>
-              <Left>1.2778cm</Left>
+              <Top>6.50766cm</Top>
+              <Left>1.0388cm</Left>
               <Height>1.0239cm</Height>
-              <Width>18.58488cm</Width>
+              <Width>17.9224cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
               </Style>
             </Image>
+            <Rectangle Name="Rectangle16">
+              <ReportItems>
+                <Textbox Name="Textbox55">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Atendimento. . . . . . .</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>0.76805cm</Top>
+                  <Left>0.02748cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>2.72826cm</Width>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox105">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>:</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value xml:space="preserve">  </Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Numero.Value</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>0.76805cm</Top>
+                  <Left>2.75574cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>6.70215cm</Width>
+                  <ZIndex>1</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox106">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Nome do Paciente. .</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>1.21805cm</Top>
+                  <Left>0.02748cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>2.72826cm</Width>
+                  <ZIndex>2</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox107">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>:  </Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=IIF(Fields!NomeSocial.Value = "" Or Nothing, Fields!Nome.Value, Fields!NomeSocial.Value)</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>1.21805cm</Top>
+                  <Left>2.75574cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>6.70215cm</Width>
+                  <ZIndex>3</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox157">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Convênio. . . . . . . . . .</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>1.66805cm</Top>
+                  <Left>0.02748cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>2.72826cm</Width>
+                  <ZIndex>4</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox158">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>:  </Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Convenio.Value</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>1.66805cm</Top>
+                  <Left>2.75574cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>6.70215cm</Width>
+                  <ZIndex>5</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox159">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Data: </Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Data.Value</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <Format>d</Format>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>0.13108cm</Top>
+                  <Left>12.9458cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>6.93772cm</Width>
+                  <ZIndex>6</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox49">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>RETIRAR  ____/____/_______ A PARTIR DAS 14HRS ATÉ AS 17HRS</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Format>g</Format>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox26</rd:DefaultName>
+                  <Top>3.29505cm</Top>
+                  <Left>0.02748cm</Left>
+                  <Height>0.51171cm</Height>
+                  <Width>19.85604cm</Width>
+                  <ZIndex>7</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox916">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value />
+                          <Style />
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox783</rd:DefaultName>
+                  <Top>0.31805cm</Top>
+                  <Left>0.02748cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>9.43041cm</Width>
+                  <ZIndex>8</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox160">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Modalidade . . . . . . .</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>2.11805cm</Top>
+                  <Left>0.02748cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>2.72826cm</Width>
+                  <ZIndex>9</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox161">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>:  </Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Lista_Modalidade.Value</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>2.11805cm</Top>
+                  <Left>2.75574cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>6.70215cm</Width>
+                  <ZIndex>10</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox918">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=Fields!Site.Value</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox786</rd:DefaultName>
+                  <Top>1.4458cm</Top>
+                  <Left>12.9458cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>6.93772cm</Width>
+                  <ZIndex>11</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
+                    <PaddingLeft>4pt</PaddingLeft>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox209">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Usuário: </Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!IDLogin.Value</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>1.97378cm</Top>
+                  <Left>13.32762cm</Left>
+                  <Height>0.50773cm</Height>
+                  <Width>6.5264cm</Width>
+                  <ZIndex>12</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox210">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Senha: </Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Pwd_IDLogin.Value</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox39</rd:DefaultName>
+                  <Top>2.48151cm</Top>
+                  <Left>13.32762cm</Left>
+                  <Height>0.52056cm</Height>
+                  <Width>6.5264cm</Width>
+                  <ZIndex>13</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox919">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value />
+                          <Style />
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox793</rd:DefaultName>
+                  <Top>2.58088cm</Top>
+                  <Height>0.44959cm</Height>
+                  <Width>9.45789cm</Width>
+                  <ZIndex>14</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox920">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Para retirada dos exames online, aponte a câmera do seu celular para o QRCode ou acesse nosso site:</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox786</rd:DefaultName>
+                  <Top>0.58108cm</Top>
+                  <Left>12.9458cm</Left>
+                  <Height>0.86472cm</Height>
+                  <Width>6.93772cm</Width>
+                  <ZIndex>15</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox146">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>RETIRADA DE EXAMES APENAS NO PERÍODO DA TARDE</Value>
+                          <Style>
+                            <FontFamily>noto sans</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Format>g</Format>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox146</rd:DefaultName>
+                  <Top>3.75356cm</Top>
+                  <Left>0.02748cm</Left>
+                  <Height>0.80461cm</Height>
+                  <Width>19.75801cm</Width>
+                  <ZIndex>16</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <BottomBorder>
+                      <Color>Black</Color>
+                      <Style>Solid</Style>
+                      <Width>1pt</Width>
+                    </BottomBorder>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+              </ReportItems>
+              <KeepTogether>true</KeepTogether>
+              <Top>1.94949cm</Top>
+              <Left>0.07719cm</Left>
+              <Height>4.75617cm</Height>
+              <Width>19.88352cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Rectangle>
+            <Image Name="Image3">
+              <Source>Embedded</Source>
+              <Value>Logo_BrenoLobosemonda1</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.17639cm</Top>
+              <Left>0cm</Left>
+              <Height>1.9389cm</Height>
+              <Width>6.96227cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Image Name="Image1">
+              <Source>Embedded</Source>
+              <Value>BrenoLoboCabecalhodetalhe1</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.52211cm</Top>
+              <Left>7.10338cm</Left>
+              <Height>1.28626cm</Height>
+              <Width>12.82783cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Rectangle Name="Rectangle5">
+              <ReportItems>
+                <Image Name="imageQrCode3">
+                  <Source>Database</Source>
+                  <Value>=System.Convert.FromBase64String(Parameters!qrCodeBase64.Value)</Value>
+                  <MIMEType>image/png</MIMEType>
+                  <Sizing>FitProportional</Sizing>
+                  <Top>0.0635cm</Top>
+                  <Left>0.09525cm</Left>
+                  <Height>2.89641cm</Height>
+                  <Width>3.04694cm</Width>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Image>
+              </ReportItems>
+              <KeepTogether>true</KeepTogether>
+              <Top>1.98476cm</Top>
+              <Left>9.67619cm</Left>
+              <Height>2.95991cm</Height>
+              <Width>3.17394cm</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Rectangle>
           </ReportItems>
           <Style>
             <Border>
