@@ -393,20 +393,6 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>, no período entre </Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>14pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!Complemento_Atestado.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>14pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
                                   <Value>, onde realizou exame(s) de </Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
@@ -421,7 +407,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>.          </Value>
+                                  <Value>.</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -434,6 +420,66 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>2.68064cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>14pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Período: </Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>14pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!Complemento_Atestado.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>14pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -586,12 +632,13 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
             <Top>3cm</Top>
             <Left>1cm</Left>
-            <Height>8.87604cm</Height>
+            <Height>11.55668cm</Height>
             <Width>18cm</Width>
             <Style>
               <Border>
