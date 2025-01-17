@@ -2217,6 +2217,29 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=IIF(Fields!cvCodigo.Value = 1
+OrElse Fields!cvCodigo.Value = 615
+OrElse Fields!cvCodigo.Value = 629
+OrElse Fields!cvCodigo.Value = 640
+OrElse Fields!cvCodigo.Value = 760
+OrElse Fields!cvCodigo.Value = 761
+OrElse Fields!cvCodigo.Value = 762,
+True, False)</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Boolean">=True</FilterValue>
+                </FilterValues>
+              </Filter>
+              <Filter>
+                <FilterExpression>=IIF(Fields!ValorCobrado.Value = 0, True, False)</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Boolean">=True</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
             <Left>0.1cm</Left>
             <Height>4.6cm</Height>
             <Width>19.8cm</Width>
