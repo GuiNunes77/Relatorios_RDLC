@@ -1168,14 +1168,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Lista_Modalidade">
+                        <Textbox Name="Lista_Exame">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Lista_Modalidade.Value</Value>
+                                  <Value>=Fields!Lista_Exame.Value</Value>
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -1185,7 +1185,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Lista_Modalidade</rd:DefaultName>
+                          <rd:DefaultName>Lista_Exame</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1194,7 +1194,6 @@
                           </Style>
                         </Textbox>
                         <ColSpan>4</ColSpan>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />

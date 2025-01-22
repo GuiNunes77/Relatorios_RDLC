@@ -440,7 +440,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="          Declaro, para os devidos fins, que o Sr.(a) " + First(Fields!Nome.Value, "Dados") + " esteve nesta clínica realizando exames no dia " +  Format(First(Fields!Data.Value, "Dados"),"dd 'd'e MMMM 'd'e yyyy.")</Value>
+                                  <Value>="          Declaro, para os devidos fins, que o Sr.(a) " + First(Fields!Responsavel_Atestado.Value, "Dados") + " esteve nesta clínica acompanhando " + Fields!Nome.Value + 
+" na realização de exames no dia " +  Format(First(Fields!Data.Value, "Dados"),"dd 'd'e MMMM 'd'e yyyy.")</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -634,10 +635,10 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>D E C L A R A Ç Ã O</Value>
+                      <Value>D E C L A R A Ç Ã O  D E  A C O M P A N H A N T E </Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
-                        <FontSize>22pt</FontSize>
+                        <FontSize>18pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>Underline</TextDecoration>
                       </Style>
