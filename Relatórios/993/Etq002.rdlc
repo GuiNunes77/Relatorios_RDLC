@@ -428,22 +428,18 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox16">
+                        <Textbox Name="DataNasc">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Day(First(Fields!DataNasc.Value, "FichaAtendimento")) &amp; 
-
-IIf(Month(First(Fields!DataNasc.Value, "FichaAtendimento")) &lt; 9, "0" &amp; Month(First(Fields!DataNasc.Value, "FichaAtendimento")), Month(First(Fields!DataNasc.Value, "FichaAtendimento"))) &amp; 
-
-Year(First(Fields!DataNasc.Value, "FichaAtendimento"))</Value>
+                                  <Value>=Fields!DataNasc.Value</Value>
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>11pt</FontSize>
-                                    <Format>d</Format>
+                                    <Format>ddMMyyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -452,7 +448,7 @@ Year(First(Fields!DataNasc.Value, "FichaAtendimento"))</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox16</rd:DefaultName>
+                          <rd:DefaultName>DataNasc</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>

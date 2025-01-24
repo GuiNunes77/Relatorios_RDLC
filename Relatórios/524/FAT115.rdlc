@@ -1430,27 +1430,8 @@ Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_C
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(
-	Max(
-		IIF(
-			Fields!TIPO_RECEBIMENTO.Value = "C" AND Fields!ValorCobrado.Value = Nothing,
-			Fields!Valor_Coparticipacao.Value,
-			IIF(
-				Fields!TIPO_RECEBIMENTO.Value = "C",
-				Fields!Valor_Coparticipacao.Value,
-				IIF(
-					Fields!TIPO_RECEBIMENTO.Value = "R" AND Fields!ValorCobrado.Value = Nothing,
-					Fields!Valor_CHO.Value + Fields!Valor_CHM.Value + Fields!Valor_Filme.Value + Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_Convenio.Value,
-					IIF(
-						Fields!TIPO_RECEBIMENTO.Value = "R" AND Fields!Valor.Value &lt;&gt; Fields!ValorCobrado.Value,
-						Fields!Valor_CHO.Value + Fields!Valor_CHM.Value + Fields!Valor_Filme.Value + Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_Convenio.Value,
-						0
-					)
-				)
-			)
-		)
-	, "grpAtendimento")
-)</Value>
+                                  <Value>=Sum(Fields!Valor_CHO.Value) + Sum(Fields!Valor_CHM.Value) + Sum(Fields!Valor_Filme.Value) + 
+Sum(Fields!Valor_Material.Value) + Sum(Fields!Valor_Medicamento.Value) + Sum(Fields!Valor_Ad_Convenio.Value)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -1738,27 +1719,8 @@ Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_C
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(
-	Max(
-		IIF(
-			Fields!TIPO_RECEBIMENTO.Value = "C" AND Fields!ValorCobrado.Value = Nothing,
-			Fields!Valor_Coparticipacao.Value,
-			IIF(
-				Fields!TIPO_RECEBIMENTO.Value = "C",
-				Fields!Valor_Coparticipacao.Value,
-				IIF(
-					Fields!TIPO_RECEBIMENTO.Value = "R" AND Fields!ValorCobrado.Value = Nothing,
-					Fields!Valor_CHO.Value + Fields!Valor_CHM.Value + Fields!Valor_Filme.Value + Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_Convenio.Value,
-					IIF(
-						Fields!TIPO_RECEBIMENTO.Value = "R" AND Fields!Valor.Value &lt;&gt; Fields!ValorCobrado.Value,
-						Fields!Valor_CHO.Value + Fields!Valor_CHM.Value + Fields!Valor_Filme.Value + Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_Convenio.Value,
-						0
-					)
-				)
-			)
-		)
-	, "grpAtendimento")
-)</Value>
+                                  <Value>=Sum(Fields!Valor_CHO.Value) + Sum(Fields!Valor_CHM.Value) + Sum(Fields!Valor_Filme.Value) + 
+Sum(Fields!Valor_Material.Value) + Sum(Fields!Valor_Medicamento.Value) + Sum(Fields!Valor_Ad_Convenio.Value)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -2046,27 +2008,8 @@ Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_C
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(
-	Max(
-		IIF(
-			Fields!TIPO_RECEBIMENTO.Value = "C" AND Fields!ValorCobrado.Value = Nothing,
-			Fields!Valor_Coparticipacao.Value,
-			IIF(
-				Fields!TIPO_RECEBIMENTO.Value = "C",
-				Fields!Valor_Coparticipacao.Value,
-				IIF(
-					Fields!TIPO_RECEBIMENTO.Value = "R" AND Fields!ValorCobrado.Value = Nothing,
-					Fields!Valor_CHO.Value + Fields!Valor_CHM.Value + Fields!Valor_Filme.Value + Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_Convenio.Value,
-					IIF(
-						Fields!TIPO_RECEBIMENTO.Value = "R" AND Fields!Valor.Value &lt;&gt; Fields!ValorCobrado.Value,
-						Fields!Valor_CHO.Value + Fields!Valor_CHM.Value + Fields!Valor_Filme.Value + Fields!Valor_Material.Value + Fields!Valor_Medicamento.Value + Fields!Valor_Ad_Convenio.Value,
-						0
-					)
-				)
-			)
-		)
-	, "grpAtendimento")
-)</Value>
+                                  <Value>=Sum(Fields!Valor_CHO.Value) + Sum(Fields!Valor_CHM.Value) + Sum(Fields!Valor_Filme.Value) + 
+Sum(Fields!Valor_Material.Value) + Sum(Fields!Valor_Medicamento.Value) + Sum(Fields!Valor_Ad_Convenio.Value)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
