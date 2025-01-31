@@ -644,7 +644,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.53937cm</Width>
+                  <Width>1.88333cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.11604cm</Width>
@@ -689,6 +689,41 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
+                  <Height>0.3cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
                   <Height>0.5cm</Height>
                   <TablixCells>
                     <TablixCell>
@@ -699,7 +734,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Registro</Value>
+                                  <Value>Registro: </Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -908,11 +943,12 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Height>2.5cm</Height>
-            <Width>6.04958cm</Width>
+            <Height>2.8cm</Height>
+            <Width>6.39354cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -920,14 +956,14 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.5cm</Height>
+        <Height>2.8cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>6.04958cm</Width>
+      <Width>6.39354cm</Width>
       <Page>
         <PageHeight>3cm</PageHeight>
         <PageWidth>6cm</PageWidth>
