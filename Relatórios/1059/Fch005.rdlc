@@ -5352,7 +5352,10 @@ Nothing)</Value>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=IIF(Variables("US").Value = 1, "16:00", IIF(Variables("RX").Value = 1 And Weekday(First(Fields!DataEntregaExame.Value, "FichaAtendimento")) = 2, "16:00", IIF(Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") = "10" Or Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") = "11" Or Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") = "12", "13:00", IIF(Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") &gt;= "17", "16:00", Format(DateAdd("h", 1, First(Fields!Data.Value, "FichaAtendimento")), "HH") &amp; ":00"))))</Value>
+                    <Value>=IIF(Variables("US").Value = 1, "16:00", 
+	IIF(Variables("RX").Value = 1, "16:00", 
+		IIF(Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") = "10" Or Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") = "11" Or Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") = "12", "13:00", 
+			IIF(Format(First(Fields!Data.Value, "FichaAtendimento"), "HH") &gt;= "17", "16:00", Format(DateAdd("h", 1, First(Fields!Data.Value, "FichaAtendimento")), "HH") &amp; ":00"))))</Value>
                     <Style>
                       <FontFamily>Verdana</FontFamily>
                       <FontSize>12pt</FontSize>
