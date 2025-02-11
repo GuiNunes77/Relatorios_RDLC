@@ -198,13 +198,13 @@
                   <Width>0.15001cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5.39051cm</Width>
+                  <Width>6.34207cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.97082cm</Width>
+                  <Width>1.8406cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.00611cm</Width>
+                  <Width>1.91117cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.03542cm</Width>
@@ -219,10 +219,10 @@
                   <Width>0.14999cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.3cm</Width>
+                  <Width>1.83403cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.1167cm</Width>
+                  <Width>1.85627cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -316,10 +316,10 @@
                           <TablixBody>
                             <TablixColumns>
                               <TablixColumn>
-                                <Width>0.37042cm</Width>
+                                <Width>0.50768cm</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>17.16835cm</Width>
+                                <Width>17.29152cm</Width>
                               </TablixColumn>
                             </TablixColumns>
                             <TablixRows>
@@ -430,7 +430,7 @@
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox39">
+                        <Textbox Name="Textbox17">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -445,11 +445,11 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox39</rd:DefaultName>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -499,6 +499,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -874,6 +875,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1152,44 +1154,6 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TOTAL_PROCEDIMENTO4">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value) - Sum(Fields!VALORRECEBIDO.Value)</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Format>0.00;(0.00)</Format>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>TOTAL_PROCEDIMENTO1</rd:DefaultName>
-                          <Visibility>
-                            <Hidden>=IIF(Sum(Fields!TOTAL_PROCEDIMENTO.Value) - Sum(Fields!VALORRECEBIDO.Value) &lt;= 0, FALSE, TRUE)</Hidden>
-                          </Visibility>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
                         <Textbox Name="TOTAL_PROCEDIMENTO5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -1224,7 +1188,44 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TOTAL_PROCEDIMENTO4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value) - Sum(Fields!VALORRECEBIDO.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <Format>0.00;(0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>TOTAL_PROCEDIMENTO1</rd:DefaultName>
+                          <Visibility>
+                            <Hidden>=IIF(Sum(Fields!TOTAL_PROCEDIMENTO.Value) - Sum(Fields!VALORRECEBIDO.Value) &lt;= 0, FALSE, TRUE)</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -2950,9 +2951,6 @@
                                               </Group>
                                               <SortExpressions>
                                                 <SortExpression>
-                                                  <Value>=Fields!Numero.Value</Value>
-                                                </SortExpression>
-                                                <SortExpression>
                                                   <Value>=Fields!NomePaciente.Value</Value>
                                                 </SortExpression>
                                               </SortExpressions>
@@ -3007,6 +3005,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
+            <Top>0cm</Top>
             <Left>0.1cm</Left>
             <Height>3.7cm</Height>
             <Width>19.65547cm</Width>
@@ -3474,8 +3473,8 @@
               <rd:DefaultName>Textbox41</rd:DefaultName>
               <Top>4.66675cm</Top>
               <Left>1.6887cm</Left>
-              <Height>0.5cm</Height>
-              <Width>5.39051cm</Width>
+              <Height>0.549cm</Height>
+              <Width>6.34207cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -3512,9 +3511,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox43</rd:DefaultName>
               <Top>4.7cm</Top>
-              <Left>9.05003cm</Left>
+              <Left>9.87137cm</Left>
               <Height>0.5cm</Height>
-              <Width>1.97083cm</Width>
+              <Width>1.91117cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
                 <Border>
@@ -3569,9 +3568,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox44</rd:DefaultName>
               <Top>4.4cm</Top>
-              <Left>15.31797cm</Left>
+              <Left>16.06517cm</Left>
               <Height>0.81575cm</Height>
-              <Width>2.3208cm</Width>
+              <Width>1.83403cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
                 <Border>
@@ -3626,9 +3625,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox54</rd:DefaultName>
               <Top>4.4cm</Top>
-              <Left>7.0792cm</Left>
+              <Left>8.03077cm</Left>
               <Height>0.8cm</Height>
-              <Width>1.97083cm</Width>
+              <Width>1.8406cm</Width>
               <ZIndex>9</ZIndex>
               <Style>
                 <Border>
@@ -3684,7 +3683,7 @@
               <rd:DefaultName>Textbox54</rd:DefaultName>
               <Top>4.4cm</Top>
               <Left>0.1cm</Left>
-              <Height>0.76675cm</Height>
+              <Height>0.81575cm</Height>
               <Width>1.43869cm</Width>
               <ZIndex>10</ZIndex>
               <Style>
@@ -3740,7 +3739,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox54</rd:DefaultName>
               <Top>4.4cm</Top>
-              <Left>11.05614cm</Left>
+              <Left>11.78254cm</Left>
               <Height>0.8cm</Height>
               <Width>2.03542cm</Width>
               <ZIndex>11</ZIndex>
@@ -3796,10 +3795,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox54</rd:DefaultName>
-              <Top>4.4cm</Top>
-              <Left>13.23267cm</Left>
+              <Top>4.41575cm</Top>
+              <Left>13.96797cm</Left>
               <Height>0.8cm</Height>
-              <Width>1.95611cm</Width>
+              <Width>1.94721cm</Width>
               <ZIndex>12</ZIndex>
               <Style>
                 <Border>
@@ -3854,9 +3853,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox44</rd:DefaultName>
               <Top>4.4cm</Top>
-              <Left>17.70933cm</Left>
+              <Left>17.8992cm</Left>
               <Height>0.81575cm</Height>
-              <Width>2.01086cm</Width>
+              <Width>1.82099cm</Width>
               <ZIndex>13</ZIndex>
               <Style>
                 <Border>

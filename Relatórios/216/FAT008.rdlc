@@ -877,7 +877,6 @@
                             <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -2030,6 +2029,7 @@
                             <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -4456,10 +4456,10 @@
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!NOME_PACIENTE.Value</Value>
+                          <Value>=Fields!TOTAL_PROCEDIMENTO.Value</Value>
                         </SortExpression>
                         <SortExpression>
-                          <Value>=Fields!SEQUENCIA.Value</Value>
+                          <Value>=Fields!NOME_PACIENTE.Value</Value>
                         </SortExpression>
                       </SortExpressions>
                     </TablixMember>

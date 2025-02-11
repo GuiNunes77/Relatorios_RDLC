@@ -4276,7 +4276,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>=First(Fields!IDLogin.Value, "FichaAtendimento")</Value>
+                      <Value>=Fields!pcCodigo.Value</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontWeight>Bold</FontWeight>
@@ -4303,10 +4303,11 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>=First(Fields!Pwd_IDLogin.Value, "FichaAtendimento")</Value>
+                      <Value>=Fields!DataNasc.Value</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontWeight>Bold</FontWeight>
+                        <Format>ddMMyyyy</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
