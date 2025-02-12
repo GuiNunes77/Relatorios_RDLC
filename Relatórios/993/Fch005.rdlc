@@ -4187,6 +4187,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox56">
+              <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
@@ -4322,9 +4323,6 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               <Height>3.08771cm</Height>
               <Width>7.30083cm</Width>
               <ZIndex>14</ZIndex>
-              <Visibility>
-                <Hidden>=IIF(Max(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
-              </Visibility>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4341,9 +4339,6 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               <Height>2.36169cm</Height>
               <Width>2.6577cm</Width>
               <ZIndex>15</ZIndex>
-              <Visibility>
-                <Hidden>=IIF(Max(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
-              </Visibility>
               <Style>
                 <Border>
                   <Style>None</Style>
