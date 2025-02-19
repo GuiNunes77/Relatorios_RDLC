@@ -7521,7 +7521,7 @@ IIF(Lookup(13, Fields!teCodigo.Value, Fields!teCodigo.Value, "FichaAtendimento")
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Retirar de Segunda a Sexta, das 07:30 às 17:00 em</Value>
+                                                    <Value>Retirar de Segunda a Sexta, das 07:30 às 19:30 em</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                       <FontSize>9pt</FontSize>
@@ -7880,9 +7880,8 @@ IIF(Lookup(13, Fields!teCodigo.Value, Fields!teCodigo.Value, "FichaAtendimento")
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=LCase(Fields!IDLogin.Value)</Value>
+                                                    <Value>=UCase(Fields!IDLogin.Value)</Value>
                                                     <Style>
-                                                      <FontFamily>Times New Roman</FontFamily>
                                                       <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
@@ -8443,6 +8442,7 @@ IIF(Lookup(13, Fields!teCodigo.Value, Fields!teCodigo.Value, "FichaAtendimento")
                             </BottomBorder>
                           </Style>
                         </Rectangle>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
