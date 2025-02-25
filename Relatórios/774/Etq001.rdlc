@@ -616,6 +616,7 @@
                           </Style>
                         </Textbox>
                         <ColSpan>2</ColSpan>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -679,6 +680,7 @@ IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "m", "DR. ",
                           </Style>
                         </Textbox>
                         <ColSpan>2</ColSpan>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -721,6 +723,7 @@ IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "m", "DR. ",
                           </Style>
                         </Textbox>
                         <ColSpan>2</ColSpan>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -763,6 +766,7 @@ IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "m", "DR. ",
                           </Style>
                         </Textbox>
                         <ColSpan>2</ColSpan>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -783,9 +787,6 @@ IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "m", "DR. ",
                     <GroupExpressions>
                       <GroupExpression>=Fields!Numero.Value</GroupExpression>
                     </GroupExpressions>
-                    <PageBreak>
-                      <BreakLocation>Between</BreakLocation>
-                    </PageBreak>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
@@ -821,7 +822,7 @@ IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "m", "DR. ",
       <Width>8cm</Width>
       <Page>
         <PageHeight>3cm</PageHeight>
-        <PageWidth>8cm</PageWidth>
+        <PageWidth>10cm</PageWidth>
         <InteractiveHeight>3cm</InteractiveHeight>
         <InteractiveWidth>8cm</InteractiveWidth>
         <LeftMargin>0cm</LeftMargin>
