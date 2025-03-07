@@ -69,12 +69,24 @@
           <DataField>Endereco_LocalAtendimento</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Estado_LocalAtendimento">
+          <DataField>Estado_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Bairro_LocalAtendimento">
           <DataField>Bairro_LocalAtendimento</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CEP_LocalAtendimento">
           <DataField>CEP_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CNES_LocalAtendimento">
+          <DataField>CNES_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IBGE_LocalAtendimento">
+          <DataField>IBGE_LocalAtendimento</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Numero">
@@ -309,6 +321,10 @@
           <DataField>Sexo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Cor">
+          <DataField>Cor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="DataNasc">
           <DataField>DataNasc</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
@@ -331,6 +347,14 @@
         </Field>
         <Field Name="CPF_Resp">
           <DataField>CPF_Resp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EC">
+          <DataField>EC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="codIBGE_Paciente">
+          <DataField>codIBGE_Paciente</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Responsavel">
@@ -417,8 +441,8 @@
           <DataField>pfCodigo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ProfissaoPacinete">
-          <DataField>ProfissaoPacinete</DataField>
+        <Field Name="ProfissaoPaciente">
+          <DataField>ProfissaoPaciente</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="mrCodigo">
@@ -443,6 +467,10 @@
         </Field>
         <Field Name="UF_CRM">
           <DataField>UF_CRM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Conselho_Medico">
+          <DataField>Conselho_Medico</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Email_Medico">
@@ -513,6 +541,10 @@
           <DataField>Medico_Responsavel</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Sexo_Medico_Responsavel">
+          <DataField>Sexo_Medico_Responsavel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="mdCodigo_Revisor">
           <DataField>mdCodigo_Revisor</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -525,13 +557,17 @@
           <DataField>Pendencias</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="tpCodigo">
-          <DataField>tpCodigo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="TipoPagamento">
-          <DataField>TipoPagamento</DataField>
+        <Field Name="susCodigo">
+          <DataField>susCodigo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomeGrupoSus">
+          <DataField>NomeGrupoSus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DiasHistorico">
+          <DataField>DiasHistorico</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="BexibeHistorico">
           <DataField>BexibeHistorico</DataField>
@@ -549,10 +585,54 @@
           <DataField>Lista_Exame</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Lista_Modalidade">
+          <DataField>Lista_Modalidade</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_COM_ACCESSION_NUMBER">
+          <DataField>LISTA_EXAME_COM_ACCESSION_NUMBER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_ACCESSION_NUMBER_02">
+          <DataField>LISTA_EXAME_ACCESSION_NUMBER_02</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_SIGLA_MODALIDADE">
+          <DataField>LISTA_EXAME_SIGLA_MODALIDADE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoPagamento">
+          <DataField>TipoPagamento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATA_AGENDA">
+          <DataField>DATA_AGENDA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DATA_REGISTRO_AGENDA">
+          <DataField>DATA_REGISTRO_AGENDA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_PENDENCIA">
+          <DataField>LISTA_PENDENCIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="seq_GENERO">
+          <DataField>seq_GENERO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nome_Genero">
+          <DataField>Nome_Genero</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Mneumonico">
+          <DataField>Mneumonico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csi29DataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_FCH001</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -573,7 +653,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>5.7cm</Height>
+                  <Height>6.3cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1776,6 +1856,220 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
+                                    <Height>0.6cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox1">
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>Mneumônico . . . . . . . . . . </Value>
+                                                    <Style>
+                                                      <FontFamily>Verdana</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox1</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox2">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>: </Value>
+                                                    <Style>
+                                                      <FontFamily>Verdana</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>=Fields!Mneumonico.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>Verdana</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox2</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox3">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Verdana</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox3</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox4">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Verdana</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox4</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox5">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Verdana</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox5</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox6">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Verdana</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox6</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
                                     <Height>0.2cm</Height>
                                     <TablixCells>
                                       <TablixCell>
@@ -2316,6 +2610,10 @@
                                     <RepeatOnNewPage>true</RepeatOnNewPage>
                                   </TablixMember>
                                   <TablixMember>
+                                    <KeepWithGroup>After</KeepWithGroup>
+                                    <RepeatOnNewPage>true</RepeatOnNewPage>
+                                  </TablixMember>
+                                  <TablixMember>
                                     <Group Name="grpSequencia1">
                                       <GroupExpressions>
                                         <GroupExpression>=Fields!Sequencia.Value</GroupExpression>
@@ -2335,7 +2633,7 @@
                               </TablixRowHierarchy>
                               <KeepTogether>true</KeepTogether>
                               <DataSetName>FichaAtendimento</DataSetName>
-                              <Height>5.7cm</Height>
+                              <Height>6.3cm</Height>
                               <Width>19.9cm</Width>
                               <Style>
                                 <Border>
@@ -3956,7 +4254,7 @@ Nothing)</Value>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Height>8.85cm</Height>
+            <Height>9.45cm</Height>
             <Width>19.9cm</Width>
             <Style>
               <Border>
@@ -3965,7 +4263,7 @@ Nothing)</Value>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>8.85cm</Height>
+        <Height>9.45cm</Height>
         <Style />
       </Body>
       <Width>19.9cm</Width>

@@ -247,12 +247,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Visual Studio 2017\Projects\Relatorios_CSPro\Relatorios_CSPro\DataSet.xsd</rd:SchemaPath>
-        <rd:TableName>PR_REL_FAT013</rd:TableName>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>PR_REL_FAT012</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>PR_REL_FAT013TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>PR_REL_FAT012TableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -1460,7 +1460,7 @@
                                   </TablixCell>
                                   <TablixCell>
                                     <CellContents>
-                                      <Textbox Name="Textbox85">
+                                      <Textbox Name="Textbox98">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
@@ -1471,6 +1471,7 @@
                                                 <Style>
                                                   <FontFamily>Verdana</FontFamily>
                                                   <FontSize>7pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -1479,7 +1480,7 @@
                                             </Style>
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox74</rd:DefaultName>
+                                        <rd:DefaultName>Textbox98</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Style>None</Style>
@@ -1582,7 +1583,122 @@
                             </TablixColumns>
                             <TablixRows>
                               <TablixRow>
-                                <Height>0.5cm</Height>
+                                <Height>0.45cm</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox94">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value />
+                                                <Style>
+                                                  <FontFamily>verdana</FontFamily>
+                                                  <FontSize>8pt</FontSize>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox94</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>None</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox95">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Total Contraste:</Value>
+                                                <Style>
+                                                  <FontFamily>Verdana</FontFamily>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox95</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>None</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                      <ColSpan>2</ColSpan>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell />
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox97">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=SUM(Fields!VALOR_MATERIAL.Value + Fields!VALOR_MEDICAMENTO.Value)</Value>
+                                                <Style>
+                                                  <FontFamily>Verdana</FontFamily>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Format>0.00;(0.00)</Format>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox97</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>None</Style>
+                                          </Border>
+                                          <TopBorder>
+                                            <Color>Black</Color>
+                                            <Style>Solid</Style>
+                                            <Width>1pt</Width>
+                                          </TopBorder>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                              <TablixRow>
+                                <Height>0.45cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -1696,7 +1812,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.3cm</Height>
+                                <Height>0.25cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -1839,7 +1955,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5cm</Height>
+                                <Height>0.45cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -1980,7 +2096,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5cm</Height>
+                                <Height>0.45cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -2121,7 +2237,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5cm</Height>
+                                <Height>0.45cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -2262,7 +2378,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5cm</Height>
+                                <Height>0.45cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -2403,7 +2519,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5cm</Height>
+                                <Height>0.45cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -2544,7 +2660,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.3cm</Height>
+                                <Height>0.25cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -2681,7 +2797,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5cm</Height>
+                                <Height>0.45cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -2807,6 +2923,7 @@
                           <TablixRowHierarchy>
                             <TablixMembers>
                               <TablixMember />
+                              <TablixMember />
                               <TablixMember>
                                 <Visibility>
                                   <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR (Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value) = 0</Hidden>
@@ -2909,7 +3026,10 @@
                       <Group Name="Details" />
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!NOME_PACIENTE.Value</Value>
+                          <Value>=Fields!NUMERO.Value</Value>
+                        </SortExpression>
+                        <SortExpression>
+                          <Value>=Fields!SEQUENCIA.Value</Value>
                         </SortExpression>
                       </SortExpressions>
                     </TablixMember>
@@ -2922,16 +3042,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
-            <Filters>
-              <Filter>
-                <FilterExpression>=Fields!VALOR_MATERIAL.Value + Fields!VALOR_MEDICAMENTO.Value</FilterExpression>
-                <Operator>NotEqual</Operator>
-                <FilterValues>
-                  <FilterValue DataType="Float">=0</FilterValue>
-                </FilterValues>
-              </Filter>
-            </Filters>
-            <Left>0.13023cm</Left>
+            <Left>0.13727cm</Left>
             <Height>8cm</Height>
             <Width>19.65546cm</Width>
             <Style>
@@ -2943,7 +3054,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>3.2135in</Height>
+        <Height>3.14961in</Height>
         <Style />
       </Body>
       <Width>19.93cm</Width>
