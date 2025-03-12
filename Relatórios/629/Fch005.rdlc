@@ -3582,7 +3582,7 @@ Nothing)</Value>
         <Height>8.85cm</Height>
         <Style />
       </Body>
-      <Width>20.00001cm</Width>
+      <Width>20.02162cm</Width>
       <Page>
         <PageHeader>
           <Height>2.80386cm</Height>
@@ -4191,7 +4191,7 @@ Nothing)</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>5.37867cm</Height>
+          <Height>7.27359cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -4856,6 +4856,104 @@ Nothing)</Value>
                   <Style>None</Style>
                 </Border>
                 <PaddingLeft>2pt</PaddingLeft>
+              </Style>
+            </Textbox>
+            <Line Name="Line3">
+              <Top>5.12311cm</Top>
+              <Height>0cm</Height>
+              <Width>20.02162cm</Width>
+              <ZIndex>20</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="Textbox4">
+              <CanGrow>true</CanGrow>
+              <CanShrink>true</CanShrink>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Retirar a partir de: </Value>
+                      <Style>
+                        <FontFamily>Noto Sans</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Fields!DataEntregaExame.Value</Value>
+                      <Style>
+                        <FontFamily>Noto Sans</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>OBS.: ANTES DE VIR RETIRAR LIGAR (16) 3810-1800 OPÇÃO 2 PARA CONFIRMAR A LIBERAÇÃO DO LAUDO </Value>
+                      <Style>
+                        <FontFamily>Noto Sans</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>DAS 08H30 AS 11H30 OU DAS 14H30 AS 17H (RECEPÇÃO DO RAIO-X) DE SEGUNDA A SEXTA-FEIRA</Value>
+                      <Style>
+                        <FontFamily>Noto Sans</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>O EXAME PERMANECERÁ EM NOSSOS ARQUIVOS PELO PRAZO MÁXIMO DE 30 DIAS </Value>
+                      <Style>
+                        <FontFamily>Noto Sans</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox4</rd:DefaultName>
+              <Top>5.2995cm</Top>
+              <Height>1.89646cm</Height>
+              <Width>20.00001cm</Width>
+              <ZIndex>21</ZIndex>
+              <Visibility>
+                <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "N", False, True)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
               </Style>
             </Textbox>
           </ReportItems>

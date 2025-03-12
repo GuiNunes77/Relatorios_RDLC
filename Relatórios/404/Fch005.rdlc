@@ -1602,13 +1602,13 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Número da Matrícula: </Value>
+                                                    <Value>Número da Guia: </Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!Matricula.Value</Value>
+                                                    <Value>=Fields!Guia.Value</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -1648,7 +1648,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Número da Guia . . . . . . . . . .</Value>
+                                                    <Value>Número da Matrícula . . . . . . . . . .</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -1686,7 +1686,7 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!Guia.Value</Value>
+                                                    <Value>=Fields!Matricula.Value</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -2933,7 +2933,11 @@ Nothing)</Value>
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>=First(Fields!Nome.Value, "FichaAtendimento")</Value>
+                              <Value>=IIF(
+IsNothing(First(Fields!NomeSocial.Value, "FichaAtendimento")) or Trim(First(Fields!NomeSocial.Value, "FichaAtendimento")) = "",
+First(Fields!Nome.Value, "FichaAtendimento"),
+First(Fields!NomeSocial.Value, "FichaAtendimento")
+)</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                               </Style>
@@ -3356,6 +3360,7 @@ Nothing)</Value>
                       </Style>
                     </Textbox>
                     <Textbox Name="Textbox156">
+                      <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
@@ -3393,7 +3398,7 @@ Nothing)</Value>
                       </Paragraphs>
                       <rd:DefaultName>Textbox11</rd:DefaultName>
                       <Top>5.56671cm</Top>
-                      <Height>1.5cm</Height>
+                      <Height>1.3175cm</Height>
                       <Width>14.31729cm</Width>
                       <ZIndex>16</ZIndex>
                       <Style>
@@ -3417,6 +3422,40 @@ Nothing)</Value>
                         </Border>
                       </Style>
                     </Line>
+                    <Textbox Name="Textbox3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>="Data Retirada: "+First(Fields!DataEntregaExame.Value, "FichaAtendimento")+" - (Após às 14:00 horas)"</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <Format>dd/MM/yyyy</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Top>6.91949cm</Top>
+                      <Height>0.59701cm</Height>
+                      <Width>14.31729cm</Width>
+                      <ZIndex>18</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
                   </ReportItems>
                   <KeepTogether>true</KeepTogether>
                   <Top>3.23503cm</Top>
