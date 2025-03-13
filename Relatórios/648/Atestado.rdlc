@@ -41,14 +41,6 @@
           <DataField>Idade</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ResponsavelPaciente">
-          <DataField>ResponsavelPaciente</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Suspeita">
-          <DataField>Suspeita</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Nome">
           <DataField>Nome</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -165,10 +157,6 @@
           <DataField>SOFTUF</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SOFTEmail">
-          <DataField>SOFTEmail</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="EmitirPara_Recibo">
           <DataField>EmitirPara_Recibo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -225,10 +213,6 @@
           <DataField>UF_CRM</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="IMG_CARIMBO">
-          <DataField>IMG_CARIMBO</DataField>
-          <rd:TypeName>System.Byte[]</rd:TypeName>
-        </Field>
         <Field Name="Responsavel_Atestado">
           <DataField>Responsavel_Atestado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -253,24 +237,8 @@
           <DataField>Complemento_Atestado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="cvCodigo">
-          <DataField>cvCodigo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
         <Field Name="Convenio">
           <DataField>Convenio</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="usCodigo">
-          <DataField>usCodigo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="usCodigoAtestado">
-          <DataField>usCodigoAtestado</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="UsuarioAtestado">
-          <DataField>UsuarioAtestado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LISTA_EXAME">
@@ -281,54 +249,10 @@
           <DataField>LISTA_MODALIDADE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LISTA_FORMA_PAGAMENTO">
-          <DataField>LISTA_FORMA_PAGAMENTO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CodigoMedico">
-          <DataField>CodigoMedico</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="usCodigoAtendimento">
-          <DataField>usCodigoAtendimento</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="UsuarioAtendimento">
-          <DataField>UsuarioAtendimento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SOFTSite">
-          <DataField>SOFTSite</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SOFTCNPJ">
-          <DataField>SOFTCNPJ</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CodigoEspecialidadeMedica">
-          <DataField>CodigoEspecialidadeMedica</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="NomeEspecialidadeMedica">
-          <DataField>NomeEspecialidadeMedica</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="usCodigoRecibo">
-          <DataField>usCodigoRecibo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="UsuarioRecibo">
-          <DataField>UsuarioRecibo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="LISTA_EXAME_AMBCODIGO">
-          <DataField>LISTA_EXAME_AMBCODIGO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csiDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>csi29DataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_ATES_REC</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -429,7 +353,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>2.72639cm</Height>
+                  <Height>1.35cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -468,7 +392,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>, para realizar exame de imagem no dia </Value>
+                                  <Value>, sob procedimento médico </Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -479,7 +403,7 @@
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
-                                    <Format>dd/MM/yyyy</Format>
+                                    <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
@@ -487,7 +411,7 @@
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
-                                    <Format>dd/MM/yyyy</Format>
+                                    <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -647,7 +571,7 @@
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
             <Left>1cm</Left>
-            <Height>6.52639cm</Height>
+            <Height>5.15cm</Height>
             <Width>18cm</Width>
             <Style>
               <Border>
@@ -656,7 +580,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>6.52639cm</Height>
+        <Height>5.15cm</Height>
         <Style />
       </Body>
       <Width>20cm</Width>
@@ -740,7 +664,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Declaração</Value>
+                      <Value>Atestado</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>22pt</FontSize>
@@ -778,61 +702,10 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>9.68181cm</Height>
+          <Height>5cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Textbox Name="Responsavel2">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>DR. CARLOS E.M.F. SACRAMENTO</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>CRM 72.152</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Responsavel</rd:DefaultName>
-              <Top>0.17639cm</Top>
-              <Left>1cm</Left>
-              <Height>1.2cm</Height>
-              <Width>8.4009cm</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <TopBorder>
-                  <Style>Solid</Style>
-                </TopBorder>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
             <Textbox Name="Responsavel">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
@@ -840,7 +713,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>DR ANTONIO NADER</Value>
+                      <Value>=First(Fields!Responsavel.Value, "Dados")</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -854,7 +727,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>CRM 30.540</Value>
+                      <Value>=First(Fields!CONSELHO.Value, "Dados") + " " + First(Fields!CRM.Value, "Dados")</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -868,166 +741,9 @@
               </Paragraphs>
               <rd:DefaultName>Responsavel</rd:DefaultName>
               <Top>0.17639cm</Top>
-              <Left>10.5991cm</Left>
+              <Left>9cm</Left>
               <Height>1.2cm</Height>
-              <Width>8.4009cm</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <TopBorder>
-                  <Style>Solid</Style>
-                </TopBorder>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Responsavel4">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>DRa RENATA A.F. ROCHA</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>CRM 101.246</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Responsavel</rd:DefaultName>
-              <Top>4.76632cm</Top>
-              <Left>1cm</Left>
-              <Height>1.2cm</Height>
-              <Width>8.4009cm</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <TopBorder>
-                  <Style>Solid</Style>
-                </TopBorder>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Responsavel3">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>DR MARCEL NADER</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>CRM 116.863</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Responsavel</rd:DefaultName>
-              <Top>4.76632cm</Top>
-              <Left>10.5991cm</Left>
-              <Height>1.2cm</Height>
-              <Width>8.4009cm</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <TopBorder>
-                  <Style>Solid</Style>
-                </TopBorder>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Responsavel5">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>DR CAIO RIBEIRO PEREIRA</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>CRM 200.704</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Responsavel</rd:DefaultName>
-              <Top>8.32306cm</Top>
-              <Left>5.79955cm</Left>
-              <Height>1.2cm</Height>
-              <Width>8.4009cm</Width>
-              <ZIndex>4</ZIndex>
+              <Width>10cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>

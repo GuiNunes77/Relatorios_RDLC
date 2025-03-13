@@ -4191,7 +4191,7 @@ Nothing)</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>7.27359cm</Height>
+          <Height>8.64617cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -4398,8 +4398,8 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox24</rd:DefaultName>
-              <Top>2.63019cm</Top>
-              <Left>9.75661cm</Left>
+              <Top>3.09144cm</Top>
+              <Left>12.29239cm</Left>
               <Height>0.43528cm</Height>
               <Width>7.65742cm</Width>
               <ZIndex>4</ZIndex>
@@ -4477,7 +4477,7 @@ Nothing)</Value>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Center</TextAlign>
                   </Style>
                 </Paragraph>
                 <Paragraph>
@@ -4502,15 +4502,15 @@ Nothing)</Value>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Center</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>3.77015cm</Top>
-              <Left>12.94478cm</Left>
+              <Top>4.04672cm</Top>
+              <Left>12.46213cm</Left>
               <Height>0.9cm</Height>
-              <Width>4.43397cm</Width>
+              <Width>7.53788cm</Width>
               <ZIndex>6</ZIndex>
               <Visibility>
                 <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
@@ -4523,37 +4523,6 @@ Nothing)</Value>
                 <PaddingRight>2pt</PaddingRight>
               </Style>
             </Textbox>
-            <Rectangle Name="Rectangle4">
-              <ReportItems>
-                <Image Name="imageQrCode2">
-                  <Source>Database</Source>
-                  <Value>=System.Convert.FromBase64String(Parameters!qrCodeBase64.Value)</Value>
-                  <MIMEType>image/png</MIMEType>
-                  <Sizing>FitProportional</Sizing>
-                  <Height>2.5cm</Height>
-                  <Width>2.5cm</Width>
-                  <Visibility>
-                    <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S" AND Parameters!qrCodeBase64.Value &lt;&gt; "", False, True)</Hidden>
-                  </Visibility>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Image>
-              </ReportItems>
-              <KeepTogether>true</KeepTogether>
-              <Top>2.48179cm</Top>
-              <Left>17.41403cm</Left>
-              <Height>2.5cm</Height>
-              <Width>2.5cm</Width>
-              <ZIndex>7</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Rectangle>
             <Image Name="Image2">
               <Source>Embedded</Source>
               <Value>cdisjb_logo1</Value>
@@ -4562,7 +4531,7 @@ Nothing)</Value>
               <Left>0.70104cm</Left>
               <Height>2.16534cm</Height>
               <Width>6.48357cm</Width>
-              <ZIndex>8</ZIndex>
+              <ZIndex>7</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4585,16 +4554,16 @@ Nothing)</Value>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Center</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>3.2348cm</Top>
+              <Top>3.52672cm</Top>
               <Left>12.46213cm</Left>
               <Height>0.52cm</Height>
-              <Width>4.94485cm</Width>
-              <ZIndex>9</ZIndex>
+              <Width>7.53788cm</Width>
+              <ZIndex>8</ZIndex>
               <Visibility>
                 <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
               </Visibility>
@@ -4629,7 +4598,7 @@ Nothing)</Value>
               <Left>11.8006cm</Left>
               <Height>0.36119cm</Height>
               <Width>7.76418cm</Width>
-              <ZIndex>10</ZIndex>
+              <ZIndex>9</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4661,7 +4630,7 @@ Nothing)</Value>
               <Left>8.37128cm</Left>
               <Height>0.36119cm</Height>
               <Width>3.09227cm</Width>
-              <ZIndex>11</ZIndex>
+              <ZIndex>10</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4692,7 +4661,7 @@ Nothing)</Value>
               <Left>8.37128cm</Left>
               <Height>0.36825cm</Height>
               <Width>3.08522cm</Width>
-              <ZIndex>12</ZIndex>
+              <ZIndex>11</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4723,7 +4692,7 @@ Nothing)</Value>
               <Left>11.8006cm</Left>
               <Height>0.36472cm</Height>
               <Width>7.76418cm</Width>
-              <ZIndex>13</ZIndex>
+              <ZIndex>12</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4739,7 +4708,7 @@ Nothing)</Value>
               <Left>8.02128cm</Left>
               <Height>0.3612cm</Height>
               <Width>0.35cm</Width>
-              <ZIndex>14</ZIndex>
+              <ZIndex>13</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4754,7 +4723,7 @@ Nothing)</Value>
               <Left>8.02128cm</Left>
               <Height>0.36825cm</Height>
               <Width>0.35cm</Width>
-              <ZIndex>15</ZIndex>
+              <ZIndex>14</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4769,7 +4738,7 @@ Nothing)</Value>
               <Left>11.46355cm</Left>
               <Height>0.36472cm</Height>
               <Width>0.60472cm</Width>
-              <ZIndex>16</ZIndex>
+              <ZIndex>15</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4784,7 +4753,7 @@ Nothing)</Value>
               <Left>11.46355cm</Left>
               <Height>0.36119cm</Height>
               <Width>0.60472cm</Width>
-              <ZIndex>17</ZIndex>
+              <ZIndex>16</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4820,7 +4789,7 @@ Nothing)</Value>
               <Top>4.18672cm</Top>
               <Height>0.38cm</Height>
               <Width>12.46213cm</Width>
-              <ZIndex>18</ZIndex>
+              <ZIndex>17</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4850,7 +4819,7 @@ Nothing)</Value>
               <Top>4.56672cm</Top>
               <Height>0.38cm</Height>
               <Width>12.46213cm</Width>
-              <ZIndex>19</ZIndex>
+              <ZIndex>18</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4862,7 +4831,7 @@ Nothing)</Value>
               <Top>5.12311cm</Top>
               <Height>0cm</Height>
               <Width>20.02162cm</Width>
-              <ZIndex>20</ZIndex>
+              <ZIndex>19</ZIndex>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -4946,7 +4915,7 @@ Nothing)</Value>
               <Top>5.2995cm</Top>
               <Height>1.89646cm</Height>
               <Width>20.00001cm</Width>
-              <ZIndex>21</ZIndex>
+              <ZIndex>20</ZIndex>
               <Visibility>
                 <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "N", False, True)</Hidden>
               </Visibility>
@@ -4956,6 +4925,186 @@ Nothing)</Value>
                 </Border>
               </Style>
             </Textbox>
+            <Rectangle Name="Rectangle6">
+              <ReportItems>
+                <Textbox Name="Textbox17">
+                  <CanGrow>true</CanGrow>
+                  <CanShrink>true</CanShrink>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>PASSO A PASSO DE COMO ACESSAR SEU EXAME:</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Entrar no seu navegador (Google - Internet Explorer - entre outros)</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Digitar o site: </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Site.Value</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <TextDecoration>Underline</TextDecoration>
+                            <Color>Blue</Color>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value> ou </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>scaneie o QR CODE ao lado</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Seu primeiro acesso será sempre com a senha e login que iremos entregar, serão sequências</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>de letras e números. </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>Atenção:</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value> digitar as letras sempre como MAIÚSCULAS</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>      Exemplo: Login: CS01254521 (esses são apenas exemplos)</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>                       Senha: JK1245 (esses são apenas exemplos)</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>*MESMO APÓS O CADASTRO DO LOGIN E SENHA, SERÁ POSSÍVEL O ACESSO COM OS DADOS DO PROTOCOLO ENTREGUE*</Value>
+                          <Style>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox17</rd:DefaultName>
+                  <Height>3.135cm</Height>
+                  <Width>18.70656cm</Width>
+                  <Visibility>
+                    <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S" AND Parameters!qrCodeBase64.Value &lt;&gt; "", False, True)</Hidden>
+                  </Visibility>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Image Name="imageQrCode2">
+                  <Source>Database</Source>
+                  <Value>=System.Convert.FromBase64String(Parameters!qrCodeBase64.Value)</Value>
+                  <MIMEType>image/png</MIMEType>
+                  <Sizing>FitProportional</Sizing>
+                  <Left>14.96302cm</Left>
+                  <Height>3.135cm</Height>
+                  <Width>3.74354cm</Width>
+                  <ZIndex>1</ZIndex>
+                  <Visibility>
+                    <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S" AND Parameters!qrCodeBase64.Value &lt;&gt; "", False, True)</Hidden>
+                  </Visibility>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Image>
+              </ReportItems>
+              <KeepTogether>true</KeepTogether>
+              <Top>5.2995cm</Top>
+              <Left>0.21559cm</Left>
+              <Height>3.135cm</Height>
+              <Width>19.34919cm</Width>
+              <ZIndex>21</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Rectangle>
           </ReportItems>
           <Style>
             <Border>
