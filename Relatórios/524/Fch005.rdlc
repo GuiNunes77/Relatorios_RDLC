@@ -12772,7 +12772,9 @@ true
                       <Style />
                     </TextRun>
                     <TextRun>
-                      <Value>=Fields!Convenio.Value</Value>
+                      <Value>=IIF(IsNothing(Fields!cdEmpresa.Value), 
+	Fields!Convenio.Value,
+	Cstr(Fields!Convenio.Value &amp; " - " &amp; Fields!Empresa_Convenio.Value))</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>

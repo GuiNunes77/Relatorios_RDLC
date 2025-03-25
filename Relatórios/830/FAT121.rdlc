@@ -496,45 +496,45 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.5cm</Width>
+                  <Width>2.14938cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.5cm</Width>
+                  <Width>1.75604cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.5cm</Width>
+                  <Width>2.19375cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2cm</Width>
+                  <Width>1.91792cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.6825cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.2cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3cm</Width>
+                  <Width>2.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5cm</Width>
+                  <Width>4.14208cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>3cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>2cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>4.3cm</Width>
+                  <Width>3.79646cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.5cm</Width>
                 </TablixColumn>
+                <TablixColumn>
+                  <Width>1.96188cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.78563cm</Width>
+                </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.5cm</Height>
+                  <Height>0.42062cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -545,10 +545,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>Atendimento</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -585,10 +585,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>Convenio</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -625,10 +625,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>T. Atendimento</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -658,6 +658,46 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Departamento</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox189">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -667,8 +707,8 @@
                                 <TextRun>
                                   <Value>Atend.</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -707,8 +747,8 @@
                                 <TextRun>
                                   <Value>Data</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -738,17 +778,17 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox1">
+                        <Textbox Name="Textbox203">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Departamento</Value>
+                                  <Value>Matricula</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -758,7 +798,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <rd:DefaultName>Textbox202</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -787,8 +827,8 @@
                                 <TextRun>
                                   <Value>Nome Paciente</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -825,130 +865,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Matricula</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox202</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox208">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Guia</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox208</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox200">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Código AMB</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox200</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox201">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
                                   <Value>Procedimento</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -978,6 +898,86 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox204">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Código AMB</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox200</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox208">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Guia</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox208</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox194">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -987,14 +987,14 @@
                                 <TextRun>
                                   <Value>Valor</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1019,303 +1019,20 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox45">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Local de Atendimento: </Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!NOME_LOCAL_ATENDIMENTO.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>12</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.6cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox33">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox33</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox34">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Convênio: </Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!NOME_CONVENIO.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox34</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>11</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.6cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox2">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox2</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox3">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox3</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox4">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Tipo de Atendimento: </Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!Tipo_Atend.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>10</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
                   <Height>0.5cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox58">
-                          <CanGrow>true</CanGrow>
+                        <Textbox Name="NOME_LOCAL_ATENDIMENTO">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!NOME_LOCAL_ATENDIMENTO.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1324,7 +1041,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox58</rd:DefaultName>
+                          <rd:DefaultName>NOME_LOCAL_ATENDIMENTO</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1339,17 +1056,16 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox59">
-                          <CanGrow>true</CanGrow>
+                        <Textbox Name="NOME_CONVENIO">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!NOME_CONVENIO.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1358,7 +1074,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox59</rd:DefaultName>
+                          <rd:DefaultName>NOME_CONVENIO</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1373,17 +1089,16 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox60">
-                          <CanGrow>true</CanGrow>
+                        <Textbox Name="Tipo_Atend">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Tipo_Atend.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1392,7 +1107,40 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox60</rd:DefaultName>
+                          <rd:DefaultName>Tipo_Atend</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Departamento2">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Departamento.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Departamento</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1408,7 +1156,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Numero">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1416,8 +1163,9 @@
                                 <TextRun>
                                   <Value>=Fields!Numero.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                    <Format>0;(0)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1442,7 +1190,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Data">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1450,9 +1197,9 @@
                                 <TextRun>
                                   <Value>=Fields!Data.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Format>d</Format>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                    <Format>dd/MM/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1476,76 +1223,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Departamento">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Departamento.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Departamento</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Nome_Paciente">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Nome_Paciente.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Nome_Paciente</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Matricula">
-                          <CanGrow>true</CanGrow>
+                        <Textbox Name="Matricula2">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1553,8 +1231,8 @@
                                 <TextRun>
                                   <Value>=Fields!Matricula.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1578,17 +1256,16 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Guia">
-                          <CanGrow>true</CanGrow>
+                        <Textbox Name="Nome_Paciente">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Guia.Value</Value>
+                                  <Value>=Fields!Nome_Paciente.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1597,7 +1274,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Guia</rd:DefaultName>
+                          <rd:DefaultName>Nome_Paciente</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1612,42 +1289,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CODIGO_PROCED_FATURA">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!CODIGO_PROCED_FATURA.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>CODIGO_PROCED_FATURA</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="DESCRICAO_PROCEDIMENTO_ATEND">
-                          <CanGrow>true</CanGrow>
+                        <Textbox Name="DESCRICAO_PROCEDIMENTO_ATEND2">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1655,8 +1297,8 @@
                                 <TextRun>
                                   <Value>=Fields!DESCRICAO_PROCEDIMENTO_ATEND.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1680,8 +1322,73 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="CODIGO_PROCED_FATURA2">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!CODIGO_PROCED_FATURA.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>CODIGO_PROCED_FATURA</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Guia">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Guia.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Guia</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="TOTAL_PROCEDIMENTO">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1689,14 +1396,14 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>6pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1729,7 +1436,7 @@
                                 <TextRun>
                                   <Value>Total de Exames do Tipo de Atendimento:</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -1761,7 +1468,7 @@
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Controle">
+                        <Textbox Name="Controle5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1770,7 +1477,7 @@
                                 <TextRun>
                                   <Value>=CountDistinct(Fields!SEQUENCIA.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0;(#,0)</Format>
@@ -1797,7 +1504,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox204">
+                        <Textbox Name="Textbox38">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1806,8 +1513,9 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1816,7 +1524,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox204</rd:DefaultName>
+                          <rd:DefaultName>Textbox38</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1831,27 +1539,27 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox155">
+                        <Textbox Name="Textbox17">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total do Tipo de Atendimento:</Value>
+                                  <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox155</rd:DefaultName>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1862,10 +1570,44 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>3</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox26">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total do Tipo de Atendimento:</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox26</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
@@ -1878,7 +1620,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
@@ -1919,7 +1661,7 @@
                                 <TextRun>
                                   <Value>Total de Exames do Convenio:</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -1951,7 +1693,7 @@
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Controle2">
+                        <Textbox Name="Controle6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1960,7 +1702,7 @@
                                 <TextRun>
                                   <Value>=CountDistinct(Fields!SEQUENCIA.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0;(#,0)</Format>
@@ -1987,7 +1729,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox205">
+                        <Textbox Name="Textbox39">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1996,8 +1738,9 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2006,7 +1749,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox205</rd:DefaultName>
+                          <rd:DefaultName>Textbox39</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -2021,27 +1764,27 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox156">
+                        <Textbox Name="Textbox18">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total do Convênio:</Value>
+                                  <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox156</rd:DefaultName>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -2052,10 +1795,44 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>3</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox27">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total do Convênio:</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox27</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
@@ -2068,7 +1845,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
@@ -2109,7 +1886,7 @@
                                 <TextRun>
                                   <Value>Total de Exames do Local de Atendimento:</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -2141,7 +1918,7 @@
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Controle3">
+                        <Textbox Name="Controle7">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2150,7 +1927,7 @@
                                 <TextRun>
                                   <Value>=CountDistinct(Fields!SEQUENCIA.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0;(#,0)</Format>
@@ -2177,7 +1954,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox206">
+                        <Textbox Name="Textbox40">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2186,8 +1963,9 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2196,7 +1974,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox206</rd:DefaultName>
+                          <rd:DefaultName>Textbox40</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -2211,27 +1989,27 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox223">
+                        <Textbox Name="Textbox19">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total do Local de Atendimento:</Value>
+                                  <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox223</rd:DefaultName>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -2242,10 +2020,44 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>3</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox28">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total do Local de Atendimento:</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox28</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
@@ -2258,7 +2070,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
@@ -2299,7 +2111,7 @@
                                 <TextRun>
                                   <Value>Total de Exames Geral:</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -2331,7 +2143,7 @@
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Controle4">
+                        <Textbox Name="Controle8">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2340,7 +2152,7 @@
                                 <TextRun>
                                   <Value>=CountDistinct(Fields!SEQUENCIA.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0;(#,0)</Format>
@@ -2367,7 +2179,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox207">
+                        <Textbox Name="Textbox41">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2376,8 +2188,9 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2386,7 +2199,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox207</rd:DefaultName>
+                          <rd:DefaultName>Textbox41</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -2401,27 +2214,27 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox226">
+                        <Textbox Name="Textbox21">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total Geral</Value>
+                                  <Value />
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox226</rd:DefaultName>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -2432,10 +2245,44 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>3</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox31">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total Geral</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox31</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell>
                       <CellContents>
@@ -2448,7 +2295,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value)</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
+                                    <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
@@ -2512,10 +2359,6 @@
                   </SortExpressions>
                   <TablixMembers>
                     <TablixMember>
-                      <KeepWithGroup>After</KeepWithGroup>
-                      <RepeatOnNewPage>true</RepeatOnNewPage>
-                    </TablixMember>
-                    <TablixMember>
                       <Group Name="grpConvenio">
                         <GroupExpressions>
                           <GroupExpression>=Fields!cvCodigo.Value</GroupExpression>
@@ -2528,10 +2371,6 @@
                       </SortExpressions>
                       <TablixMembers>
                         <TablixMember>
-                          <KeepWithGroup>After</KeepWithGroup>
-                          <RepeatOnNewPage>true</RepeatOnNewPage>
-                        </TablixMember>
-                        <TablixMember>
                           <Group Name="grpTipoAtendimento">
                             <GroupExpressions>
                               <GroupExpression>=Fields!seq_Tiss_Atend.Value</GroupExpression>
@@ -2543,10 +2382,6 @@
                             </SortExpression>
                           </SortExpressions>
                           <TablixMembers>
-                            <TablixMember>
-                              <KeepWithGroup>After</KeepWithGroup>
-                              <RepeatOnNewPage>true</RepeatOnNewPage>
-                            </TablixMember>
                             <TablixMember>
                               <Group Name="grpSequencia">
                                 <GroupExpressions>
@@ -2593,8 +2428,8 @@
               </Filter>
             </Filters>
             <Left>0.1cm</Left>
-            <Height>5.2cm</Height>
-            <Width>28.5cm</Width>
+            <Height>3.32062cm</Height>
+            <Width>28.58563cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2602,10 +2437,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.2cm</Height>
+        <Height>3.32062cm</Height>
         <Style />
       </Body>
-      <Width>28.6cm</Width>
+      <Width>28.68563cm</Width>
       <Page>
         <PageHeader>
           <Height>4.2cm</Height>
