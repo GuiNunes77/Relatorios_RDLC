@@ -89,6 +89,14 @@
           <DataField>Seq_Registro</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="seq_Fatura">
+          <DataField>seq_Fatura</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="seq_Receb">
+          <DataField>seq_Receb</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="CVCODIGO">
           <DataField>CVCODIGO</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -112,6 +120,18 @@
         <Field Name="TIPO">
           <DataField>TIPO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Numero">
+          <DataField>Numero</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ambCodigo">
+          <DataField>ambCodigo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Sequencia">
+          <DataField>Sequencia</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="TOTAL_PROCEDIMENTO">
           <DataField>TOTAL_PROCEDIMENTO</DataField>
@@ -141,6 +161,10 @@
           <DataField>PorcTAXA</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="TIPOPAGTO">
+          <DataField>TIPOPAGTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Desc_Local">
           <DataField>Desc_Local</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -149,34 +173,14 @@
           <DataField>NFantasia_Local</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="seq_Fatura">
-          <DataField>seq_Fatura</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="seq_Receb">
-          <DataField>seq_Receb</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="TIPOPAGTO">
-          <DataField>TIPOPAGTO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Numero">
-          <DataField>Numero</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="ambCodigo">
-          <DataField>ambCodigo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Sequencia">
-          <DataField>Sequencia</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+        <Field Name="Vencimento">
+          <DataField>Vencimento</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>ReportViewer</rd:DataSetName>
-        <rd:SchemaPath>C:\Documents and Settings\Allan\Desktop\ReportViewer\ReportViewer\ReportViewer.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_REC017</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -747,17 +751,18 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox8">
+                        <Textbox Name="Vencimento">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Vencimento.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
+                                    <Format>dd/MM/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -766,7 +771,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <rd:DefaultName>Vencimento</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>

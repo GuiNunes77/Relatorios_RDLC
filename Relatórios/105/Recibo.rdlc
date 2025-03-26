@@ -872,20 +872,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>(   ) Dinheiro         (   ) Cartão de débito (   ) Cartão de crédito</Value>
-                    <Style>
-                      <FontFamily>Verdana</FontFamily>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value> (   ) Cheque à vista (   ) Cheque à prazo (   ) Depósito em conta</Value>
+                    <Value>=Fields!LISTA_FORMA_PAGAMENTO.Value</Value>
                     <Style>
                       <FontFamily>Verdana</FontFamily>
                     </Style>
@@ -953,7 +940,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>(   ) Sistema   (   ) Site</Value>
+                    <Value>=Fields!NOTAFISCAL.Value</Value>
                     <Style>
                       <FontFamily>Verdana</FontFamily>
                     </Style>

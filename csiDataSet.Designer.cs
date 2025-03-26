@@ -45240,6 +45240,8 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnNFantasia_Local;
             
+            private global::System.Data.DataColumn columnVencimento;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_REC017DataTable() {
@@ -45451,6 +45453,14 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VencimentoColumn {
+                get {
+                    return this.columnVencimento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -45508,7 +45518,8 @@ namespace Relatorios_RDLC {
                         decimal PorcTAXA, 
                         string TIPOPAGTO, 
                         string Desc_Local, 
-                        string NFantasia_Local) {
+                        string NFantasia_Local, 
+                        System.DateTime Vencimento) {
                 PR_REL_REC017Row rowPR_REL_REC017Row = ((PR_REL_REC017Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Seq_Registro,
@@ -45532,7 +45543,8 @@ namespace Relatorios_RDLC {
                         PorcTAXA,
                         TIPOPAGTO,
                         Desc_Local,
-                        NFantasia_Local};
+                        NFantasia_Local,
+                        Vencimento};
                 rowPR_REL_REC017Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_REC017Row);
                 return rowPR_REL_REC017Row;
@@ -45577,6 +45589,7 @@ namespace Relatorios_RDLC {
                 this.columnTIPOPAGTO = base.Columns["TIPOPAGTO"];
                 this.columnDesc_Local = base.Columns["Desc_Local"];
                 this.columnNFantasia_Local = base.Columns["NFantasia_Local"];
+                this.columnVencimento = base.Columns["Vencimento"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -45626,6 +45639,8 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnDesc_Local);
                 this.columnNFantasia_Local = new global::System.Data.DataColumn("NFantasia_Local", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNFantasia_Local);
+                this.columnVencimento = new global::System.Data.DataColumn("Vencimento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVencimento);
                 this.columnSeq_Registro.MaxLength = 61;
                 this.columnseq_Fatura.AllowDBNull = false;
                 this.columnseq_Receb.AllowDBNull = false;
@@ -104968,6 +104983,22 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime Vencimento {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tablePR_REL_REC017.VencimentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Vencimento\' na tabela \'PR_REL_REC017\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_REC017.VencimentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSeq_RegistroNull() {
                 return this.IsNull(this.tablePR_REL_REC017.Seq_RegistroColumn);
             }
@@ -105072,6 +105103,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetNFantasia_LocalNull() {
                 this[this.tablePR_REL_REC017.NFantasia_LocalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVencimentoNull() {
+                return this.IsNull(this.tablePR_REL_REC017.VencimentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVencimentoNull() {
+                this[this.tablePR_REL_REC017.VencimentoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -119881,6 +119924,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("TIPOPAGTO", "TIPOPAGTO");
             tableMapping.ColumnMappings.Add("Desc_Local", "Desc_Local");
             tableMapping.ColumnMappings.Add("NFantasia_Local", "NFantasia_Local");
+            tableMapping.ColumnMappings.Add("Vencimento", "Vencimento");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
