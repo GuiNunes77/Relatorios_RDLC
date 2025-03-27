@@ -872,7 +872,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Fields!LISTA_FORMA_PAGAMENTO.Value</Value>
+                    <Value>=First(Fields!LISTA_FORMA_PAGAMENTO.Value, "Dados")</Value>
                     <Style>
                       <FontFamily>Verdana</FontFamily>
                     </Style>
@@ -940,7 +940,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Fields!NOTAFISCAL.Value</Value>
+                    <Value>=First(Fields!NOTAFISCAL.Value, "Dados")</Value>
                     <Style>
                       <FontFamily>Verdana</FontFamily>
                     </Style>
