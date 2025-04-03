@@ -585,6 +585,25 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
+                                  <Value>=
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "F", "DRA. ",
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "f", "DRA. ",
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "M", "DR. ",
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "m", "DR. ",
+""))))</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
                                   <Value>=Fields!Medico.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>

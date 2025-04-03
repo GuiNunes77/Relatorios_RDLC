@@ -41,6 +41,14 @@
           <DataField>Idade</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ResponsavelPaciente">
+          <DataField>ResponsavelPaciente</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Suspeita">
+          <DataField>Suspeita</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Nome">
           <DataField>Nome</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -157,6 +165,10 @@
           <DataField>SOFTUF</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SOFTEmail">
+          <DataField>SOFTEmail</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="EmitirPara_Recibo">
           <DataField>EmitirPara_Recibo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -213,6 +225,10 @@
           <DataField>UF_CRM</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="IMG_CARIMBO">
+          <DataField>IMG_CARIMBO</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
         <Field Name="Responsavel_Atestado">
           <DataField>Responsavel_Atestado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -237,8 +253,24 @@
           <DataField>Complemento_Atestado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="cvCodigo">
+          <DataField>cvCodigo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="Convenio">
           <DataField>Convenio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="usCodigo">
+          <DataField>usCodigo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="usCodigoAtestado">
+          <DataField>usCodigoAtestado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="UsuarioAtestado">
+          <DataField>UsuarioAtestado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LISTA_EXAME">
@@ -249,10 +281,54 @@
           <DataField>LISTA_MODALIDADE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="LISTA_FORMA_PAGAMENTO">
+          <DataField>LISTA_FORMA_PAGAMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoMedico">
+          <DataField>CodigoMedico</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="usCodigoAtendimento">
+          <DataField>usCodigoAtendimento</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="UsuarioAtendimento">
+          <DataField>UsuarioAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOFTSite">
+          <DataField>SOFTSite</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOFTCNPJ">
+          <DataField>SOFTCNPJ</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoEspecialidadeMedica">
+          <DataField>CodigoEspecialidadeMedica</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NomeEspecialidadeMedica">
+          <DataField>NomeEspecialidadeMedica</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="usCodigoRecibo">
+          <DataField>usCodigoRecibo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="UsuarioRecibo">
+          <DataField>UsuarioRecibo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_AMBCODIGO">
+          <DataField>LISTA_EXAME_AMBCODIGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csi29DataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_ATES_REC</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -696,7 +772,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="CRM / " + First(Fields!CONSELHO.Value, "Dados") + " " + First(Fields!CRM.Value, "Dados")</Value>
+                      <Value>="CRM / " + First(Fields!UF_CRM.Value, "Dados") + " " + First(Fields!CRM.Value, "Dados")</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>12pt</FontSize>
