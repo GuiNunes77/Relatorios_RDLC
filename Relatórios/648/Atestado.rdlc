@@ -364,53 +364,53 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>          Declaro, para os devidos fins, que o Sr.(a) </Value>
+                                  <Value>          Atesto, para os devidos fins, que o Sr.(a) </Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!Nome.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value> esteve presente na clínica </Value>
+                                  <Value> esteve presente na </Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!SOFTClinica.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>, sob procedimento médico </Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!Data.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                     <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>.</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                     <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -449,30 +449,30 @@
                                 <TextRun>
                                   <Value xml:space="preserve">          </Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>Complemento: </Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                     <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!Complemento_Atestado.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>.</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -497,7 +497,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>3cm</Height>
+                  <Height>10.00656cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -510,22 +510,22 @@
                                 <TextRun>
                                   <Value>=Fields!SOFTCidade.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>, </Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Now()</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>12pt</FontSize>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>14pt</FontSize>
                                     <Format>d' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -571,7 +571,7 @@
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
             <Left>1cm</Left>
-            <Height>5.15cm</Height>
+            <Height>12.15656cm</Height>
             <Width>18cm</Width>
             <Style>
               <Border>
@@ -580,7 +580,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.15cm</Height>
+        <Height>14.31242cm</Height>
         <Style />
       </Body>
       <Width>20cm</Width>
@@ -599,8 +599,9 @@
                     <TextRun>
                       <Value>=First(Fields!SOFTEmpresa.Value, "Dados")</Value>
                       <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>18pt</FontSize>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>24pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -610,9 +611,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>2cm</Top>
+              <Top>0.9525cm</Top>
               <Left>0.1cm</Left>
-              <Height>1cm</Height>
+              <Height>1.3831cm</Height>
               <Width>19.8cm</Width>
               <Style>
                 <Border>
@@ -632,7 +633,9 @@
                     <TextRun>
                       <Value>=First(Fields!SOFTComplemento.Value, "Dados")</Value>
                       <Style>
-                        <FontFamily>Verdana</FontFamily>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -642,7 +645,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>SOFTComplemento</rd:DefaultName>
-              <Top>3cm</Top>
+              <Top>2.3356cm</Top>
               <Left>0.1cm</Left>
               <Height>0.6cm</Height>
               <Width>19.8cm</Width>
@@ -664,12 +667,12 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Atestado</Value>
+                      <Value>A T E S T A D O</Value>
                       <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>22pt</FontSize>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>24pt</FontSize>
                         <FontWeight>Bold</FontWeight>
-                        <TextDecoration>None</TextDecoration>
+                        <TextDecoration>Underline</TextDecoration>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -715,8 +718,8 @@
                     <TextRun>
                       <Value>=First(Fields!Responsavel.Value, "Dados")</Value>
                       <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>14pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -729,8 +732,8 @@
                     <TextRun>
                       <Value>=First(Fields!CONSELHO.Value, "Dados") + " " + First(Fields!CRM.Value, "Dados")</Value>
                       <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>12pt</FontSize>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>14pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -740,7 +743,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Responsavel</rd:DefaultName>
-              <Top>0.17639cm</Top>
+              <Top>1.12889cm</Top>
               <Left>9cm</Left>
               <Height>1.2cm</Height>
               <Width>10cm</Width>
