@@ -325,6 +325,14 @@
           <DataField>LISTA_EXAME_AMBCODIGO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NomeSocial">
+          <DataField>NomeSocial</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Complemento_Recibo">
+          <DataField>Complemento_Recibo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>csiDataSet</rd:DataSetName>
@@ -924,6 +932,9 @@
             <Height>0.67938cm</Height>
             <Width>2.65062cm</Width>
             <ZIndex>13</ZIndex>
+            <Visibility>
+              <Hidden>=IIF(IsNothing(First(Fields!Complemento_Recibo.Value, "Dados")), True, False)</Hidden>
+            </Visibility>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -940,7 +951,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!NOTAFISCAL.Value, "Dados")</Value>
+                    <Value>=First(Fields!Complemento_Recibo.Value, "Dados")</Value>
                     <Style>
                       <FontFamily>Verdana</FontFamily>
                     </Style>
@@ -957,6 +968,9 @@
             <Height>0.67938cm</Height>
             <Width>9.1193cm</Width>
             <ZIndex>14</ZIndex>
+            <Visibility>
+              <Hidden>=IIF(IsNothing(First(Fields!Complemento_Recibo.Value, "Dados")), True, False)</Hidden>
+            </Visibility>
             <Style>
               <Border>
                 <Style>None</Style>
