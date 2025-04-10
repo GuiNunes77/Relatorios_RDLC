@@ -367,42 +367,42 @@
                                   <Value>          Atesto, para os devidos fins, que o Sr.(a) </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!Nome.Value</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value> esteve presente na </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!SOFTClinica.Value</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>, sob procedimento médico </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!Data.Value</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -410,7 +410,7 @@
                                   <Value>.</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -431,6 +431,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -450,14 +451,14 @@
                                   <Value xml:space="preserve">          </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>Complemento: </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <Format>dddd,' dia 'd' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -465,14 +466,14 @@
                                   <Value>=Fields!Complemento_Atestado.Value</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>.</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -492,6 +493,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -511,21 +513,21 @@
                                   <Value>=Fields!SOFTCidade.Value</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>, </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Now()</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <Format>d' de 'MMMM' de 'yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -547,6 +549,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -670,7 +673,7 @@
                       <Value>A T E S T A D O</Value>
                       <Style>
                         <FontFamily>Times New Roman</FontFamily>
-                        <FontSize>24pt</FontSize>
+                        <FontSize>20pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>Underline</TextDecoration>
                       </Style>

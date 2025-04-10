@@ -660,7 +660,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>19.9cm</Width>
+                  <Width>19.40258cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -801,7 +801,7 @@
                               <rd:DefaultName>Textbox1</rd:DefaultName>
                               <Left>15.61994cm</Left>
                               <Height>0.6cm</Height>
-                              <Width>4.15306cm</Width>
+                              <Width>3.78264cm</Width>
                               <ZIndex>2</ZIndex>
                               <Style>
                                 <Border>
@@ -1516,7 +1516,7 @@
                               <Top>2.02002cm</Top>
                               <Left>15.61994cm</Left>
                               <Height>0.6cm</Height>
-                              <Width>4.2cm</Width>
+                              <Width>3.78264cm</Width>
                               <ZIndex>4</ZIndex>
                               <Style>
                                 <Border>
@@ -1569,7 +1569,7 @@
                               <Top>2.79641cm</Top>
                               <Left>15.61994cm</Left>
                               <Height>0.6cm</Height>
-                              <Width>4.2cm</Width>
+                              <Width>3.78264cm</Width>
                               <ZIndex>5</ZIndex>
                               <Style>
                                 <Border>
@@ -1601,13 +1601,13 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>2cm</Width>
+                                    <Width>1.94885cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>10cm</Width>
+                                    <Width>9.94885cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>7.9cm</Width>
+                                    <Width>7.50489cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
@@ -1825,7 +1825,7 @@
                               <DataSetName>FichaAtendimento</DataSetName>
                               <Top>4.3942cm</Top>
                               <Height>1cm</Height>
-                              <Width>19.9cm</Width>
+                              <Width>19.40258cm</Width>
                               <ZIndex>6</ZIndex>
                               <Style>
                                 <Border>
@@ -1858,7 +1858,7 @@
                               <Top>0.89641cm</Top>
                               <Left>15.59348cm</Left>
                               <Height>0.6cm</Height>
-                              <Width>4.15306cm</Width>
+                              <Width>3.8091cm</Width>
                               <ZIndex>7</ZIndex>
                               <Style>
                                 <Border>
@@ -1913,7 +1913,7 @@
             <KeepTogether>true</KeepTogether>
             <DataSetName>FichaAtendimento</DataSetName>
             <Height>5.3942cm</Height>
-            <Width>19.9cm</Width>
+            <Width>19.40258cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1924,487 +1924,8 @@
         <Height>5.3942cm</Height>
         <Style />
       </Body>
-      <Width>19.9cm</Width>
+      <Width>19.40258cm</Width>
       <Page>
-        <PageFooter>
-          <Height>4.48521cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="Textbox68">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=First(Fields!NomeFantasia.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <FontSize>11pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox68</rd:DefaultName>
-              <Top>0.01764cm</Top>
-              <Height>0.6cm</Height>
-              <Width>19.9cm</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Top</VerticalAlign>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox69">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=First(Fields!Complemento.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox68</rd:DefaultName>
-              <Top>0.61764cm</Top>
-              <Height>0.5cm</Height>
-              <Width>19.9cm</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox70">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>DATA:</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>1.14939cm</Top>
-              <Left>0.3175cm</Left>
-              <Height>0.4cm</Height>
-              <Width>2cm</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox71">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>PACIENTE:</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>1.56954cm</Top>
-              <Left>0.3175cm</Left>
-              <Height>0.4cm</Height>
-              <Width>2cm</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox72">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>CONVÊNIO: </Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>1.98257cm</Top>
-              <Left>0.3175cm</Left>
-              <Height>0.4cm</Height>
-              <Width>2cm</Width>
-              <ZIndex>4</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox73">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>EXAMES: </Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=Join(LookupSet(Fields!Numero.Value, Fields!Numero.Value, Fields!Exame.Value, "FichaAtendimento"), "; ") + "."</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>2.45271cm</Top>
-              <Left>0.3175cm</Left>
-              <Height>0.5cm</Height>
-              <Width>16.48688cm</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Top</VerticalAlign>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox74">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Acesse seu exame pela internet no site: </Value>
-                      <Style>
-                        <FontFamily>TIMEs New Roman</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=First(Fields!Site.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>TIMEs New Roman</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>, utilize a opção Resultado de Exames.</Value>
-                      <Style>
-                        <FontFamily>TIMEs New Roman</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox74</rd:DefaultName>
-              <Top>3.03754cm</Top>
-              <Height>0.6cm</Height>
-              <Width>19.9cm</Width>
-              <ZIndex>6</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox75">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>USUÁRIO:  </Value>
-                      <Style>
-                        <FontFamily>TIMEs New Roman</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=First(Fields!IDLogin.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>TIMEs New Roman</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>                SENHA:  </Value>
-                      <Style>
-                        <FontFamily>TIMEs New Roman</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=First(Fields!Pwd_IDLogin.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>TIMEs New Roman</FontFamily>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox74</rd:DefaultName>
-              <Top>3.63754cm</Top>
-              <Height>0.6cm</Height>
-              <Width>19.9cm</Width>
-              <ZIndex>7</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox76">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=First(Fields!Data.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <Format>d</Format>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>1.1247cm</Top>
-              <Left>2.41275cm</Left>
-              <Height>0.4cm</Height>
-              <Width>6.46443cm</Width>
-              <ZIndex>8</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Top</VerticalAlign>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox77">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=First(Fields!Nome.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <Format>d</Format>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>1.56954cm</Top>
-              <Left>2.41275cm</Left>
-              <Height>0.4cm</Height>
-              <Width>8.50475cm</Width>
-              <ZIndex>9</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Top</VerticalAlign>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox78">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=First(Fields!Convenio.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <Format>d</Format>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>2.02096cm</Top>
-              <Left>2.41628cm</Left>
-              <Height>0.4cm</Height>
-              <Width>8.50122cm</Width>
-              <ZIndex>10</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Top</VerticalAlign>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox79">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>NÚMERO:   </Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=First(Fields!Numero.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <Format>0;(0)</Format>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>1.15645cm</Top>
-              <Left>10.99258cm</Left>
-              <Height>0.4cm</Height>
-              <Width>8.78042cm</Width>
-              <ZIndex>11</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox80">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>DATA NASC.: </Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=First(Fields!DataNasc.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <Format>d</Format>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value xml:space="preserve">   </Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=First(Fields!Idade.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>Times New Roman</FontFamily>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox70</rd:DefaultName>
-              <Top>1.55997cm</Top>
-              <Left>10.99258cm</Left>
-              <Height>0.4cm</Height>
-              <Width>8.78042cm</Width>
-              <ZIndex>12</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <TopBorder>
-              <Color>Black</Color>
-              <Style>Solid</Style>
-              <Width>1pt</Width>
-            </TopBorder>
-          </Style>
-        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>1cm</LeftMargin>
