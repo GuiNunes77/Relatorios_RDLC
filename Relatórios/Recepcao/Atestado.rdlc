@@ -351,7 +351,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>2cm</Height>
+                  <Height>1.35cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -369,7 +369,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=Fields!Responsavel_Atestado.Value</Value>
+                                  <Value>=Fields!Nome.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -390,21 +390,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>, esteve acompanhando </Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>14pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!Nome.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>14pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value xml:space="preserve"> </Value>
+                                  <Value>, sob procedimento médico </Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -513,7 +499,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox4">
+                        <Textbox Name="Textbox3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -573,13 +559,17 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember />
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=IIF(Fields!Complemento_Atestado.Value = "" OR Fields!Complemento_Atestado.Value = Nothing, true, false)</Hidden>
+                  </Visibility>
+                </TablixMember>
                 <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
             <Left>1cm</Left>
-            <Height>5.8cm</Height>
+            <Height>5.15cm</Height>
             <Width>18cm</Width>
             <Style>
               <Border>
@@ -588,7 +578,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.8cm</Height>
+        <Height>5.15cm</Height>
         <Style />
       </Body>
       <Width>20cm</Width>
@@ -672,7 +662,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Atestado de Acompanhante</Value>
+                      <Value>Atestado</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>22pt</FontSize>
