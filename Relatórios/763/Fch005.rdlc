@@ -714,10 +714,10 @@
                                     <Width>3.86516cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.25655cm</Width>
+                                    <Width>2.586cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.1601cm</Width>
+                                    <Width>3.83066cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.5cm</Width>
@@ -1364,7 +1364,13 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=IIf(Fields!Sexo.Value = "M", "Masculino", "Feminino")</Value>
+                                                    <Value>=IIf(Fields!Sexo.Value = "M", "M", "F")</Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value xml:space="preserve"> </Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -1383,10 +1389,44 @@
                                               <PaddingRight>1pt</PaddingRight>
                                             </Style>
                                           </Textbox>
-                                          <ColSpan>2</ColSpan>
                                         </CellContents>
                                       </TablixCell>
-                                      <TablixCell />
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox17">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>CPF: </Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>=Left(Fields!CPF.Value, 3) &amp; "." &amp; Mid(Fields!CPF.Value, 4, 3) &amp; "." &amp; Mid(Fields!CPF.Value, 7, 3) &amp; "-" &amp; Right(Fields!CPF.Value, 2)</Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox17</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>1pt</PaddingLeft>
+                                              <PaddingRight>1pt</PaddingRight>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox46">
@@ -2458,7 +2498,7 @@
                               <DataSetName>FichaAtendimento</DataSetName>
                               <Top>0.06354cm</Top>
                               <Height>5.8cm</Height>
-                              <Width>19.83858cm</Width>
+                              <Width>19.83859cm</Width>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -4503,7 +4543,7 @@ Nothing)</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>7.65123cm</Height>
+          <Height>8.28623cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -4661,12 +4701,14 @@ Nothing)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>HORÁRIO PARA RETIRADA DE EXAMES A PARTIR DAS 09:00 HS</Value>
+                      <Value>ADIANTAMENTO DA ENTREGA DO RESULTADO SOMENTE SE ACORDADO, ASSINADO E DATADO  NO PROTOCOLO PELO PROFISSIONAL DA CLÍNICA</Value>
                       <Style>
+                        <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
-                        <Format>0;(0)</Format>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -4676,9 +4718,10 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>4.26979cm</Top>
-              <Height>0.45cm</Height>
-              <Width>19.9cm</Width>
+              <Top>4.37562cm</Top>
+              <Left>0.28047cm</Left>
+              <Height>1.0215cm</Height>
+              <Width>19.23152cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -4897,7 +4940,7 @@ Nothing)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>RETIRAR EXAME DIA </Value>
+                      <Value>RETIRADA DE EXAMES DIA </Value>
                       <Style>
                         <FontFamily>TIMEs New Roman</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -4906,6 +4949,15 @@ Nothing)</Value>
                     </TextRun>
                     <TextRun>
                       <Value>=First(Fields!DataEntregaExame.Value, "FichaAtendimento")</Value>
+                      <Style>
+                        <FontFamily>TIMEs New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value> DAS 09:00 HS ATÉ 17:30 HS</Value>
                       <Style>
                         <FontFamily>TIMEs New Roman</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -4948,7 +5000,7 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox273</rd:DefaultName>
-              <Top>4.83268cm</Top>
+              <Top>5.46768cm</Top>
               <Left>0.296cm</Left>
               <Height>0.45cm</Height>
               <Width>19.21599cm</Width>
@@ -4987,7 +5039,7 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox273</rd:DefaultName>
-              <Top>5.60722cm</Top>
+              <Top>6.24222cm</Top>
               <Left>0.31222cm</Left>
               <Height>1.02056cm</Height>
               <Width>11.30669cm</Width>
@@ -5024,7 +5076,7 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox276</rd:DefaultName>
-              <Top>5.60722cm</Top>
+              <Top>6.24222cm</Top>
               <Left>11.90114cm</Left>
               <Height>0.5cm</Height>
               <Width>7.61085cm</Width>
@@ -5062,7 +5114,7 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox276</rd:DefaultName>
-              <Top>6.12778cm</Top>
+              <Top>6.76278cm</Top>
               <Left>11.90114cm</Left>
               <Height>0.5cm</Height>
               <Width>7.61085cm</Width>
@@ -5088,7 +5140,7 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox16</rd:DefaultName>
-              <Top>6.62778cm</Top>
+              <Top>7.26278cm</Top>
               <Left>0.31222cm</Left>
               <Height>1.02345cm</Height>
               <Width>19.23152cm</Width>

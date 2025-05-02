@@ -17,6 +17,10 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="DadosAtendSelecionado">
+          <DataField>DadosAtendSelecionado</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="lcCodigo">
           <DataField>lcCodigo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -49,6 +53,42 @@
           <DataField>Site</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Email_LocalAtendimento">
+          <DataField>Email_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LinkWEBQrCode">
+          <DataField>LinkWEBQrCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cidade_LocalAtendimento">
+          <DataField>Cidade_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Endereco_LocalAtendimento">
+          <DataField>Endereco_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Estado_LocalAtendimento">
+          <DataField>Estado_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bairro_LocalAtendimento">
+          <DataField>Bairro_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CEP_LocalAtendimento">
+          <DataField>CEP_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CNES_LocalAtendimento">
+          <DataField>CNES_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IBGE_LocalAtendimento">
+          <DataField>IBGE_LocalAtendimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Numero">
           <DataField>Numero</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -61,8 +101,16 @@
           <DataField>Guia</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="GuiaPrincipal">
+          <DataField>GuiaPrincipal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Matricula">
           <DataField>Matricula</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Controle">
+          <DataField>Controle</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Data">
@@ -93,6 +141,14 @@
           <DataField>QtdeEnvelope</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="SolicitarLaudo">
+          <DataField>SolicitarLaudo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ImprimirLaudo">
+          <DataField>ImprimirLaudo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Suspeita">
           <DataField>Suspeita</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -113,6 +169,22 @@
           <DataField>Pwd_IDLogin</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="DATA_GUIA">
+          <DataField>DATA_GUIA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ValidadeCarterinha">
+          <DataField>ValidadeCarterinha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="VALIDADE_SENHA">
+          <DataField>VALIDADE_SENHA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DATA_AUTORIZACAO">
+          <DataField>DATA_AUTORIZACAO</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="SEQ_CLASSIF_EXEC">
           <DataField>SEQ_CLASSIF_EXEC</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -121,12 +193,32 @@
           <DataField>Classificacao_Atend</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="cdEmpresa">
-          <DataField>cdEmpresa</DataField>
+        <Field Name="seq_Departamento">
+          <DataField>seq_Departamento</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="Empresa_Convenio">
-          <DataField>Empresa_Convenio</DataField>
+        <Field Name="DepartamentoOrigem">
+          <DataField>DepartamentoOrigem</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="seq_Indicacao">
+          <DataField>seq_Indicacao</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Indicacao">
+          <DataField>Indicacao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="codCID">
+          <DataField>codCID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CID">
+          <DataField>CID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRONTUARIO_HIS">
+          <DataField>PRONTUARIO_HIS</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="cvCodigo">
@@ -139,6 +231,14 @@
         </Field>
         <Field Name="PLANO">
           <DataField>PLANO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cdEmpresa">
+          <DataField>cdEmpresa</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Empresa_Convenio">
+          <DataField>Empresa_Convenio</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="teCodigo">
@@ -160,6 +260,10 @@
         <Field Name="Codigo">
           <DataField>Codigo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CAD_AMB_DiasEntrega">
+          <DataField>CAD_AMB_DiasEntrega</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="ambCodigo">
           <DataField>ambCodigo</DataField>
@@ -217,6 +321,10 @@
           <DataField>Sexo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Cor">
+          <DataField>Cor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="DataNasc">
           <DataField>DataNasc</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
@@ -241,6 +349,14 @@
           <DataField>CPF_Resp</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="EC">
+          <DataField>EC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="codIBGE_Paciente">
+          <DataField>codIBGE_Paciente</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Responsavel">
           <DataField>Responsavel</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -255,6 +371,10 @@
         </Field>
         <Field Name="Idade">
           <DataField>Idade</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RECEM_NASCIDO">
+          <DataField>RECEM_NASCIDO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CNS">
@@ -321,8 +441,8 @@
           <DataField>pfCodigo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ProfissaoPacinete">
-          <DataField>ProfissaoPacinete</DataField>
+        <Field Name="ProfissaoPaciente">
+          <DataField>ProfissaoPaciente</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="mrCodigo">
@@ -347,6 +467,10 @@
         </Field>
         <Field Name="UF_CRM">
           <DataField>UF_CRM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Conselho_Medico">
+          <DataField>Conselho_Medico</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Email_Medico">
@@ -409,10 +533,118 @@
           <DataField>DataAlteracao</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
+        <Field Name="mdCodigo">
+          <DataField>mdCodigo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Medico_Responsavel">
+          <DataField>Medico_Responsavel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sexo_Medico_Responsavel">
+          <DataField>Sexo_Medico_Responsavel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mdCodigo_Revisor">
+          <DataField>mdCodigo_Revisor</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Medico_Revisor">
+          <DataField>Medico_Revisor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pendencias">
+          <DataField>Pendencias</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="susCodigo">
+          <DataField>susCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomeGrupoSus">
+          <DataField>NomeGrupoSus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DiasHistorico">
+          <DataField>DiasHistorico</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BexibeHistorico">
+          <DataField>BexibeHistorico</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="BimprimirModalidadePorPagina">
+          <DataField>BimprimirModalidadePorPagina</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="NumeroSelecionado">
+          <DataField>NumeroSelecionado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Lista_Exame">
+          <DataField>Lista_Exame</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Lista_Modalidade">
+          <DataField>Lista_Modalidade</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_COM_ACCESSION_NUMBER">
+          <DataField>LISTA_EXAME_COM_ACCESSION_NUMBER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_ACCESSION_NUMBER_02">
+          <DataField>LISTA_EXAME_ACCESSION_NUMBER_02</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_SIGLA_MODALIDADE">
+          <DataField>LISTA_EXAME_SIGLA_MODALIDADE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoPagamento">
+          <DataField>TipoPagamento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATA_AGENDA">
+          <DataField>DATA_AGENDA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DATA_REGISTRO_AGENDA">
+          <DataField>DATA_REGISTRO_AGENDA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_PENDENCIA">
+          <DataField>LISTA_PENDENCIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="seq_GENERO">
+          <DataField>seq_GENERO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nome_Genero">
+          <DataField>Nome_Genero</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Mneumonico">
+          <DataField>Mneumonico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Codigo_Tecnico">
+          <DataField>Codigo_Tecnico</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nome_Tecnico">
+          <DataField>Nome_Tecnico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nome_Tecnico_Abreviado">
+          <DataField>Nome_Tecnico_Abreviado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csi29DataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_FCH001</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -431,7 +663,7 @@
                   <Width>4cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5cm</Width>
+                  <Width>4cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -448,8 +680,6 @@
                                 <TextRun>
                                   <Value>=Fields!Nome.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -483,16 +713,12 @@
                                 <TextRun>
                                   <Value>Registro: </Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!Numero.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -521,8 +747,6 @@
                                 <TextRun>
                                   <Value>=Fields!Data.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>dd/MM/yyyy</Format>
                                   </Style>
@@ -557,8 +781,6 @@
                                 <TextRun>
                                   <Value>=Fields!Convenio.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -592,8 +814,6 @@
                                 <TextRun>
                                   <Value>=Fields!Medico.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -619,15 +839,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Exame">
+                        <Textbox Name="Lista_Exame">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Exame.Value</Value>
+                                  <Value>=Fields!Lista_Exame.Value</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -635,7 +854,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Exame</rd:DefaultName>
+                          <rd:DefaultName>Lista_Exame</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -643,7 +862,6 @@
                           </Style>
                         </Textbox>
                         <ColSpan>2</ColSpan>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -660,11 +878,19 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="grpSequencia">
+                  <Group Name="grpNumero">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Numero.Value</GroupExpression>
+                    </GroupExpressions>
                     <PageBreak>
                       <BreakLocation>Between</BreakLocation>
                     </PageBreak>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Sequencia.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
                   <TablixMembers>
                     <TablixMember />
                     <TablixMember />
@@ -677,7 +903,7 @@
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
             <Height>2.25cm</Height>
-            <Width>9cm</Width>
+            <Width>8cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -692,14 +918,14 @@
           </Border>
         </Style>
       </Body>
-      <Width>9cm</Width>
+      <Width>8cm</Width>
       <Page>
-        <PageHeight>3cm</PageHeight>
-        <PageWidth>10cm</PageWidth>
-        <LeftMargin>0.3cm</LeftMargin>
-        <RightMargin>0.3cm</RightMargin>
-        <TopMargin>0.3cm</TopMargin>
-        <BottomMargin>0.3cm</BottomMargin>
+        <PageHeight>2.25cm</PageHeight>
+        <PageWidth>8cm</PageWidth>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
+        <TopMargin>0.5cm</TopMargin>
+        <BottomMargin>0.5cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
