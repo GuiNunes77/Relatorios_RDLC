@@ -516,8 +516,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=IIF(IsNothing(Fields!departamento.Value), "&lt;Nenhum&gt;", 
-CStr(Fields!departamento.Value) &amp; " - (" &amp; CStr(Fields!seq_Departamento.Value) &amp; ")")</Value>
+                                  <Value>=Fields!departamento.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>8pt</FontSize>
