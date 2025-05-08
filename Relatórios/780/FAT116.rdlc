@@ -595,28 +595,28 @@
                   <Width>0.07938cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.32646cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>2.10583cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>4.77042cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>2.20542cm</Width>
+                  <Width>1.74979cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.73271cm</Width>
+                  <Width>7.10542cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4cm</Width>
+                  <Width>2.8059cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.47979cm</Width>
+                  <Width>2.37042cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.36104cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>7.55347cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.32646cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1082,7 +1082,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Numero">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1116,7 +1115,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Data">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1151,7 +1149,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Paciente">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1185,7 +1182,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="CPF_PACIENTE">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1219,7 +1215,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="CelularCompletoSomenteNumeros">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1253,7 +1248,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Guia">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1287,7 +1281,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox33">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1321,7 +1314,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox35">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1500,14 +1492,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox77">
+                        <Textbox Name="Textbox5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Total do Local de Atendimento:</Value>
+                                  <Value />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Verdana</FontFamily>
@@ -1523,7 +1515,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox77</rd:DefaultName>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1548,6 +1540,17 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
+                                  <Value>Total do Local de Atendimento: </Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
                                   <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
@@ -1558,7 +1561,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1644,7 +1647,7 @@
             <DataSetName>Dados</DataSetName>
             <Left>0.1cm</Left>
             <Height>2.2cm</Height>
-            <Width>19.70001cm</Width>
+            <Width>28.35187cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1655,7 +1658,7 @@
         <Height>2.2cm</Height>
         <Style />
       </Body>
-      <Width>19.90583cm</Width>
+      <Width>28.45187cm</Width>
       <Page>
         <PageHeader>
           <Height>7.2cm</Height>
@@ -1713,7 +1716,7 @@
               <Top>0.1cm</Top>
               <Left>0.1cm</Left>
               <Height>3.2cm</Height>
-              <Width>14.9cm</Width>
+              <Width>23.39611cm</Width>
               <Style>
                 <Border>
                   <Color>DimGray</Color>
@@ -1756,7 +1759,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.1cm</Top>
-              <Left>15.1cm</Left>
+              <Left>23.6725cm</Left>
               <Height>1cm</Height>
               <Width>3cm</Width>
               <ZIndex>1</ZIndex>
@@ -1803,7 +1806,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.1cm</Top>
-              <Left>18.2cm</Left>
+              <Left>26.7725cm</Left>
               <Height>1cm</Height>
               <Width>1.6cm</Width>
               <ZIndex>2</ZIndex>
@@ -1850,7 +1853,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>1.2cm</Top>
-              <Left>15.1cm</Left>
+              <Left>23.6725cm</Left>
               <Height>1cm</Height>
               <Width>4.7cm</Width>
               <ZIndex>3</ZIndex>
@@ -1897,7 +1900,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>2.3cm</Top>
-              <Left>15.1cm</Left>
+              <Left>23.6725cm</Left>
               <Height>1cm</Height>
               <Width>4.7cm</Width>
               <ZIndex>4</ZIndex>
@@ -1955,7 +1958,7 @@
               <Top>3.5cm</Top>
               <Left>0.1cm</Left>
               <Height>1cm</Height>
-              <Width>19.7cm</Width>
+              <Width>28.2725cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -2193,7 +2196,7 @@
               <Top>4.5cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>16.4cm</Width>
+              <Width>24.9725cm</Width>
               <ZIndex>12</ZIndex>
               <Style>
                 <Border>
@@ -2226,7 +2229,7 @@
               <Top>4.9cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>16.4cm</Width>
+              <Width>24.9725cm</Width>
               <ZIndex>13</ZIndex>
               <Style>
                 <Border>
@@ -2259,7 +2262,7 @@
               <Top>5.3cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>16.4cm</Width>
+              <Width>24.9725cm</Width>
               <ZIndex>14</ZIndex>
               <Style>
                 <Border>
@@ -2292,7 +2295,7 @@
               <Top>5.7cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>16.4cm</Width>
+              <Width>24.9725cm</Width>
               <ZIndex>15</ZIndex>
               <Style>
                 <Border>
@@ -2325,7 +2328,7 @@
               <Top>6.1cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>16.4cm</Width>
+              <Width>24.9725cm</Width>
               <ZIndex>16</ZIndex>
               <Style>
                 <Border>
@@ -2358,7 +2361,7 @@
               <Top>6.5cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>16.4cm</Width>
+              <Width>24.9725cm</Width>
               <ZIndex>17</ZIndex>
               <Style>
                 <Border>
@@ -2403,7 +2406,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox555</rd:DefaultName>
               <Top>0.1cm</Top>
-              <Left>14.8cm</Left>
+              <Left>23.45187cm</Left>
               <Height>0.5cm</Height>
               <Width>5cm</Width>
               <Style>
@@ -2463,8 +2466,8 @@
             </TopBorder>
           </Style>
         </PageFooter>
-        <PageHeight>29.7cm</PageHeight>
-        <PageWidth>21cm</PageWidth>
+        <PageHeight>21cm</PageHeight>
+        <PageWidth>29.7cm</PageWidth>
         <LeftMargin>0.5cm</LeftMargin>
         <RightMargin>0.5cm</RightMargin>
         <TopMargin>0.5cm</TopMargin>
