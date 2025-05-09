@@ -3990,7 +3990,7 @@ Nothing)</Value>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Height>14.31354cm</Height>
-            <Width>19.7039cm</Width>
+            <Width>19.70389cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4254,7 +4254,8 @@ Nothing)</Value>
                                     </TextRun>
                                     <TextRun>
                                       <Value>=IIF(IsNothing(Fields!CPF.Value), 
-    IIF(IsNothing(Fields!RG.Value), "", Fields!RG.Value), 
+    IIF(IsNothing(Fields!RG.Value), "", 
+        Left(Fields!RG.Value, 2) &amp; "." &amp; Mid(Fields!RG.Value, 3, 3) &amp; "." &amp; Mid(Fields!RG.Value, 6, 3) &amp; "-" &amp; Right(Fields!RG.Value, 1)), 
     Left(Fields!CPF.Value, 3) &amp; "." &amp; Mid(Fields!CPF.Value, 4, 3) &amp; "." &amp; Mid(Fields!CPF.Value, 7, 3) &amp; "-" &amp; Right(Fields!CPF.Value, 2))</Value>
                                       <Style>
                                         <FontFamily>Times New Roman</FontFamily>
@@ -4388,7 +4389,8 @@ Nothing)</Value>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value>=IIF(IsNothing(Fields!CPF_Resp.Value), "", Fields!CPF_Resp.Value)</Value>
+                                      <Value>=IIF(IsNothing(Fields!CPF_Resp.Value), "", 
+Left(Fields!CPF_Resp.Value, 3) &amp; "." &amp; Mid(Fields!CPF_Resp.Value, 4, 3) &amp; "." &amp; Mid(Fields!CPF_Resp.Value, 7, 3) &amp; "-" &amp; Right(Fields!CPF_Resp.Value, 2))</Value>
                                       <Style>
                                         <FontFamily>Times New Roman</FontFamily>
                                         <FontWeight>Normal</FontWeight>
@@ -4531,7 +4533,8 @@ Nothing)</Value>
                       </TextRun>
                       <TextRun>
                         <Value>=IIF(IsNothing(Fields!CPF.Value), 
-    IIF(IsNothing(Fields!RG.Value), "", Fields!RG.Value), 
+    IIF(IsNothing(Fields!RG.Value), "", 
+        Left(Fields!RG.Value, 2) &amp; "." &amp; Mid(Fields!RG.Value, 3, 3) &amp; "." &amp; Mid(Fields!RG.Value, 6, 3) &amp; "-" &amp; Right(Fields!RG.Value, 1)), 
     Left(Fields!CPF.Value, 3) &amp; "." &amp; Mid(Fields!CPF.Value, 4, 3) &amp; "." &amp; Mid(Fields!CPF.Value, 7, 3) &amp; "-" &amp; Right(Fields!CPF.Value, 2))</Value>
                         <Style>
                           <FontStyle>Normal</FontStyle>
@@ -4779,8 +4782,8 @@ Nothing)</Value>
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox87</rd:DefaultName>
-                <Top>14.28889cm</Top>
-                <Left>1.10449cm</Left>
+                <Top>17.25879cm</Top>
+                <Left>1.21829cm</Left>
                 <Height>0.6cm</Height>
                 <Width>8.59135cm</Width>
                 <ZIndex>6</ZIndex>
@@ -4855,8 +4858,8 @@ Nothing)</Value>
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox87</rd:DefaultName>
-                <Top>14.28889cm</Top>
-                <Left>9.87223cm</Left>
+                <Top>17.25879cm</Top>
+                <Left>9.98603cm</Left>
                 <Height>1.41837cm</Height>
                 <Width>8.68486cm</Width>
                 <ZIndex>7</ZIndex>
@@ -4880,11 +4883,11 @@ Nothing)</Value>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <Top>14.27241cm</Top>
-            <Height>15.88397cm</Height>
+            <Height>18.74588cm</Height>
             <Width>19.7039cm</Width>
             <ZIndex>1</ZIndex>
             <Visibility>
-              <Hidden>=IIF(Fields!mrCodigo.Value = 3026, False, True)</Hidden>
+              <Hidden>=IIF(Fields!mrCodigo.Value = 2168, False, True)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -4893,7 +4896,7 @@ Nothing)</Value>
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>30.15638cm</Height>
+        <Height>33.01829cm</Height>
         <Style />
       </Body>
       <Width>19.7039cm</Width>
@@ -5730,6 +5733,11 @@ Nothing)</Value>
                 <Border>
                   <Style>None</Style>
                 </Border>
+                <TopBorder>
+                  <Color>Black</Color>
+                  <Style>Dashed</Style>
+                  <Width>1pt</Width>
+                </TopBorder>
               </Style>
             </Rectangle>
           </ReportItems>
@@ -5737,10 +5745,6 @@ Nothing)</Value>
             <Border>
               <Style>None</Style>
             </Border>
-            <TopBorder>
-              <Color>DimGray</Color>
-              <Style>Dashed</Style>
-            </TopBorder>
           </Style>
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
