@@ -866,7 +866,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Sum(Fields!VALOR_CHM.Value) + Sum(Fields!VALOR_CHO.Value)</Value>
+                                                <Value>=Sum(Fields!VALOR_CHM.Value)</Value>
                                                 <Style>
                                                   <FontFamily>Verdana</FontFamily>
                                                   <FontSize>7pt</FontSize>
@@ -1142,7 +1142,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Sum(Fields!TABELA_QTDE_FILME.Value, "grpLocalConvenio")</Value>
+                                                <Value>=Sum(Fields!TABELA_QTDE_FILME.Value)</Value>
                                                 <Style>
                                                   <FontFamily>Verdana</FontFamily>
                                                   <FontSize>7pt</FontSize>
@@ -1280,7 +1280,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Sum(Fields!TABELA_QTDE_FILME.Value) * CDbl(First(Fields!VALOR_FILME_CONVENIO.Value))</Value>
+                                                <Value>=Sum(Fields!TABELA_QTDE_FILME.Value) * First(Fields!VALOR_FILME_CONVENIO.Value)</Value>
                                                 <Style>
                                                   <FontFamily>Verdana</FontFamily>
                                                   <FontSize>7pt</FontSize>
@@ -1557,7 +1557,6 @@
                                             <TextRuns>
                                               <TextRun>
                                                 <Value>=Sum(Fields!VALOR_CHM.Value) + 
-	Sum(Fields!VALOR_CHO.Value) +
 		Sum(Fields!VALOR_MATERIAL.Value) + 
 			Sum(Fields!VALOR_MEDICAMENTO.Value)</Value>
                                                 <Style>
@@ -1692,7 +1691,11 @@
                       <RepeatOnNewPage>true</RepeatOnNewPage>
                     </TablixMember>
                     <TablixMember>
-                      <Group Name="Details" />
+                      <Group Name="Details">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!SEQUENCIA.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
                       <Visibility>
                         <Hidden>true</Hidden>
                       </Visibility>
