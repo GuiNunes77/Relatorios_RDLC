@@ -9,20 +9,6 @@
       </ConnectionProperties>
       <rd:DataSourceID>d430cb16-0e84-4023-8fac-4b8ed03b37ef</rd:DataSourceID>
     </DataSource>
-    <DataSource Name="EtiquetaAtendimento">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>0157e8e0-99b9-4955-87cd-ea2d7087536b</rd:DataSourceID>
-    </DataSource>
-    <DataSource Name="csiDataSet1">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>5ab89ed5-253d-45f0-af77-496e712bf2aa</rd:DataSourceID>
-    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="FichaAtendimento">
@@ -31,10 +17,6 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="DadosAtendSelecionado">
-          <DataField>DadosAtendSelecionado</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="lcCodigo">
           <DataField>lcCodigo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -67,30 +49,6 @@
           <DataField>Site</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Email_LocalAtendimento">
-          <DataField>Email_LocalAtendimento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="LinkWEBQrCode">
-          <DataField>LinkWEBQrCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Cidade_LocalAtendimento">
-          <DataField>Cidade_LocalAtendimento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Endereco_LocalAtendimento">
-          <DataField>Endereco_LocalAtendimento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Bairro_LocalAtendimento">
-          <DataField>Bairro_LocalAtendimento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CEP_LocalAtendimento">
-          <DataField>CEP_LocalAtendimento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Numero">
           <DataField>Numero</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -103,16 +61,8 @@
           <DataField>Guia</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="GuiaPrincipal">
-          <DataField>GuiaPrincipal</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Matricula">
           <DataField>Matricula</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Controle">
-          <DataField>Controle</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Data">
@@ -143,14 +93,6 @@
           <DataField>QtdeEnvelope</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="SolicitarLaudo">
-          <DataField>SolicitarLaudo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ImprimirLaudo">
-          <DataField>ImprimirLaudo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Suspeita">
           <DataField>Suspeita</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -171,22 +113,6 @@
           <DataField>Pwd_IDLogin</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="DATA_GUIA">
-          <DataField>DATA_GUIA</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="ValidadeCarterinha">
-          <DataField>ValidadeCarterinha</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="VALIDADE_SENHA">
-          <DataField>VALIDADE_SENHA</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="DATA_AUTORIZACAO">
-          <DataField>DATA_AUTORIZACAO</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="SEQ_CLASSIF_EXEC">
           <DataField>SEQ_CLASSIF_EXEC</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -195,32 +121,12 @@
           <DataField>Classificacao_Atend</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="seq_Departamento">
-          <DataField>seq_Departamento</DataField>
+        <Field Name="cdEmpresa">
+          <DataField>cdEmpresa</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="DepartamentoOrigem">
-          <DataField>DepartamentoOrigem</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="seq_Indicacao">
-          <DataField>seq_Indicacao</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Indicacao">
-          <DataField>Indicacao</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="codCID">
-          <DataField>codCID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CID">
-          <DataField>CID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PRONTUARIO_HIS">
-          <DataField>PRONTUARIO_HIS</DataField>
+        <Field Name="Empresa_Convenio">
+          <DataField>Empresa_Convenio</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="cvCodigo">
@@ -233,14 +139,6 @@
         </Field>
         <Field Name="PLANO">
           <DataField>PLANO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="cdEmpresa">
-          <DataField>cdEmpresa</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Empresa_Convenio">
-          <DataField>Empresa_Convenio</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="teCodigo">
@@ -262,10 +160,6 @@
         <Field Name="Codigo">
           <DataField>Codigo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CAD_AMB_DiasEntrega">
-          <DataField>CAD_AMB_DiasEntrega</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="ambCodigo">
           <DataField>ambCodigo</DataField>
@@ -347,10 +241,6 @@
           <DataField>CPF_Resp</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="EC">
-          <DataField>EC</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Responsavel">
           <DataField>Responsavel</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -365,10 +255,6 @@
         </Field>
         <Field Name="Idade">
           <DataField>Idade</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RECEM_NASCIDO">
-          <DataField>RECEM_NASCIDO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CNS">
@@ -435,8 +321,8 @@
           <DataField>pfCodigo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ProfissaoPaciente">
-          <DataField>ProfissaoPaciente</DataField>
+        <Field Name="ProfissaoPacinete">
+          <DataField>ProfissaoPacinete</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="mrCodigo">
@@ -523,58 +409,10 @@
           <DataField>DataAlteracao</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="mdCodigo">
-          <DataField>mdCodigo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Medico_Responsavel">
-          <DataField>Medico_Responsavel</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="mdCodigo_Revisor">
-          <DataField>mdCodigo_Revisor</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Medico_Revisor">
-          <DataField>Medico_Revisor</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Pendencias">
-          <DataField>Pendencias</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="tpCodigo">
-          <DataField>tpCodigo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="TipoPagamento">
-          <DataField>TipoPagamento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DiasHistorico">
-          <DataField>DiasHistorico</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="BexibeHistorico">
-          <DataField>BexibeHistorico</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="BimprimirModalidadePorPagina">
-          <DataField>BimprimirModalidadePorPagina</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="NumeroSelecionado">
-          <DataField>NumeroSelecionado</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Lista_Exame">
-          <DataField>Lista_Exame</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csiDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>csi29DataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_FCH001</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -590,15 +428,55 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>5.02092cm</Width>
+                  <Width>4.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.55033cm</Width>
+                  <Width>3.5cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.35cm</Height>
+                  <Height>1.25cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox22">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ACOMPANHANTE</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>18pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>Underline</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.5cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -609,15 +487,17 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=CStr(Fields!Nome.Value)</Value>
+                                  <Value>=Fields!Nome.Value</Value>
                                   <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>7pt</FontSize>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Nome</rd:DefaultName>
@@ -634,21 +514,27 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.35cm</Height>
+                  <Height>0.5cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="AmbAtendNumero">
+                        <Textbox Name="Textbox13">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="Registro: " + CStr(Fields!Numero.Value)</Value>
+                                  <Value>Atendimento: </Value>
                                   <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!Numero.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -657,7 +543,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>AmbAtendNumero</rd:DefaultName>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -668,139 +554,40 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Data">
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
+                                  <Value>Data: </Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
                                   <Value>=Fields!Data.Value</Value>
                                   <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
                                     <Format>dd/MM/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Data</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.35cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Convenio">
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Convenio.Value</Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Convenio</rd:DefaultName>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
                           </Style>
                         </Textbox>
-                        <ColSpan>2</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.35cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Medico">
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>="Dr(a) "+(Fields!Medico.Value)</Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Medico</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.35cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Lista_Exame">
-                          <CanGrow>true</CanGrow>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Lista_Exame.Value</Value>
-                                  <Style>
-                                    <FontSize>7pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Lista_Exame</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
@@ -818,6 +605,9 @@
                     <GroupExpressions>
                       <GroupExpression>=Fields!Numero.Value</GroupExpression>
                     </GroupExpressions>
+                    <PageBreak>
+                      <BreakLocation>Between</BreakLocation>
+                    </PageBreak>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
@@ -828,21 +618,13 @@
                     <TablixMember />
                     <TablixMember />
                     <TablixMember />
-                    <TablixMember />
-                    <TablixMember>
-                      <TablixMembers>
-                        <TablixMember />
-                      </TablixMembers>
-                    </TablixMember>
                   </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Top>0.01cm</Top>
-            <Left>0.01cm</Left>
-            <Height>1.75cm</Height>
-            <Width>7.57125cm</Width>
+            <Height>2.25cm</Height>
+            <Width>8cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -850,21 +632,21 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.76cm</Height>
+        <Height>2.25cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>7.58125cm</Width>
+      <Width>8cm</Width>
       <Page>
-        <PageHeight>2cm</PageHeight>
+        <PageHeight>2.25cm</PageHeight>
         <PageWidth>8cm</PageWidth>
-        <LeftMargin>0cm</LeftMargin>
-        <RightMargin>0cm</RightMargin>
-        <TopMargin>0cm</TopMargin>
-        <BottomMargin>0cm</BottomMargin>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
+        <TopMargin>0.5cm</TopMargin>
+        <BottomMargin>0.5cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
