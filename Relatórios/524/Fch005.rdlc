@@ -1234,7 +1234,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>19.5964cm</Width>
+                  <Width>19.60189cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1270,192 +1270,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>15.23961cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Rectangle Name="Rectangle1">
-                          <ReportItems>
-                            <Textbox Name="Textbox652">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Atendimento: </Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>=Fields!Numero.Value</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox57</rd:DefaultName>
-                              <Top>12.92617cm</Top>
-                              <Left>0.08071cm</Left>
-                              <Height>0.52944cm</Height>
-                              <Width>5.32132cm</Width>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox653">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Realizado em: </Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>=Fields!Data.Value</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                        <Format>d</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox58</rd:DefaultName>
-                              <Top>12.92617cm</Top>
-                              <Left>5.40203cm</Left>
-                              <Height>0.52944cm</Height>
-                              <Width>14.0685cm</Width>
-                              <ZIndex>1</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox654">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Exame realizado: </Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>=Fields!Lista_Exame.Value</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox59</rd:DefaultName>
-                              <Top>13.45561cm</Top>
-                              <Left>0.07345cm</Left>
-                              <Height>0.52944cm</Height>
-                              <Width>19.39707cm</Width>
-                              <ZIndex>2</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox655">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Paciente: </Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>=Fields!Nome.Value</Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox60</rd:DefaultName>
-                              <Top>13.98505cm</Top>
-                              <Left>0.07345cm</Left>
-                              <Height>0.53918cm</Height>
-                              <Width>19.39707cm</Width>
-                              <ZIndex>3</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox656">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Valor recebido: </Value>
-                                      <Style>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox60</rd:DefaultName>
-                              <Top>14.52423cm</Top>
-                              <Left>0.07345cm</Left>
-                              <Height>0.53918cm</Height>
-                              <Width>19.47336cm</Width>
-                              <ZIndex>4</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                          </ReportItems>
-                          <KeepTogether>true</KeepTogether>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                          </Style>
-                        </Rectangle>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -12609,21 +12423,6 @@
                   <Visibility>
                     <Hidden>=IIF(
 	Sum(
-		IIf(Max(Fields!teCodigo.Value, "Detalhes") = 12,
-		1,
-		0
-		)
-	) = 0,
-	true,
-	false
-)</Hidden>
-                  </Visibility>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
-                <TablixMember>
-                  <Visibility>
-                    <Hidden>=IIF(
-	Sum(
 		IIf(Max(Fields!teCodigo.Value, "Detalhes") = 10,
 		1,
 		0
@@ -12870,8 +12669,8 @@ true
             </Filters>
             <Top>2.15673cm</Top>
             <Left>0.27947cm</Left>
-            <Height>195.56371cm</Height>
-            <Width>19.5964cm</Width>
+            <Height>180.3241cm</Height>
+            <Width>19.60189cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -12880,10 +12679,10 @@ true
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>197.72044cm</Height>
+        <Height>182.48083cm</Height>
         <Style />
       </Body>
-      <Width>19.87587cm</Width>
+      <Width>19.88136cm</Width>
       <Page>
         <PageHeader>
           <Height>4.29457cm</Height>
@@ -13631,7 +13430,7 @@ Fields!Fone_Trabalho.Value)</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>7.25619cm</Height>
+          <Height>7.62663cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -13745,9 +13544,9 @@ Fields!Fone_Trabalho.Value)</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox2527</rd:DefaultName>
                   <Top>0.14111cm</Top>
-                  <Left>4.07493cm</Left>
+                  <Left>4.48779cm</Left>
                   <Height>1.61994cm</Height>
-                  <Width>15.4906cm</Width>
+                  <Width>15.07774cm</Width>
                   <ZIndex>2</ZIndex>
                   <Style>
                     <Border>
@@ -14239,12 +14038,194 @@ Fields!Fone_Trabalho.Value)</Value>
                 </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
-              <Top>0.17637cm</Top>
-              <Left>0.15873cm</Left>
+              <Top>0.54681cm</Top>
+              <Left>0.11549cm</Left>
               <Height>7.07982cm</Height>
               <Width>19.58734cm</Width>
               <Visibility>
                 <Hidden>=IIf(Globals!PageNumber = 1, false, true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Rectangle>
+            <Rectangle Name="Rectangle2">
+              <ReportItems>
+                <Textbox Name="Textbox657">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Atendimento: </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Numero.Value</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox57</rd:DefaultName>
+                  <Left>0.06055cm</Left>
+                  <Height>0.02646cm</Height>
+                  <Width>5.32132cm</Width>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox658">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Realizado em: </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Data.Value</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                            <Format>d</Format>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox58</rd:DefaultName>
+                  <Left>5.38187cm</Left>
+                  <Height>0.02646cm</Height>
+                  <Width>14.0685cm</Width>
+                  <ZIndex>1</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox659">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Exame realizado: </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Lista_Exame.Value</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox59</rd:DefaultName>
+                  <Top>0.02646cm</Top>
+                  <Left>0.05329cm</Left>
+                  <Height>0.02646cm</Height>
+                  <Width>19.39707cm</Width>
+                  <ZIndex>2</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox660">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Paciente: </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>=Fields!Nome.Value</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox60</rd:DefaultName>
+                  <Top>0.06864cm</Top>
+                  <Left>0.06055cm</Left>
+                  <Height>0.02646cm</Height>
+                  <Width>19.39707cm</Width>
+                  <ZIndex>3</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox661">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Valor recebido: </Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox60</rd:DefaultName>
+                  <Top>0.13038cm</Top>
+                  <Left>0.02642cm</Left>
+                  <Height>0.02646cm</Height>
+                  <Width>19.47336cm</Width>
+                  <ZIndex>4</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+              </ReportItems>
+              <KeepTogether>true</KeepTogether>
+              <Top>0.07247cm</Top>
+              <Left>0.11299cm</Left>
+              <Height>0.15684cm</Height>
+              <Width>19.76837cm</Width>
+              <ZIndex>1</ZIndex>
+              <Visibility>
+                <Hidden>=IIF(Globals!PageNumber = 1 AND Count(IIf(Fields!teCodigo.Value = 12, 1, Nothing), "FichaAtendimento") &gt; 0, false, true)</Hidden>
               </Visibility>
               <Style>
                 <Border>
