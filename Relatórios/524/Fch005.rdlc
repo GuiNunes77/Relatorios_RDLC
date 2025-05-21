@@ -14225,7 +14225,10 @@ Fields!Fone_Trabalho.Value)</Value>
               <Width>19.76837cm</Width>
               <ZIndex>1</ZIndex>
               <Visibility>
-                <Hidden>=IIF(Globals!PageNumber = 1 AND Count(IIf(Fields!teCodigo.Value = 12, 1, Nothing), "FichaAtendimento") &gt; 0, false, true)</Hidden>
+                <Hidden>=IIF(Globals!PageNumber = 1 AND 
+     Count(IIf(Fields!teCodigo.Value = 12 AND Fields!DadosAtendSelecionado.Value = 1, 1, Nothing), "FichaAtendimento") &gt; 0, 
+     false, 
+     true)</Hidden>
               </Visibility>
               <Style>
                 <Border>
