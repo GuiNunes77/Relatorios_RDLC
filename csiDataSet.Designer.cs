@@ -15017,6 +15017,16 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnCelularCompletoSomenteNumeros;
             
+            private global::System.Data.DataColumn columnPcCodigo1;
+            
+            private global::System.Data.DataColumn columnEMail;
+            
+            private global::System.Data.DataColumn columnNomeMae;
+            
+            private global::System.Data.DataColumn columnRG;
+            
+            private global::System.Data.DataColumn columnSexo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_FAT123DataTable() {
@@ -16060,6 +16070,46 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PcCodigo1Column {
+                get {
+                    return this.columnPcCodigo1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EMailColumn {
+                get {
+                    return this.columnEMail;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NomeMaeColumn {
+                get {
+                    return this.columnNomeMae;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RGColumn {
+                get {
+                    return this.columnRG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SexoColumn {
+                get {
+                    return this.columnSexo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -16221,7 +16271,11 @@ namespace Relatorios_RDLC {
                         string CodMedSolOper, 
                         string ACCESSION_NUMBER, 
                         string PRONTUARIO_HIS, 
-                        string CelularCompletoSomenteNumeros) {
+                        string CelularCompletoSomenteNumeros, 
+                        string EMail, 
+                        string NomeMae, 
+                        string RG, 
+                        string Sexo) {
                 PR_REL_FAT123Row rowPR_REL_FAT123Row = ((PR_REL_FAT123Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         lcCodigo,
@@ -16349,7 +16403,12 @@ namespace Relatorios_RDLC {
                         CodMedSolOper,
                         ACCESSION_NUMBER,
                         PRONTUARIO_HIS,
-                        CelularCompletoSomenteNumeros};
+                        CelularCompletoSomenteNumeros,
+                        null,
+                        EMail,
+                        NomeMae,
+                        RG,
+                        Sexo};
                 rowPR_REL_FAT123Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_FAT123Row);
                 return rowPR_REL_FAT123Row;
@@ -16498,6 +16557,11 @@ namespace Relatorios_RDLC {
                 this.columnACCESSION_NUMBER = base.Columns["ACCESSION_NUMBER"];
                 this.columnPRONTUARIO_HIS = base.Columns["PRONTUARIO_HIS"];
                 this.columnCelularCompletoSomenteNumeros = base.Columns["CelularCompletoSomenteNumeros"];
+                this.columnPcCodigo1 = base.Columns["PcCodigo1"];
+                this.columnEMail = base.Columns["EMail"];
+                this.columnNomeMae = base.Columns["NomeMae"];
+                this.columnRG = base.Columns["RG"];
+                this.columnSexo = base.Columns["Sexo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16759,6 +16823,16 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnPRONTUARIO_HIS);
                 this.columnCelularCompletoSomenteNumeros = new global::System.Data.DataColumn("CelularCompletoSomenteNumeros", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCelularCompletoSomenteNumeros);
+                this.columnPcCodigo1 = new global::System.Data.DataColumn("PcCodigo1", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPcCodigo1);
+                this.columnEMail = new global::System.Data.DataColumn("EMail", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEMail);
+                this.columnNomeMae = new global::System.Data.DataColumn("NomeMae", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNomeMae);
+                this.columnRG = new global::System.Data.DataColumn("RG", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRG);
+                this.columnSexo = new global::System.Data.DataColumn("Sexo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSexo);
                 this.columnlcCodigo.AllowDBNull = false;
                 this.columnNomeEmpresa.MaxLength = 80;
                 this.columnNomeFantasia.MaxLength = 80;
@@ -16875,6 +16949,15 @@ namespace Relatorios_RDLC {
                 this.columnPRONTUARIO_HIS.MaxLength = 15;
                 this.columnCelularCompletoSomenteNumeros.ReadOnly = true;
                 this.columnCelularCompletoSomenteNumeros.MaxLength = 512;
+                this.columnPcCodigo1.AutoIncrement = true;
+                this.columnPcCodigo1.AutoIncrementSeed = -1;
+                this.columnPcCodigo1.AutoIncrementStep = -1;
+                this.columnPcCodigo1.AllowDBNull = false;
+                this.columnPcCodigo1.ReadOnly = true;
+                this.columnEMail.MaxLength = 255;
+                this.columnNomeMae.MaxLength = 80;
+                this.columnRG.MaxLength = 22;
+                this.columnSexo.MaxLength = 1;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -76288,6 +76371,81 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal PcCodigo1 {
+                get {
+                    return ((decimal)(this[this.tablePR_REL_FAT123.PcCodigo1Column]));
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.PcCodigo1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string EMail {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT123.EMailColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'EMail\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.EMailColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NomeMae {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT123.NomeMaeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'NomeMae\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.NomeMaeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RG {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT123.RGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'RG\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.RGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Sexo {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT123.SexoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Sexo\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.SexoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNomeEmpresaNull() {
                 return this.IsNull(this.tablePR_REL_FAT123.NomeEmpresaColumn);
             }
@@ -77676,6 +77834,54 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetCelularCompletoSomenteNumerosNull() {
                 this[this.tablePR_REL_FAT123.CelularCompletoSomenteNumerosColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEMailNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.EMailColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEMailNull() {
+                this[this.tablePR_REL_FAT123.EMailColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNomeMaeNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.NomeMaeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNomeMaeNull() {
+                this[this.tablePR_REL_FAT123.NomeMaeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRGNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.RGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRGNull() {
+                this[this.tablePR_REL_FAT123.RGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSexoNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.SexoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSexoNull() {
+                this[this.tablePR_REL_FAT123.SexoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -134950,6 +135156,11 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("ACCESSION_NUMBER", "ACCESSION_NUMBER");
             tableMapping.ColumnMappings.Add("PRONTUARIO_HIS", "PRONTUARIO_HIS");
             tableMapping.ColumnMappings.Add("CelularCompletoSomenteNumeros", "CelularCompletoSomenteNumeros");
+            tableMapping.ColumnMappings.Add("PcCodigo1", "PcCodigo1");
+            tableMapping.ColumnMappings.Add("EMail", "EMail");
+            tableMapping.ColumnMappings.Add("NomeMae", "NomeMae");
+            tableMapping.ColumnMappings.Add("RG", "RG");
+            tableMapping.ColumnMappings.Add("Sexo", "Sexo");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
