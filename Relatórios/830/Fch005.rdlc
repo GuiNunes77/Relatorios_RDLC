@@ -638,25 +638,11 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Senha:</Value>
+                                                        <Value />
                                                         <Style>
                                                           <FontFamily>Times New Roman</FontFamily>
                                                           <FontSize>14pt</FontSize>
                                                           <FontWeight>Bold</FontWeight>
-                                                        </Style>
-                                                      </TextRun>
-                                                      <TextRun>
-                                                        <Value xml:space="preserve">  </Value>
-                                                        <Style>
-                                                          <FontFamily>Times New Roman</FontFamily>
-                                                          <FontSize>14pt</FontSize>
-                                                        </Style>
-                                                      </TextRun>
-                                                      <TextRun>
-                                                        <Value>=Fields!Senha_Chamada.Value</Value>
-                                                        <Style>
-                                                          <FontFamily>Times New Roman</FontFamily>
-                                                          <FontSize>14pt</FontSize>
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
@@ -1061,15 +1047,16 @@
                                         <TablixCells>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox28">
+                                              <Textbox Name="Textbox95">
+                                                <CanGrow>true</CanGrow>
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=First(Fields!Numero.Value, "FichaAtendimento") &amp; "-" &amp; First(Fields!lcCodigo.Value, "FichaAtendimento")</Value>
+                                                        <Value>Idade:</Value>
                                                         <Style>
-                                                          <FontFamily>Times New Roman</FontFamily>
+                                                          <FontFamily>arial</FontFamily>
                                                           <FontSize>9pt</FontSize>
                                                         </Style>
                                                       </TextRun>
@@ -1077,7 +1064,7 @@
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox28</rd:DefaultName>
+                                                <rd:DefaultName>Textbox95</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>None</Style>
@@ -1151,7 +1138,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value> Peso: </Value>
+                                                        <Value>Peso: </Value>
                                                         <Style>
                                                           <FontFamily>Times New Roman</FontFamily>
                                                         </Style>
@@ -1184,7 +1171,9 @@
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
-                                                    <Style />
+                                                    <Style>
+                                                      <TextAlign>Left</TextAlign>
+                                                    </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
                                                 <rd:DefaultName>Textbox32</rd:DefaultName>
@@ -1971,6 +1960,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox84">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
@@ -1999,6 +1989,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox73">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
@@ -2027,6 +2018,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox16">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
@@ -2218,6 +2210,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox86">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
@@ -2246,6 +2239,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox75">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
@@ -2274,6 +2268,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox17">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
@@ -3716,6 +3711,7 @@
                                                     <TablixCell>
                                                       <CellContents>
                                                         <Textbox Name="Exame4">
+                                                          <CanGrow>true</CanGrow>
                                                           <KeepTogether>true</KeepTogether>
                                                           <Paragraphs>
                                                             <Paragraph>
@@ -3940,7 +3936,6 @@ Nothing)</Value>
             </TablixRowHierarchy>
             <KeepTogether>true</KeepTogether>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Left>0cm</Left>
             <Height>9.59958cm</Height>
             <Width>18.99219cm</Width>
             <Style>
@@ -3956,7 +3951,7 @@ Nothing)</Value>
       <Width>18.99219cm</Width>
       <Page>
         <PageFooter>
-          <Height>12.81049cm</Height>
+          <Height>10.81857cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -3968,7 +3963,7 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Atendimento..............:</Value>
+                          <Value>Atendimento...............:</Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
@@ -3994,7 +3989,7 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Paciente.....................:</Value>
+                          <Value>Paciente.......................:</Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
@@ -4005,7 +4000,7 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>3.38847cm</Top>
+                  <Top>3.90903cm</Top>
                   <Height>0.45cm</Height>
                   <Width>3.06009cm</Width>
                   <ZIndex>1</ZIndex>
@@ -4021,7 +4016,7 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Médico......................:</Value>
+                          <Value>Médico Solicitante.......:</Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
@@ -4032,7 +4027,7 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>4.28847cm</Top>
+                  <Top>4.80903cm</Top>
                   <Height>0.45cm</Height>
                   <Width>3.06009cm</Width>
                   <ZIndex>2</ZIndex>
@@ -4091,7 +4086,7 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>3.38847cm</Top>
+                  <Top>3.90903cm</Top>
                   <Left>3.06009cm</Left>
                   <Height>0.45cm</Height>
                   <Width>8.19576cm</Width>
@@ -4121,10 +4116,10 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>4.28847cm</Top>
+                  <Top>4.80903cm</Top>
                   <Left>3.06009cm</Left>
                   <Height>0.45cm</Height>
-                  <Width>7.54037cm</Width>
+                  <Width>6.67491cm</Width>
                   <ZIndex>5</ZIndex>
                   <Style>
                     <Border>
@@ -4138,7 +4133,7 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Data Nasc..................: </Value>
+                          <Value>Data Nasc....................: </Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
@@ -4152,7 +4147,7 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>3.83847cm</Top>
+                  <Top>4.35903cm</Top>
                   <Height>0.45cm</Height>
                   <Width>3.06009cm</Width>
                   <ZIndex>6</ZIndex>
@@ -4181,7 +4176,7 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>4.73847cm</Top>
+                  <Top>5.25903cm</Top>
                   <Left>3.06009cm</Left>
                   <Height>0.9cm</Height>
                   <Width>8.5671cm</Width>
@@ -4207,35 +4202,6 @@ Nothing)</Value>
                     </Border>
                   </Style>
                 </Image>
-                <Textbox Name="Textbox3">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=CStr(First(Fields!Endereco_LocalAtendimento.Value, "FichaAtendimento") &amp; " - (16) 3514-0700")</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>2.17097cm</Top>
-                  <Height>0.45cm</Height>
-                  <Width>18.91716cm</Width>
-                  <ZIndex>9</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Textbox>
                 <Textbox Name="Textbox77">
                   <KeepTogether>true</KeepTogether>
                   <Paragraphs>
@@ -4256,11 +4222,11 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>3.83847cm</Top>
+                  <Top>4.35903cm</Top>
                   <Left>3.06009cm</Left>
                   <Height>0.45cm</Height>
-                  <Width>7.54037cm</Width>
-                  <ZIndex>10</ZIndex>
+                  <Width>6.67491cm</Width>
+                  <ZIndex>9</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4273,7 +4239,7 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Exame realizado........:</Value>
+                          <Value>Exame realizado...........:</Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
@@ -4284,10 +4250,10 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>4.73847cm</Top>
+                  <Top>5.25903cm</Top>
                   <Height>0.45cm</Height>
                   <Width>3.06009cm</Width>
-                  <ZIndex>11</ZIndex>
+                  <ZIndex>10</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4300,18 +4266,25 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>O resultado estará disponível para visualização online a partir de: </Value>
+                          <Value>"Para sua comodidade, os resultados dos exames estarão disponíveis online no site: </Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
                           </Style>
                         </TextRun>
                         <TextRun>
-                          <Value>=Fields!DataEntregaExame.Value</Value>
+                          <Value>www.medicinadisgnostica.gruposaolucas.com.br</Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
-                            <Format>d</Format>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value>" a partir de: _____/_____/________</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
                           </Style>
                         </TextRun>
                       </TextRuns>
@@ -4319,10 +4292,10 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>5.63847cm</Top>
-                  <Height>0.45cm</Height>
+                  <Top>6.16764cm</Top>
+                  <Height>1.04972cm</Height>
                   <Width>11.62719cm</Width>
-                  <ZIndex>12</ZIndex>
+                  <ZIndex>11</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4347,10 +4320,10 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>6.08847cm</Top>
-                  <Height>0.49271cm</Height>
+                  <Top>7.21736cm</Top>
+                  <Height>0.45cm</Height>
                   <Width>1.5cm</Width>
-                  <ZIndex>13</ZIndex>
+                  <ZIndex>12</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4375,10 +4348,10 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>6.58118cm</Top>
-                  <Height>0.52056cm</Height>
+                  <Top>7.66836cm</Top>
+                  <Height>0.45cm</Height>
                   <Width>1.5cm</Width>
-                  <ZIndex>14</ZIndex>
+                  <ZIndex>13</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4403,11 +4376,11 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>6.08847cm</Top>
+                  <Top>7.21736cm</Top>
                   <Left>1.5cm</Left>
-                  <Height>0.49271cm</Height>
+                  <Height>0.451cm</Height>
                   <Width>4cm</Width>
-                  <ZIndex>15</ZIndex>
+                  <ZIndex>14</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4432,100 +4405,11 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>6.58118cm</Top>
+                  <Top>7.66836cm</Top>
                   <Left>1.5cm</Left>
-                  <Height>0.52056cm</Height>
+                  <Height>0.45cm</Height>
                   <Width>4cm</Width>
-                  <ZIndex>16</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox81">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Acesse pelo QR Code</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value> ou através do site:</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox81</rd:DefaultName>
-                  <Top>2.93847cm</Top>
-                  <Left>11.25585cm</Left>
-                  <Height>0.9cm</Height>
-                  <Width>5.81471cm</Width>
-                  <ZIndex>17</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox61">
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value />
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=Fields!Site.Value</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>3.83847cm</Top>
-                  <Left>10.60046cm</Left>
-                  <Height>0.9cm</Height>
-                  <Width>6.4701cm</Width>
-                  <ZIndex>18</ZIndex>
+                  <ZIndex>15</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4539,21 +4423,22 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Opte por resultados digitais e ajude o meio ambiente.</Value>
+                          <Value>Unidades para realização de exames</Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
                           </Style>
                         </TextRun>
                       </TextRuns>
                       <Style>
-                        <TextAlign>Center</TextAlign>
+                        <TextAlign>Left</TextAlign>
                       </Style>
                     </Paragraph>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>Imprima menos, preserve mais</Value>
+                          <Value>* Unidade São Lucas </Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
@@ -4561,82 +4446,64 @@ Nothing)</Value>
                         </TextRun>
                       </TextRuns>
                       <Style>
-                        <TextAlign>Center</TextAlign>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Rua Bernardino de Campo, 1426</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>* Unidade Ribeirania </Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Rua Carlos Lucas Evangelista, 351</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
                       </Style>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox87</rd:DefaultName>
-                  <Top>5.50597cm</Top>
-                  <Left>11.62719cm</Left>
-                  <Height>0.9cm</Height>
-                  <Width>7.365cm</Width>
-                  <ZIndex>19</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Textbox>
-                <Image Name="Image2">
-                  <Source>Embedded</Source>
-                  <Value>QRCode_830</Value>
-                  <Sizing>FitProportional</Sizing>
                   <Top>2.93847cm</Top>
-                  <Left>16.75306cm</Left>
+                  <Left>12.91716cm</Left>
                   <Height>2.25cm</Height>
-                  <Width>2.23913cm</Width>
-                  <ZIndex>20</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Image>
-                <Textbox Name="Textbox7">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Caso necessite do resultado impresso, solicitar com pelo menos 2 dias de antecedência pelo WhatsApp </Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>9pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>7.10173cm</Top>
-                  <Height>0.45cm</Height>
-                  <Width>15.19631cm</Width>
-                  <ZIndex>21</ZIndex>
+                  <Width>6.07503cm</Width>
+                  <ZIndex>16</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
                     </Border>
                   </Style>
                 </Textbox>
-                <Image Name="Image3">
-                  <Source>Embedded</Source>
-                  <Value>WhatsAppicone3</Value>
-                  <Sizing>FitProportional</Sizing>
-                  <Top>7.10173cm</Top>
-                  <Left>15.19631cm</Left>
-                  <Height>0.45cm</Height>
-                  <Width>0.45cm</Width>
-                  <ZIndex>22</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Image>
                 <Textbox Name="Textbox89">
                   <CanGrow>true</CanGrow>
                   <KeepTogether>true</KeepTogether>
@@ -4644,7 +4511,82 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value> (16) 99399-5705</Value>
+                          <Value>Dúvidas sobre resultados de exames?</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Entre em contato pelo WhatsApp: (16) 99399-5705</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Para agendamentos:</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Ligue ou mande mensagem: (16) 3514-0700</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox87</rd:DefaultName>
+                  <Top>5.25903cm</Top>
+                  <Left>12.14712cm</Left>
+                  <Height>1.84271cm</Height>
+                  <Width>6.77004cm</Width>
+                  <ZIndex>17</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox61">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Data Atendimento......:</Value>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
                             <FontSize>9pt</FontSize>
@@ -4654,12 +4596,41 @@ Nothing)</Value>
                       <Style />
                     </Paragraph>
                   </Paragraphs>
-                  <rd:DefaultName>Textbox89</rd:DefaultName>
-                  <Top>7.10173cm</Top>
-                  <Left>15.63291cm</Left>
+                  <rd:DefaultName>Textbox33</rd:DefaultName>
+                  <Top>3.43236cm</Top>
                   <Height>0.45cm</Height>
-                  <Width>2.90056cm</Width>
-                  <ZIndex>23</ZIndex>
+                  <Width>3.06009cm</Width>
+                  <ZIndex>18</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox69">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=Fields!Data.Value</Value>
+                          <Style>
+                            <FontFamily>Times New Roman</FontFamily>
+                            <FontSize>9pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox33</rd:DefaultName>
+                  <Top>3.43236cm</Top>
+                  <Left>3.06009cm</Left>
+                  <Height>0.45cm</Height>
+                  <Width>8.19576cm</Width>
+                  <ZIndex>19</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4668,9 +4639,8 @@ Nothing)</Value>
                 </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
-              <Top>5.14683cm</Top>
-              <Left>0cm</Left>
-              <Height>7.66366cm</Height>
+              <Top>2.44683cm</Top>
+              <Height>8.37174cm</Height>
               <Width>18.99219cm</Width>
               <Style>
                 <Border>
@@ -4680,165 +4650,6 @@ Nothing)</Value>
             </Rectangle>
             <Rectangle Name="Rectangle5">
               <ReportItems>
-                <Textbox Name="Textbox69">
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Bomba Injetora:  [     ] Sim      [     ] Não                     [      ] Ionico      [      ] Não Ionico        [      ] Sedação:  _______________________________________________</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>2.1861cm</Top>
-                  <Left>0cm</Left>
-                  <Height>0.6cm</Height>
-                  <Width>18.91716cm</Width>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox70">
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Contraste: [     ] DT   [     ] TX   [     ] HX   [     ] MI     [     ] TXH      Médico Resp. Contraste:___________________________________________________________</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>2.85666cm</Top>
-                  <Height>0.6cm</Height>
-                  <Width>18.91716cm</Width>
-                  <ZIndex>1</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox71">
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>[     ] Nome  [     ] Idade  [     ] Exame    [     ] Pedido Médico  [     ] Lateralidade         [      ] Responsavel: ________________________________________________</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>3.52721cm</Top>
-                  <Height>0.6cm</Height>
-                  <Width>18.91716cm</Width>
-                  <ZIndex>2</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox76">
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Tem Exames Anteriores?  </Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                            <Format>dd/MM/yyyy</Format>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value>=IIf(
-	UCase(First(Fields!ExameAnterior.Value, "FichaAtendimento")) = "S", 
-	  "Sim"
-	, "Não")</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value xml:space="preserve">       </Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value>=IIf(
-	IsNothing(First(Fields!QtdeEnvelope.Value, "FichaAtendimento")), 
-	  "", 
-	  "Quantidade: " &amp; First(Fields!QtdeEnvelope.Value, "FichaAtendimento"))</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value>    Preparo realizado: [     ] Sim [      ] Não [      ]  Sem preparo</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style />
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox33</rd:DefaultName>
-                  <Top>4.23304cm</Top>
-                  <Height>0.6cm</Height>
-                  <Width>18.91716cm</Width>
-                  <ZIndex>3</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>2pt</PaddingLeft>
-                    <PaddingRight>2pt</PaddingRight>
-                    <PaddingTop>2pt</PaddingTop>
-                    <PaddingBottom>2pt</PaddingBottom>
-                  </Style>
-                </Textbox>
                 <Textbox Name="Textbox18">
                   <CanGrow>true</CanGrow>
                   <KeepTogether>true</KeepTogether>
@@ -4858,10 +4669,8 @@ Nothing)</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox18</rd:DefaultName>
                   <Top>1.17284cm</Top>
-                  <Left>0cm</Left>
                   <Height>0.94284cm</Height>
                   <Width>18.91716cm</Width>
-                  <ZIndex>4</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4893,10 +4702,9 @@ Nothing)</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox19</rd:DefaultName>
                   <Top>0.27284cm</Top>
-                  <Left>0cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.20465cm</Width>
-                  <ZIndex>5</ZIndex>
+                  <ZIndex>1</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4924,10 +4732,9 @@ Nothing)</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox19</rd:DefaultName>
                   <Top>0.72284cm</Top>
-                  <Left>0cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.20465cm</Width>
-                  <ZIndex>6</ZIndex>
+                  <ZIndex>2</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4957,7 +4764,7 @@ Nothing)</Value>
                   <Left>2.20465cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.79535cm</Width>
-                  <ZIndex>7</ZIndex>
+                  <ZIndex>3</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -4988,7 +4795,7 @@ Nothing)</Value>
                   <Left>5cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.5cm</Width>
-                  <ZIndex>8</ZIndex>
+                  <ZIndex>4</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5019,7 +4826,7 @@ Nothing)</Value>
                   <Left>7.5cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.5cm</Width>
-                  <ZIndex>9</ZIndex>
+                  <ZIndex>5</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5050,7 +4857,7 @@ Nothing)</Value>
                   <Left>10cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.5cm</Width>
-                  <ZIndex>10</ZIndex>
+                  <ZIndex>6</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5080,7 +4887,7 @@ Nothing)</Value>
                   <Left>12.5cm</Left>
                   <Height>0.45cm</Height>
                   <Width>6.41716cm</Width>
-                  <ZIndex>11</ZIndex>
+                  <ZIndex>7</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5110,7 +4917,7 @@ Nothing)</Value>
                   <Left>2.20465cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.79535cm</Width>
-                  <ZIndex>12</ZIndex>
+                  <ZIndex>8</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5141,7 +4948,7 @@ Nothing)</Value>
                   <Left>5cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.5cm</Width>
-                  <ZIndex>13</ZIndex>
+                  <ZIndex>9</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5172,7 +4979,7 @@ Nothing)</Value>
                   <Left>7.5cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.5cm</Width>
-                  <ZIndex>14</ZIndex>
+                  <ZIndex>10</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5203,7 +5010,7 @@ Nothing)</Value>
                   <Left>10cm</Left>
                   <Height>0.45cm</Height>
                   <Width>0.97281cm</Width>
-                  <ZIndex>15</ZIndex>
+                  <ZIndex>11</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5241,7 +5048,7 @@ Nothing)</Value>
                   <Left>10.97281cm</Left>
                   <Height>0.45cm</Height>
                   <Width>1.52719cm</Width>
-                  <ZIndex>16</ZIndex>
+                  <ZIndex>12</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5272,7 +5079,7 @@ Nothing)</Value>
                   <Left>12.5cm</Left>
                   <Height>0.45cm</Height>
                   <Width>1.34322cm</Width>
-                  <ZIndex>17</ZIndex>
+                  <ZIndex>13</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5308,7 +5115,7 @@ Nothing)</Value>
                   <Left>13.84322cm</Left>
                   <Height>0.45cm</Height>
                   <Width>2.5cm</Width>
-                  <ZIndex>18</ZIndex>
+                  <ZIndex>14</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -5318,7 +5125,7 @@ Nothing)</Value>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>0.17639cm</Top>
-              <Height>4.9524cm</Height>
+              <Height>2.11568cm</Height>
               <Width>18.91716cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
