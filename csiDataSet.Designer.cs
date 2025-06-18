@@ -15027,6 +15027,16 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnSexo;
             
+            private global::System.Data.DataColumn columnseq_Tiss_Atend;
+            
+            private global::System.Data.DataColumn columncodCBOS;
+            
+            private global::System.Data.DataColumn columnTipo_Atend;
+            
+            private global::System.Data.DataColumn columnCBOS300;
+            
+            private global::System.Data.DataColumn columnCBOS;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_FAT123DataTable() {
@@ -16110,6 +16120,46 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn seq_Tiss_AtendColumn {
+                get {
+                    return this.columnseq_Tiss_Atend;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn codCBOSColumn {
+                get {
+                    return this.columncodCBOS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Tipo_AtendColumn {
+                get {
+                    return this.columnTipo_Atend;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CBOS300Column {
+                get {
+                    return this.columnCBOS300;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CBOSColumn {
+                get {
+                    return this.columnCBOS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -16275,7 +16325,12 @@ namespace Relatorios_RDLC {
                         string EMail, 
                         string NomeMae, 
                         string RG, 
-                        string Sexo) {
+                        string Sexo, 
+                        decimal seq_Tiss_Atend, 
+                        decimal codCBOS, 
+                        string Tipo_Atend, 
+                        string CBOS300, 
+                        string CBOS) {
                 PR_REL_FAT123Row rowPR_REL_FAT123Row = ((PR_REL_FAT123Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         lcCodigo,
@@ -16408,7 +16463,12 @@ namespace Relatorios_RDLC {
                         EMail,
                         NomeMae,
                         RG,
-                        Sexo};
+                        Sexo,
+                        seq_Tiss_Atend,
+                        codCBOS,
+                        Tipo_Atend,
+                        CBOS300,
+                        CBOS};
                 rowPR_REL_FAT123Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_FAT123Row);
                 return rowPR_REL_FAT123Row;
@@ -16562,6 +16622,11 @@ namespace Relatorios_RDLC {
                 this.columnNomeMae = base.Columns["NomeMae"];
                 this.columnRG = base.Columns["RG"];
                 this.columnSexo = base.Columns["Sexo"];
+                this.columnseq_Tiss_Atend = base.Columns["seq_Tiss_Atend"];
+                this.columncodCBOS = base.Columns["codCBOS"];
+                this.columnTipo_Atend = base.Columns["Tipo_Atend"];
+                this.columnCBOS300 = base.Columns["CBOS300"];
+                this.columnCBOS = base.Columns["CBOS"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16833,6 +16898,16 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnRG);
                 this.columnSexo = new global::System.Data.DataColumn("Sexo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSexo);
+                this.columnseq_Tiss_Atend = new global::System.Data.DataColumn("seq_Tiss_Atend", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnseq_Tiss_Atend);
+                this.columncodCBOS = new global::System.Data.DataColumn("codCBOS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodCBOS);
+                this.columnTipo_Atend = new global::System.Data.DataColumn("Tipo_Atend", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTipo_Atend);
+                this.columnCBOS300 = new global::System.Data.DataColumn("CBOS300", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCBOS300);
+                this.columnCBOS = new global::System.Data.DataColumn("CBOS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCBOS);
                 this.columnlcCodigo.AllowDBNull = false;
                 this.columnNomeEmpresa.MaxLength = 80;
                 this.columnNomeFantasia.MaxLength = 80;
@@ -16958,6 +17033,9 @@ namespace Relatorios_RDLC {
                 this.columnNomeMae.MaxLength = 80;
                 this.columnRG.MaxLength = 22;
                 this.columnSexo.MaxLength = 1;
+                this.columnTipo_Atend.MaxLength = 30;
+                this.columnCBOS300.MaxLength = 7;
+                this.columnCBOS.MaxLength = 7;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -76651,6 +76729,86 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal seq_Tiss_Atend {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablePR_REL_FAT123.seq_Tiss_AtendColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'seq_Tiss_Atend\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.seq_Tiss_AtendColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal codCBOS {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablePR_REL_FAT123.codCBOSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'codCBOS\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.codCBOSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Tipo_Atend {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT123.Tipo_AtendColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Tipo_Atend\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.Tipo_AtendColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CBOS300 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT123.CBOS300Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CBOS300\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.CBOS300Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CBOS {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT123.CBOSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CBOS\' na tabela \'PR_REL_FAT123\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT123.CBOSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNomeEmpresaNull() {
                 return this.IsNull(this.tablePR_REL_FAT123.NomeEmpresaColumn);
             }
@@ -78087,6 +78245,66 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetSexoNull() {
                 this[this.tablePR_REL_FAT123.SexoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isseq_Tiss_AtendNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.seq_Tiss_AtendColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setseq_Tiss_AtendNull() {
+                this[this.tablePR_REL_FAT123.seq_Tiss_AtendColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IscodCBOSNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.codCBOSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetcodCBOSNull() {
+                this[this.tablePR_REL_FAT123.codCBOSColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTipo_AtendNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.Tipo_AtendColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTipo_AtendNull() {
+                this[this.tablePR_REL_FAT123.Tipo_AtendColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCBOS300Null() {
+                return this.IsNull(this.tablePR_REL_FAT123.CBOS300Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCBOS300Null() {
+                this[this.tablePR_REL_FAT123.CBOS300Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCBOSNull() {
+                return this.IsNull(this.tablePR_REL_FAT123.CBOSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCBOSNull() {
+                this[this.tablePR_REL_FAT123.CBOSColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -135731,6 +135949,11 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("NomeMae", "NomeMae");
             tableMapping.ColumnMappings.Add("RG", "RG");
             tableMapping.ColumnMappings.Add("Sexo", "Sexo");
+            tableMapping.ColumnMappings.Add("seq_Tiss_Atend", "seq_Tiss_Atend");
+            tableMapping.ColumnMappings.Add("codCBOS", "codCBOS");
+            tableMapping.ColumnMappings.Add("Tipo_Atend", "Tipo_Atend");
+            tableMapping.ColumnMappings.Add("CBOS300", "CBOS300");
+            tableMapping.ColumnMappings.Add("CBOS", "CBOS");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
