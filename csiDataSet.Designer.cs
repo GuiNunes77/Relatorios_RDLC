@@ -24026,6 +24026,8 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnComplemento_Recibo;
             
+            private global::System.Data.DataColumn columnDataAtestado_Atestado;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_ATES_RECDataTable() {
@@ -24693,6 +24695,14 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DataAtestado_AtestadoColumn {
+                get {
+                    return this.columnDataAtestado_Atestado;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -24798,7 +24808,8 @@ namespace Relatorios_RDLC {
                         string UsuarioRecibo, 
                         string LISTA_EXAME_AMBCODIGO, 
                         string NomeSocial, 
-                        string Complemento_Recibo) {
+                        string Complemento_Recibo, 
+                        System.DateTime DataAtestado_Atestado) {
                 PR_REL_ATES_RECRow rowPR_REL_ATES_RECRow = ((PR_REL_ATES_RECRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         lcCodigo,
@@ -24879,7 +24890,8 @@ namespace Relatorios_RDLC {
                         UsuarioRecibo,
                         LISTA_EXAME_AMBCODIGO,
                         NomeSocial,
-                        Complemento_Recibo};
+                        Complemento_Recibo,
+                        DataAtestado_Atestado};
                 rowPR_REL_ATES_RECRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_ATES_RECRow);
                 return rowPR_REL_ATES_RECRow;
@@ -24981,6 +24993,7 @@ namespace Relatorios_RDLC {
                 this.columnLISTA_EXAME_AMBCODIGO = base.Columns["LISTA_EXAME_AMBCODIGO"];
                 this.columnNomeSocial = base.Columns["NomeSocial"];
                 this.columnComplemento_Recibo = base.Columns["Complemento_Recibo"];
+                this.columnDataAtestado_Atestado = base.Columns["DataAtestado_Atestado"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -25144,6 +25157,8 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnNomeSocial);
                 this.columnComplemento_Recibo = new global::System.Data.DataColumn("Complemento_Recibo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnComplemento_Recibo);
+                this.columnDataAtestado_Atestado = new global::System.Data.DataColumn("DataAtestado_Atestado", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataAtestado_Atestado);
                 this.columnlcCodigo.AllowDBNull = false;
                 this.columnNumero.AutoIncrement = true;
                 this.columnNumero.AllowDBNull = false;
@@ -88427,6 +88442,22 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime DataAtestado_Atestado {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tablePR_REL_ATES_REC.DataAtestado_AtestadoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'DataAtestado_Atestado\' na tabela \'PR_REL_ATES_REC\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ATES_REC.DataAtestado_AtestadoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDataNull() {
                 return this.IsNull(this.tablePR_REL_ATES_REC.DataColumn);
             }
@@ -89335,6 +89366,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetComplemento_ReciboNull() {
                 this[this.tablePR_REL_ATES_REC.Complemento_ReciboColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDataAtestado_AtestadoNull() {
+                return this.IsNull(this.tablePR_REL_ATES_REC.DataAtestado_AtestadoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDataAtestado_AtestadoNull() {
+                this[this.tablePR_REL_ATES_REC.DataAtestado_AtestadoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -138601,6 +138644,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("LISTA_EXAME_AMBCODIGO", "LISTA_EXAME_AMBCODIGO");
             tableMapping.ColumnMappings.Add("NomeSocial", "NomeSocial");
             tableMapping.ColumnMappings.Add("Complemento_Recibo", "Complemento_Recibo");
+            tableMapping.ColumnMappings.Add("DataAtestado_Atestado", "DataAtestado_Atestado");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
