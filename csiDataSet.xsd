@@ -3832,6 +3832,7 @@
               <Mapping SourceColumn="CelularCompletoSomenteNumeros" DataSetColumn="CelularCompletoSomenteNumeros" />
               <Mapping SourceColumn="susCodigo" DataSetColumn="susCodigo" />
               <Mapping SourceColumn="seq_SUS1" DataSetColumn="seq_SUS1" />
+              <Mapping SourceColumn="StatusDoLaudo" DataSetColumn="StatusDoLaudo" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -7463,23 +7464,23 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="seq_Tiss_Atend" msprop:Generator_UserColumnName="seq_Tiss_Atend" msprop:Generator_ColumnPropNameInTable="seq_Tiss_AtendColumn" msprop:Generator_ColumnPropNameInRow="seq_Tiss_Atend" msprop:Generator_ColumnVarNameInTable="columnseq_Tiss_Atend" type="xs:decimal" minOccurs="0" />
-              <xs:element name="codCBOS" msprop:Generator_UserColumnName="codCBOS" msprop:Generator_ColumnPropNameInTable="codCBOSColumn" msprop:Generator_ColumnPropNameInRow="codCBOS" msprop:Generator_ColumnVarNameInTable="columncodCBOS" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Tipo_Atend" msprop:Generator_UserColumnName="Tipo_Atend" msprop:Generator_ColumnPropNameInTable="Tipo_AtendColumn" msprop:Generator_ColumnPropNameInRow="Tipo_Atend" msprop:Generator_ColumnVarNameInTable="columnTipo_Atend" minOccurs="0">
+              <xs:element name="seq_Tiss_Atend" msprop:Generator_ColumnPropNameInTable="seq_Tiss_AtendColumn" msprop:Generator_ColumnPropNameInRow="seq_Tiss_Atend" msprop:Generator_UserColumnName="seq_Tiss_Atend" msprop:Generator_ColumnVarNameInTable="columnseq_Tiss_Atend" type="xs:decimal" minOccurs="0" />
+              <xs:element name="codCBOS" msprop:Generator_ColumnPropNameInTable="codCBOSColumn" msprop:Generator_ColumnPropNameInRow="codCBOS" msprop:Generator_UserColumnName="codCBOS" msprop:Generator_ColumnVarNameInTable="columncodCBOS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tipo_Atend" msprop:Generator_ColumnPropNameInTable="Tipo_AtendColumn" msprop:Generator_ColumnPropNameInRow="Tipo_Atend" msprop:Generator_UserColumnName="Tipo_Atend" msprop:Generator_ColumnVarNameInTable="columnTipo_Atend" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="CBOS300" msprop:Generator_UserColumnName="CBOS300" msprop:Generator_ColumnPropNameInTable="CBOS300Column" msprop:Generator_ColumnPropNameInRow="CBOS300" msprop:Generator_ColumnVarNameInTable="columnCBOS300" minOccurs="0">
+              <xs:element name="CBOS300" msprop:Generator_ColumnPropNameInTable="CBOS300Column" msprop:Generator_ColumnPropNameInRow="CBOS300" msprop:Generator_UserColumnName="CBOS300" msprop:Generator_ColumnVarNameInTable="columnCBOS300" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="7" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="CBOS" msprop:Generator_UserColumnName="CBOS" msprop:Generator_ColumnPropNameInTable="CBOSColumn" msprop:Generator_ColumnPropNameInRow="CBOS" msprop:Generator_ColumnVarNameInTable="columnCBOS" minOccurs="0">
+              <xs:element name="CBOS" msprop:Generator_ColumnPropNameInTable="CBOSColumn" msprop:Generator_ColumnPropNameInRow="CBOS" msprop:Generator_UserColumnName="CBOS" msprop:Generator_ColumnVarNameInTable="columnCBOS" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="7" />
@@ -9283,7 +9284,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DataAtestado_Atestado" msprop:Generator_ColumnPropNameInRow="DataAtestado_Atestado" msprop:Generator_ColumnPropNameInTable="DataAtestado_AtestadoColumn" msprop:Generator_ColumnVarNameInTable="columnDataAtestado_Atestado" msprop:Generator_UserColumnName="DataAtestado_Atestado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DataAtestado_Atestado" msprop:Generator_UserColumnName="DataAtestado_Atestado" msprop:Generator_ColumnPropNameInTable="DataAtestado_AtestadoColumn" msprop:Generator_ColumnPropNameInRow="DataAtestado_Atestado" msprop:Generator_ColumnVarNameInTable="columnDataAtestado_Atestado" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -15531,6 +15532,13 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="seq_SUS1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnPropNameInTable="seq_SUS1Column" msprop:Generator_ColumnPropNameInRow="seq_SUS1" msprop:Generator_UserColumnName="seq_SUS1" msprop:Generator_ColumnVarNameInTable="columnseq_SUS1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StatusDoLaudo" msprop:Generator_ColumnPropNameInRow="StatusDoLaudo" msprop:Generator_ColumnPropNameInTable="StatusDoLaudoColumn" msprop:Generator_ColumnVarNameInTable="columnStatusDoLaudo" msprop:Generator_UserColumnName="StatusDoLaudo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

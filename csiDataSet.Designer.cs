@@ -52221,6 +52221,8 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnseq_SUS1;
             
+            private global::System.Data.DataColumn columnStatusDoLaudo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_FAT116DataTable() {
@@ -53208,6 +53210,14 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn StatusDoLaudoColumn {
+                get {
+                    return this.columnStatusDoLaudo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -53361,7 +53371,8 @@ namespace Relatorios_RDLC {
                         string Paciente, 
                         string CPF_PACIENTE, 
                         string CelularCompletoSomenteNumeros, 
-                        string susCodigo) {
+                        string susCodigo, 
+                        string StatusDoLaudo) {
                 PR_REL_FAT116Row rowPR_REL_FAT116Row = ((PR_REL_FAT116Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         lcCodigo,
@@ -53482,7 +53493,8 @@ namespace Relatorios_RDLC {
                         CPF_PACIENTE,
                         CelularCompletoSomenteNumeros,
                         susCodigo,
-                        null};
+                        null,
+                        StatusDoLaudo};
                 rowPR_REL_FAT116Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_FAT116Row);
                 return rowPR_REL_FAT116Row;
@@ -53624,6 +53636,7 @@ namespace Relatorios_RDLC {
                 this.columnCelularCompletoSomenteNumeros = base.Columns["CelularCompletoSomenteNumeros"];
                 this.columnsusCodigo = base.Columns["susCodigo"];
                 this.columnseq_SUS1 = base.Columns["seq_SUS1"];
+                this.columnStatusDoLaudo = base.Columns["StatusDoLaudo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -53871,6 +53884,8 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnsusCodigo);
                 this.columnseq_SUS1 = new global::System.Data.DataColumn("seq_SUS1", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnseq_SUS1);
+                this.columnStatusDoLaudo = new global::System.Data.DataColumn("StatusDoLaudo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatusDoLaudo);
                 this.columnlcCodigo.AllowDBNull = false;
                 this.columnNomeEmpresa.MaxLength = 80;
                 this.columnNomeFantasia.MaxLength = 80;
@@ -53982,6 +53997,7 @@ namespace Relatorios_RDLC {
                 this.columnsusCodigo.MaxLength = 10;
                 this.columnseq_SUS1.AutoIncrement = true;
                 this.columnseq_SUS1.ReadOnly = true;
+                this.columnStatusDoLaudo.MaxLength = 80;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -126044,6 +126060,22 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string StatusDoLaudo {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT116.StatusDoLaudoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'StatusDoLaudo\' na tabela \'PR_REL_FAT116\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT116.StatusDoLaudoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNomeEmpresaNull() {
                 return this.IsNull(this.tablePR_REL_FAT116.NomeEmpresaColumn);
             }
@@ -127348,6 +127380,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setseq_SUS1Null() {
                 this[this.tablePR_REL_FAT116.seq_SUS1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsStatusDoLaudoNull() {
+                return this.IsNull(this.tablePR_REL_FAT116.StatusDoLaudoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetStatusDoLaudoNull() {
+                this[this.tablePR_REL_FAT116.StatusDoLaudoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -147612,6 +147656,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("CelularCompletoSomenteNumeros", "CelularCompletoSomenteNumeros");
             tableMapping.ColumnMappings.Add("susCodigo", "susCodigo");
             tableMapping.ColumnMappings.Add("seq_SUS1", "seq_SUS1");
+            tableMapping.ColumnMappings.Add("StatusDoLaudo", "StatusDoLaudo");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
