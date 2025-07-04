@@ -58,7 +58,7 @@
       <HintPath>packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -429,11 +429,14 @@
     <EmbeddedResource Include="Relatórios\895\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\899\AGD005.rdlc" />
     <EmbeddedResource Include="Relatórios\899\AGD010.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\AGD016.rdlc" />
     <EmbeddedResource Include="Relatórios\899\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\899\CRD003.rdlc" />
     <EmbeddedResource Include="Relatórios\899\CRD006.rdlc" />
     <EmbeddedResource Include="Relatórios\899\CRD006_original.rdlc" />
     <EmbeddedResource Include="Relatórios\899\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\899\ORC001.rdlc" />
     <EmbeddedResource Include="Relatórios\908\Etq001.rdlc" />
     <EmbeddedResource Include="Relatórios\914\CXA007.rdlc" />
     <EmbeddedResource Include="Relatórios\914\CXA011.rdlc" />
@@ -689,6 +692,7 @@
     <Folder Include="bin\Debug\zh-CHS\" />
     <Folder Include="bin\Debug\zh-CHT\" />
     <Folder Include="bin\Release\" />
+    <Folder Include="Relatórios\631\" />
     <Folder Include="Relatórios\750\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
