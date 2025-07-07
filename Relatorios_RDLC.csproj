@@ -256,6 +256,10 @@
     <EmbeddedResource Include="Relatórios\629\Atestado.rdlc" />
     <EmbeddedResource Include="Relatórios\629\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\629\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\631\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\631\AtestadoAcompanhante.rdlc" />
+    <EmbeddedResource Include="Relatórios\631\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\631\Fch005.rdlc" />
     <EmbeddedResource Include="Relatórios\648\Atestado.rdlc" />
     <EmbeddedResource Include="Relatórios\648\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\648\Etq001.rdlc" />
@@ -692,7 +696,6 @@
     <Folder Include="bin\Debug\zh-CHS\" />
     <Folder Include="bin\Debug\zh-CHT\" />
     <Folder Include="bin\Release\" />
-    <Folder Include="Relatórios\631\" />
     <Folder Include="Relatórios\750\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
