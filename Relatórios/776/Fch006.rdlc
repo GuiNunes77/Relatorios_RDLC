@@ -660,12 +660,12 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>7.86146cm</Width>
+                  <Width>7.13226cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>4.7cm</Height>
+                  <Height>3.6cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -675,15 +675,15 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>2.51229cm</Width>
+                                    <Width>2.07489cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>5.34917cm</Width>
+                                    <Width>5.05738cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -695,7 +695,7 @@
                                                   <TextRun>
                                                     <Value>Atendimento: </Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -725,7 +725,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Numero.Value</Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -741,13 +741,12 @@
                                               </Border>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -759,7 +758,7 @@
                                                   <TextRun>
                                                     <Value>Paciente: </Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -789,7 +788,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Nome.Value</Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -810,7 +809,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -822,7 +821,7 @@
                                                   <TextRun>
                                                     <Value>Data: </Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -852,7 +851,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Data.Value</Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>d</Format>
                                                     </Style>
                                                   </TextRun>
@@ -874,7 +873,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -886,7 +885,7 @@
                                                   <TextRun>
                                                     <Value>Modalidade: </Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -916,7 +915,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Lista_Modalidade.Value</Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -937,78 +936,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.2cm</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox14">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value />
-                                                    <Style>
-                                                      <FontFamily>Verdana</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Left</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox14</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox42">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value />
-                                                    <Style>
-                                                      <FontFamily>Verdana</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Left</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox42</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1021,7 +949,7 @@
                                                   <TextRun>
                                                     <Value>Acesse o site: </Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1050,7 +978,7 @@
                                                   <TextRun>
                                                     <Value>dcsbirigui.com.br</Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -1072,7 +1000,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1085,7 +1013,7 @@
                                                   <TextRun>
                                                     <Value>Consulte seu exame com o login e senha abaixo:</Value>
                                                     <Style>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1108,7 +1036,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1120,7 +1048,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>Login: </Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1149,6 +1079,7 @@
                                                     <Value>=Fields!IDLogin.Value</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Format>d</Format>
                                                     </Style>
@@ -1171,7 +1102,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.5cm</Height>
+                                    <Height>0.45cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1183,7 +1114,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>Senha: </Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1212,6 +1145,7 @@
                                                     <Value>=Fields!Pwd_IDLogin.Value</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Format>d</Format>
                                                     </Style>
@@ -1231,40 +1165,6 @@
                                           </Textbox>
                                         </CellContents>
                                       </TablixCell>
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
-                                    <Height>0.5cm</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox51">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Complemento.Value</Value>
-                                                    <Style>
-                                                      <FontSize>9pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox51</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>2</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell />
                                     </TablixCells>
                                   </TablixRow>
                                 </TablixRows>
@@ -1289,14 +1189,12 @@
                                   <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
-                                  <TablixMember />
-                                  <TablixMember />
                                 </TablixMembers>
                               </TablixRowHierarchy>
                               <KeepTogether>true</KeepTogether>
                               <DataSetName>FichaAtendimento</DataSetName>
-                              <Height>4.7cm</Height>
-                              <Width>7.86146cm</Width>
+                              <Height>3.6cm</Height>
+                              <Width>7.13226cm</Width>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -1353,8 +1251,8 @@ Nothing)</Value>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Height>4.7cm</Height>
-            <Width>7.86146cm</Width>
+            <Height>3.6cm</Height>
+            <Width>7.13226cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1362,10 +1260,10 @@ Nothing)</Value>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>4.7cm</Height>
+        <Height>3.6cm</Height>
         <Style />
       </Body>
-      <Width>7.86146cm</Width>
+      <Width>7.13226cm</Width>
       <Page>
         <PageHeader>
           <Height>1.5cm</Height>
@@ -1392,8 +1290,71 @@ Nothing)</Value>
             </Border>
           </Style>
         </PageHeader>
-        <PageHeight>8cm</PageHeight>
-        <PageWidth>8cm</PageWidth>
+        <PageFooter>
+          <Height>0.91941cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Rectangle Name="Rectangle2">
+              <ReportItems>
+                <Textbox Name="Textbox1">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=Fields!Complemento.Value</Value>
+                          <Style>
+                            <FontSize>8pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox1</rd:DefaultName>
+                  <Height>0.45198cm</Height>
+                  <Width>7.13226cm</Width>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Textbox>
+              </ReportItems>
+              <KeepTogether>true</KeepTogether>
+              <Top>0.17639cm</Top>
+              <Height>0.45198cm</Height>
+              <Width>7.13226cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Rectangle>
+            <Line Name="Line1">
+              <Top>0.07056cm</Top>
+              <Height>0cm</Height>
+              <Width>7.13226cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Dashed</Style>
+                </Border>
+              </Style>
+            </Line>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>7cm</PageHeight>
+        <PageWidth>9cm</PageWidth>
         <LeftMargin>0cm</LeftMargin>
         <RightMargin>0cm</RightMargin>
         <TopMargin>0cm</TopMargin>

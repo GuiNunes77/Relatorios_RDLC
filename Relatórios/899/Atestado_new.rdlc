@@ -265,10 +265,6 @@
           <DataField>usCodigo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="Usuario">
-          <DataField>Usuario</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="usCodigoAtestado">
           <DataField>usCodigoAtestado</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -300,6 +296,46 @@
         <Field Name="UsuarioAtendimento">
           <DataField>UsuarioAtendimento</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOFTSite">
+          <DataField>SOFTSite</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SOFTCNPJ">
+          <DataField>SOFTCNPJ</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoEspecialidadeMedica">
+          <DataField>CodigoEspecialidadeMedica</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NomeEspecialidadeMedica">
+          <DataField>NomeEspecialidadeMedica</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="usCodigoRecibo">
+          <DataField>usCodigoRecibo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="UsuarioRecibo">
+          <DataField>UsuarioRecibo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LISTA_EXAME_AMBCODIGO">
+          <DataField>LISTA_EXAME_AMBCODIGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomeSocial">
+          <DataField>NomeSocial</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Complemento_Recibo">
+          <DataField>Complemento_Recibo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DataAtestado_Atestado">
+          <DataField>DataAtestado_Atestado</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
@@ -513,7 +549,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=Fields!DataRegistro_Atestado.Value</Value>
+                                  <Value>=Fields!Data.Value</Value>
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>12pt</FontSize>
@@ -545,7 +581,9 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=Fields!DataRegistro_Atestado.Value</Value>
+                                  <Value>=IIf(IsNothing(Fields!Complemento_Atestado.Value) OR Trim(Fields!Complemento_Atestado.Value) = "", 
+     Fields!DataRegistro_Atestado.Value, 
+     Fields!Complemento_Atestado.Value)</Value>
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>12pt</FontSize>
