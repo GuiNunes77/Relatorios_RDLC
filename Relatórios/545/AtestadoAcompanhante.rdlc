@@ -489,72 +489,12 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=IIF(IsNothing(Fields!Complemento_Atestado.Value),
+     "No dia " &amp; Today() &amp; ", no período das " &amp; Format(Fields!Data.Value, "HH:mm") &amp; " às " &amp; Format(Now(), "HH:mm"),
+     Fields!Complemento_Atestado.Value)</Value>
                                   <Style>
                                     <FontFamily>arial</FontFamily>
                                     <FontSize>12pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>No dia </Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>12pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Today</Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>12pt</FontSize>
-                                    <Format>dd/MM/yyyy</Format>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>, no período das </Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>12pt</FontSize>
-                                    <Format>d' de 'MMMM' de 'yyyy</Format>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!Data.Value</Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>12pt</FontSize>
-                                    <Format>HH:mm</Format>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value> às </Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>12pt</FontSize>
-                                    <Format>HH:mm</Format>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Now</Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>12pt</FontSize>
-                                    <Format>HH:mm</Format>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>.</Value>
-                                  <Style>
-                                    <FontFamily>arial</FontFamily>
-                                    <FontSize>12pt</FontSize>
-                                    <Format>HH:mm</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
