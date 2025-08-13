@@ -56782,6 +56782,8 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnNOME_USUARIO;
             
+            private global::System.Data.DataColumn columnNOME_FANTASIA;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_ORC001DataTable() {
@@ -56929,6 +56931,14 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NOME_FANTASIAColumn {
+                get {
+                    return this.columnNOME_FANTASIA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -56964,7 +56974,7 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PR_REL_ORC001Row AddPR_REL_ORC001Row(string DESCRICAO_LOCALATENDIMENTO, string PACIENTE, System.DateTime DATA, string NOME_CONVENIO, string CODIGO_AMB, string DESCRICAO_PROCEDIMENTO, decimal VALOR, string NOME_USUARIO) {
+            public PR_REL_ORC001Row AddPR_REL_ORC001Row(string DESCRICAO_LOCALATENDIMENTO, string PACIENTE, System.DateTime DATA, string NOME_CONVENIO, string CODIGO_AMB, string DESCRICAO_PROCEDIMENTO, decimal VALOR, string NOME_USUARIO, string NOME_FANTASIA) {
                 PR_REL_ORC001Row rowPR_REL_ORC001Row = ((PR_REL_ORC001Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -56980,7 +56990,8 @@ namespace Relatorios_RDLC {
                         DESCRICAO_PROCEDIMENTO,
                         VALOR,
                         null,
-                        NOME_USUARIO};
+                        NOME_USUARIO,
+                        NOME_FANTASIA};
                 rowPR_REL_ORC001Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_ORC001Row);
                 return rowPR_REL_ORC001Row;
@@ -57029,6 +57040,7 @@ namespace Relatorios_RDLC {
                 this.columnVALOR = base.Columns["VALOR"];
                 this.columnUSCODIGO = base.Columns["USCODIGO"];
                 this.columnNOME_USUARIO = base.Columns["NOME_USUARIO"];
+                this.columnNOME_FANTASIA = base.Columns["NOME_FANTASIA"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -57062,6 +57074,8 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnUSCODIGO);
                 this.columnNOME_USUARIO = new global::System.Data.DataColumn("NOME_USUARIO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNOME_USUARIO);
+                this.columnNOME_FANTASIA = new global::System.Data.DataColumn("NOME_FANTASIA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOME_FANTASIA);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnSEQ_ORC,
                                 this.columnSEQ_ORCITEM,
@@ -57093,6 +57107,7 @@ namespace Relatorios_RDLC {
                 this.columnUSCODIGO.AllowDBNull = false;
                 this.columnUSCODIGO.ReadOnly = true;
                 this.columnNOME_USUARIO.MaxLength = 80;
+                this.columnNOME_FANTASIA.MaxLength = 80;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -131943,6 +131958,22 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NOME_FANTASIA {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.NOME_FANTASIAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'NOME_FANTASIA\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.NOME_FANTASIAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDESCRICAO_LOCALATENDIMENTONull() {
                 return this.IsNull(this.tablePR_REL_ORC001.DESCRICAO_LOCALATENDIMENTOColumn);
             }
@@ -132035,6 +132066,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetNOME_USUARIONull() {
                 this[this.tablePR_REL_ORC001.NOME_USUARIOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNOME_FANTASIANull() {
+                return this.IsNull(this.tablePR_REL_ORC001.NOME_FANTASIAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNOME_FANTASIANull() {
+                this[this.tablePR_REL_ORC001.NOME_FANTASIAColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -150375,6 +150418,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("VALOR", "VALOR");
             tableMapping.ColumnMappings.Add("USCODIGO", "USCODIGO");
             tableMapping.ColumnMappings.Add("NOME_USUARIO", "NOME_USUARIO");
+            tableMapping.ColumnMappings.Add("NOME_FANTASIA", "NOME_FANTASIA");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

@@ -681,7 +681,7 @@
                                   <Value>=Fields!Nome.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -716,7 +716,7 @@
                                   <Value>Registro: </Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -724,7 +724,7 @@
                                   <Value>=Fields!Numero.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -754,7 +754,7 @@
                                   <Value>=Fields!Data.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>dd/MM/yyyy</Format>
                                   </Style>
@@ -790,7 +790,7 @@
                                   <Value>=Fields!Convenio.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -825,7 +825,7 @@
                                   <Value>=Fields!Medico.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -847,7 +847,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>1.05cm</Height>
+                  <Height>0.46792cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -860,7 +860,7 @@
                                   <Value>=Fields!Lista_Exame.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>8pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -918,8 +918,9 @@ Nothing)</Value>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Height>2.85cm</Height>
+            <Height>2.26792cm</Height>
             <Width>8cm</Width>
             <Style>
               <Border>
@@ -928,7 +929,7 @@ Nothing)</Value>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.85cm</Height>
+        <Height>2.26792cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -941,10 +942,10 @@ Nothing)</Value>
         <PageWidth>10cm</PageWidth>
         <InteractiveHeight>5cm</InteractiveHeight>
         <InteractiveWidth>10cm</InteractiveWidth>
-        <LeftMargin>0.5cm</LeftMargin>
-        <RightMargin>0.5cm</RightMargin>
-        <TopMargin>0.5cm</TopMargin>
-        <BottomMargin>0.5cm</BottomMargin>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
