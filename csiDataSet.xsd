@@ -4064,7 +4064,7 @@
               <Mapping SourceColumn="VALOR" DataSetColumn="VALOR" />
               <Mapping SourceColumn="USCODIGO" DataSetColumn="USCODIGO" />
               <Mapping SourceColumn="NOME_USUARIO" DataSetColumn="NOME_USUARIO" />
-              <Mapping SourceColumn="NOME_FANTASIA" DataSetColumn="NOME_FANTASIA" />
+              <Mapping SourceColumn="FANTASIA_PROCEDIMENTO" DataSetColumn="FANTASIA_PROCEDIMENTO" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -16217,7 +16217,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="NOME_FANTASIA" msprop:Generator_ColumnPropNameInRow="NOME_FANTASIA" msprop:Generator_ColumnPropNameInTable="NOME_FANTASIAColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_FANTASIA" msprop:Generator_UserColumnName="NOME_FANTASIA" minOccurs="0">
+              <xs:element name="FANTASIA_PROCEDIMENTO" msprop:Generator_ColumnPropNameInRow="FANTASIA_PROCEDIMENTO" msprop:Generator_ColumnPropNameInTable="FANTASIA_PROCEDIMENTOColumn" msprop:Generator_ColumnVarNameInTable="columnFANTASIA_PROCEDIMENTO" msprop:Generator_UserColumnName="FANTASIA_PROCEDIMENTO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
@@ -16227,29 +16227,29 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PR_REL_FAT018" msprop:Generator_RowClassName="PR_REL_FAT018Row" msprop:Generator_RowEvHandlerName="PR_REL_FAT018RowChangeEventHandler" msprop:Generator_RowDeletedName="PR_REL_FAT018RowDeleted" msprop:Generator_RowDeletingName="PR_REL_FAT018RowDeleting" msprop:Generator_RowEvArgName="PR_REL_FAT018RowChangeEvent" msprop:Generator_TablePropName="PR_REL_FAT018" msprop:Generator_RowChangedName="PR_REL_FAT018RowChanged" msprop:Generator_UserTableName="PR_REL_FAT018" msprop:Generator_RowChangingName="PR_REL_FAT018RowChanging" msprop:Generator_TableClassName="PR_REL_FAT018DataTable" msprop:Generator_TableVarName="tablePR_REL_FAT018">
+        <xs:element name="PR_REL_FAT018" msprop:Generator_RowEvHandlerName="PR_REL_FAT018RowChangeEventHandler" msprop:Generator_RowDeletedName="PR_REL_FAT018RowDeleted" msprop:Generator_RowDeletingName="PR_REL_FAT018RowDeleting" msprop:Generator_RowEvArgName="PR_REL_FAT018RowChangeEvent" msprop:Generator_TablePropName="PR_REL_FAT018" msprop:Generator_RowChangedName="PR_REL_FAT018RowChanged" msprop:Generator_UserTableName="PR_REL_FAT018" msprop:Generator_RowChangingName="PR_REL_FAT018RowChanging" msprop:Generator_RowClassName="PR_REL_FAT018Row" msprop:Generator_TableClassName="PR_REL_FAT018DataTable" msprop:Generator_TableVarName="tablePR_REL_FAT018">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="LCCODIGO" msprop:Generator_UserColumnName="LCCODIGO" msprop:Generator_ColumnPropNameInTable="LCCODIGOColumn" msprop:Generator_ColumnPropNameInRow="LCCODIGO" msprop:Generator_ColumnVarNameInTable="columnLCCODIGO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="DATAX" msprop:Generator_UserColumnName="DATAX" msprop:Generator_ColumnPropNameInTable="DATAXColumn" msprop:Generator_ColumnPropNameInRow="DATAX" msprop:Generator_ColumnVarNameInTable="columnDATAX" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="DATA" msprop:Generator_UserColumnName="DATA" msprop:Generator_ColumnPropNameInTable="DATAColumn" msprop:Generator_ColumnPropNameInRow="DATA" msprop:Generator_ColumnVarNameInTable="columnDATA" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="USCODIGO" msprop:Generator_UserColumnName="USCODIGO" msprop:Generator_ColumnPropNameInTable="USCODIGOColumn" msprop:Generator_ColumnPropNameInRow="USCODIGO" msprop:Generator_ColumnVarNameInTable="columnUSCODIGO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="TIPO_OPERACAO" msprop:Generator_UserColumnName="TIPO_OPERACAO" msprop:Generator_ColumnPropNameInTable="TIPO_OPERACAOColumn" msprop:Generator_ColumnPropNameInRow="TIPO_OPERACAO" msprop:Generator_ColumnVarNameInTable="columnTIPO_OPERACAO">
+              <xs:element name="LCCODIGO" msprop:Generator_ColumnPropNameInTable="LCCODIGOColumn" msprop:Generator_ColumnPropNameInRow="LCCODIGO" msprop:Generator_UserColumnName="LCCODIGO" msprop:Generator_ColumnVarNameInTable="columnLCCODIGO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DATAX" msprop:Generator_ColumnPropNameInTable="DATAXColumn" msprop:Generator_ColumnPropNameInRow="DATAX" msprop:Generator_UserColumnName="DATAX" msprop:Generator_ColumnVarNameInTable="columnDATAX" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATA" msprop:Generator_ColumnPropNameInTable="DATAColumn" msprop:Generator_ColumnPropNameInRow="DATA" msprop:Generator_UserColumnName="DATA" msprop:Generator_ColumnVarNameInTable="columnDATA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USCODIGO" msprop:Generator_ColumnPropNameInTable="USCODIGOColumn" msprop:Generator_ColumnPropNameInRow="USCODIGO" msprop:Generator_UserColumnName="USCODIGO" msprop:Generator_ColumnVarNameInTable="columnUSCODIGO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TIPO_OPERACAO" msprop:Generator_ColumnPropNameInTable="TIPO_OPERACAOColumn" msprop:Generator_ColumnPropNameInRow="TIPO_OPERACAO" msprop:Generator_UserColumnName="TIPO_OPERACAO" msprop:Generator_ColumnVarNameInTable="columnTIPO_OPERACAO">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="QTDE_OPERACAO" msprop:Generator_UserColumnName="QTDE_OPERACAO" msprop:Generator_ColumnPropNameInTable="QTDE_OPERACAOColumn" msprop:Generator_ColumnPropNameInRow="QTDE_OPERACAO" msprop:Generator_ColumnVarNameInTable="columnQTDE_OPERACAO" type="xs:int" />
-              <xs:element name="Usuario" msprop:Generator_UserColumnName="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" minOccurs="0">
+              <xs:element name="QTDE_OPERACAO" msprop:Generator_ColumnPropNameInTable="QTDE_OPERACAOColumn" msprop:Generator_ColumnPropNameInRow="QTDE_OPERACAO" msprop:Generator_UserColumnName="QTDE_OPERACAO" msprop:Generator_ColumnVarNameInTable="columnQTDE_OPERACAO" type="xs:int" />
+              <xs:element name="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_UserColumnName="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="LocalAtendimento" msprop:Generator_UserColumnName="LocalAtendimento" msprop:Generator_ColumnPropNameInTable="LocalAtendimentoColumn" msprop:Generator_ColumnPropNameInRow="LocalAtendimento" msprop:Generator_ColumnVarNameInTable="columnLocalAtendimento" minOccurs="0">
+              <xs:element name="LocalAtendimento" msprop:Generator_ColumnPropNameInTable="LocalAtendimentoColumn" msprop:Generator_ColumnPropNameInRow="LocalAtendimento" msprop:Generator_UserColumnName="LocalAtendimento" msprop:Generator_ColumnVarNameInTable="columnLocalAtendimento" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />

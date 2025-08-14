@@ -298,14 +298,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="NOME_FANTASIA">
+                    <Textbox Name="FANTASIA_PROCEDIMENTO">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!NOME_FANTASIA.Value</Value>
+                              <Value>=Fields!FANTASIA_PROCEDIMENTO.Value</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -315,7 +315,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>NOME_FANTASIA</rd:DefaultName>
+                      <rd:DefaultName>FANTASIA_PROCEDIMENTO</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -1358,8 +1358,8 @@
           <DataField>NOME_USUARIO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NOME_FANTASIA">
-          <DataField>NOME_FANTASIA</DataField>
+        <Field Name="FANTASIA_PROCEDIMENTO">
+          <DataField>FANTASIA_PROCEDIMENTO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
