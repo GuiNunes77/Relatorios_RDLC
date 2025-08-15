@@ -660,10 +660,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>4cm</Width>
+                  <Width>4.92604cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4cm</Width>
+                  <Width>2.57125cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -681,7 +681,7 @@
                                   <Value>=Fields!Nome.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -716,7 +716,7 @@
                                   <Value>Registro: </Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -724,7 +724,7 @@
                                   <Value>=Fields!Numero.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -754,7 +754,7 @@
                                   <Value>=Fields!Data.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>dd/MM/yyyy</Format>
                                   </Style>
@@ -790,7 +790,7 @@
                                   <Value>=Fields!Convenio.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -822,10 +822,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Medico.Value</Value>
+                                  <Value>=Switch(
+    IsNothing(Fields!Sexo_Medico.Value), Fields!Medico.Value,
+    Fields!Sexo_Medico.Value = "M", "Dr. " &amp; Fields!Medico.Value,
+    Fields!Sexo_Medico.Value = "F", "Dra " &amp; Fields!Medico.Value,
+    True, Fields!Medico.Value
+)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -851,23 +856,34 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Lista_Exame">
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Lista_Exame.Value</Value>
+                                  <Value>Paciente ID: </Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!pcCodigo.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>0;(0)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Lista_Exame</rd:DefaultName>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -921,7 +937,7 @@ Nothing)</Value>
             <KeepTogether>true</KeepTogether>
             <DataSetName>FichaAtendimento</DataSetName>
             <Height>2.26792cm</Height>
-            <Width>8cm</Width>
+            <Width>7.49729cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -929,16 +945,16 @@ Nothing)</Value>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.26792cm</Height>
+        <Height>2.3473cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>8cm</Width>
+      <Width>7.49729cm</Width>
       <Page>
-        <PageHeight>5cm</PageHeight>
+        <PageHeight>3cm</PageHeight>
         <PageWidth>10cm</PageWidth>
         <InteractiveHeight>5cm</InteractiveHeight>
         <InteractiveWidth>10cm</InteractiveWidth>

@@ -2306,6 +2306,7 @@
               <Mapping SourceColumn="INICIO_STATUS_EmPreparo" DataSetColumn="INICIO_STATUS_EmPreparo" />
               <Mapping SourceColumn="INICIO_STATUS_PreparoFinalizado" DataSetColumn="INICIO_STATUS_PreparoFinalizado" />
               <Mapping SourceColumn="FIM_STATUS_ExameDigitando" DataSetColumn="FIM_STATUS_ExameDigitando" />
+              <Mapping SourceColumn="INICIO_STATUS_ConvocarPaciente" DataSetColumn="INICIO_STATUS_ConvocarPaciente" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -11325,6 +11326,7 @@
               <xs:element name="INICIO_STATUS_EmPreparo" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="INICIO_STATUS_EmPreparoColumn" msprop:Generator_ColumnPropNameInRow="INICIO_STATUS_EmPreparo" msprop:Generator_UserColumnName="INICIO_STATUS_EmPreparo" msprop:Generator_ColumnVarNameInTable="columnINICIO_STATUS_EmPreparo" type="xs:dateTime" minOccurs="0" />
               <xs:element name="INICIO_STATUS_PreparoFinalizado" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="INICIO_STATUS_PreparoFinalizadoColumn" msprop:Generator_ColumnPropNameInRow="INICIO_STATUS_PreparoFinalizado" msprop:Generator_UserColumnName="INICIO_STATUS_PreparoFinalizado" msprop:Generator_ColumnVarNameInTable="columnINICIO_STATUS_PreparoFinalizado" type="xs:dateTime" minOccurs="0" />
               <xs:element name="FIM_STATUS_ExameDigitando" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="FIM_STATUS_ExameDigitandoColumn" msprop:Generator_ColumnPropNameInRow="FIM_STATUS_ExameDigitando" msprop:Generator_UserColumnName="FIM_STATUS_ExameDigitando" msprop:Generator_ColumnVarNameInTable="columnFIM_STATUS_ExameDigitando" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INICIO_STATUS_ConvocarPaciente" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="INICIO_STATUS_ConvocarPaciente" msprop:Generator_ColumnPropNameInTable="INICIO_STATUS_ConvocarPacienteColumn" msprop:Generator_ColumnVarNameInTable="columnINICIO_STATUS_ConvocarPaciente" msprop:Generator_UserColumnName="INICIO_STATUS_ConvocarPaciente" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -16217,7 +16219,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FANTASIA_PROCEDIMENTO" msprop:Generator_ColumnPropNameInRow="FANTASIA_PROCEDIMENTO" msprop:Generator_ColumnPropNameInTable="FANTASIA_PROCEDIMENTOColumn" msprop:Generator_ColumnVarNameInTable="columnFANTASIA_PROCEDIMENTO" msprop:Generator_UserColumnName="FANTASIA_PROCEDIMENTO" minOccurs="0">
+              <xs:element name="FANTASIA_PROCEDIMENTO" msprop:Generator_UserColumnName="FANTASIA_PROCEDIMENTO" msprop:Generator_ColumnPropNameInTable="FANTASIA_PROCEDIMENTOColumn" msprop:Generator_ColumnPropNameInRow="FANTASIA_PROCEDIMENTO" msprop:Generator_ColumnVarNameInTable="columnFANTASIA_PROCEDIMENTO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />

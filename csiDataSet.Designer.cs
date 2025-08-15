@@ -33076,6 +33076,8 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnFIM_STATUS_ExameDigitando;
             
+            private global::System.Data.DataColumn columnINICIO_STATUS_ConvocarPaciente;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_CRD006DataTable() {
@@ -33399,6 +33401,14 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn INICIO_STATUS_ConvocarPacienteColumn {
+                get {
+                    return this.columnINICIO_STATUS_ConvocarPaciente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -33466,7 +33476,8 @@ namespace Relatorios_RDLC {
                         System.DateTime INICIO_STATUS_PresenteSetor, 
                         System.DateTime INICIO_STATUS_EmPreparo, 
                         System.DateTime INICIO_STATUS_PreparoFinalizado, 
-                        System.DateTime FIM_STATUS_ExameDigitando) {
+                        System.DateTime FIM_STATUS_ExameDigitando, 
+                        System.DateTime INICIO_STATUS_ConvocarPaciente) {
                 PR_REL_CRD006Row rowPR_REL_CRD006Row = ((PR_REL_CRD006Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SEQ_FATURA,
@@ -33504,7 +33515,8 @@ namespace Relatorios_RDLC {
                         INICIO_STATUS_PresenteSetor,
                         INICIO_STATUS_EmPreparo,
                         INICIO_STATUS_PreparoFinalizado,
-                        FIM_STATUS_ExameDigitando};
+                        FIM_STATUS_ExameDigitando,
+                        INICIO_STATUS_ConvocarPaciente};
                 rowPR_REL_CRD006Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_CRD006Row);
                 return rowPR_REL_CRD006Row;
@@ -33563,6 +33575,7 @@ namespace Relatorios_RDLC {
                 this.columnINICIO_STATUS_EmPreparo = base.Columns["INICIO_STATUS_EmPreparo"];
                 this.columnINICIO_STATUS_PreparoFinalizado = base.Columns["INICIO_STATUS_PreparoFinalizado"];
                 this.columnFIM_STATUS_ExameDigitando = base.Columns["FIM_STATUS_ExameDigitando"];
+                this.columnINICIO_STATUS_ConvocarPaciente = base.Columns["INICIO_STATUS_ConvocarPaciente"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -33640,6 +33653,8 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnINICIO_STATUS_PreparoFinalizado);
                 this.columnFIM_STATUS_ExameDigitando = new global::System.Data.DataColumn("FIM_STATUS_ExameDigitando", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFIM_STATUS_ExameDigitando);
+                this.columnINICIO_STATUS_ConvocarPaciente = new global::System.Data.DataColumn("INICIO_STATUS_ConvocarPaciente", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnINICIO_STATUS_ConvocarPaciente);
                 this.columnSEQUENCIA.AllowDBNull = false;
                 this.columnLCCODIGO.AllowDBNull = false;
                 this.columnNOME_LOCAL_ATENDIMENTO.MaxLength = 50;
@@ -33682,6 +33697,7 @@ namespace Relatorios_RDLC {
                 this.columnINICIO_STATUS_EmPreparo.ReadOnly = true;
                 this.columnINICIO_STATUS_PreparoFinalizado.ReadOnly = true;
                 this.columnFIM_STATUS_ExameDigitando.ReadOnly = true;
+                this.columnINICIO_STATUS_ConvocarPaciente.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -101936,6 +101952,23 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime INICIO_STATUS_ConvocarPaciente {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tablePR_REL_CRD006.INICIO_STATUS_ConvocarPacienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'INICIO_STATUS_ConvocarPaciente\' na tabela \'PR_REL_CRD006\' é DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_CRD006.INICIO_STATUS_ConvocarPacienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSEQ_FATURANull() {
                 return this.IsNull(this.tablePR_REL_CRD006.SEQ_FATURAColumn);
             }
@@ -102256,6 +102289,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetFIM_STATUS_ExameDigitandoNull() {
                 this[this.tablePR_REL_CRD006.FIM_STATUS_ExameDigitandoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsINICIO_STATUS_ConvocarPacienteNull() {
+                return this.IsNull(this.tablePR_REL_CRD006.INICIO_STATUS_ConvocarPacienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetINICIO_STATUS_ConvocarPacienteNull() {
+                this[this.tablePR_REL_CRD006.INICIO_STATUS_ConvocarPacienteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -142253,6 +142298,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("INICIO_STATUS_EmPreparo", "INICIO_STATUS_EmPreparo");
             tableMapping.ColumnMappings.Add("INICIO_STATUS_PreparoFinalizado", "INICIO_STATUS_PreparoFinalizado");
             tableMapping.ColumnMappings.Add("FIM_STATUS_ExameDigitando", "FIM_STATUS_ExameDigitando");
+            tableMapping.ColumnMappings.Add("INICIO_STATUS_ConvocarPaciente", "INICIO_STATUS_ConvocarPaciente");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
