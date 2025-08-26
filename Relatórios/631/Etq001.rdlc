@@ -817,6 +817,25 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
+                                  <Value>=
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "F", "DRA. ",
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "f", "DRA. ",
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "M", "DR. ",
+IIF(First(Fields!Sexo_Medico.Value, "FichaAtendimento") = "m", "DR. ",
+""))))</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
                                   <Value>=Fields!Medico.Value</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
@@ -846,12 +865,13 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Lista_Exame">
+                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Lista_Exame.Value</Value>
+                                  <Value>=Replace(Fields!Lista_Exame.Value, "; ", vbCrLf)</Value>
                                   <Style>
                                     <FontSize>11pt</FontSize>
                                   </Style>
@@ -911,7 +931,7 @@ Nothing)</Value>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
             <Height>2.85cm</Height>
-            <Width>7.49729cm</Width>
+            <Width>7.4973cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -926,7 +946,7 @@ Nothing)</Value>
           </Border>
         </Style>
       </Body>
-      <Width>7.49729cm</Width>
+      <Width>7.4973cm</Width>
       <Page>
         <PageHeight>5cm</PageHeight>
         <PageWidth>10cm</PageWidth>
