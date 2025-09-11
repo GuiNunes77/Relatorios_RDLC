@@ -3776,7 +3776,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>18.22847cm</Height>
+                  <Height>19.61944cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3813,6 +3813,403 @@
                                       </TablixColumn>
                                     </TablixColumns>
                                     <TablixRows>
+                                      <TablixRow>
+                                        <Height>2.15cm</Height>
+                                        <TablixCells>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Rectangle Name="Rectangle5">
+                                                <ReportItems>
+                                                  <Textbox Name="Textbox68">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>Usuário: </Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Left</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Top>1.7cm</Top>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>2.3cm</Width>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox70">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>Ficha de Atendimento</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                              <FontSize>13pt</FontSize>
+                                                              <FontWeight>Bold</FontWeight>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox9</rd:DefaultName>
+                                                    <Top>1cm</Top>
+                                                    <Left>7.58787cm</Left>
+                                                    <Height>0.63053cm</Height>
+                                                    <Width>4.65429cm</Width>
+                                                    <ZIndex>1</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox15">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>Hora Agend.:</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style />
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>2.3cm</Width>
+                                                    <ZIndex>2</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox71">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=First(Fields!HORARIO_AGENDA.Value, "FichaAtendimento")</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                              <Format>t</Format>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Left</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Left>2.3cm</Left>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>1.3cm</Width>
+                                                    <ZIndex>3</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox72">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=First(Fields!Usuario.Value, "FichaAtendimento")</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style />
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Top>1.7cm</Top>
+                                                    <Left>2.3cm</Left>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>3.24252cm</Width>
+                                                    <ZIndex>4</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox73">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=First(Fields!Data.Value, "FichaAtendimento")</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                              <Format>t</Format>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Left</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Top>1.1cm</Top>
+                                                    <Left>2.3cm</Left>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>1.3cm</Width>
+                                                    <ZIndex>5</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox74">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>Hora Atend.:</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style />
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Top>1.1cm</Top>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>2.3cm</Width>
+                                                    <ZIndex>6</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="NomeEmpresa6">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=First(Fields!NomeFantasia.Value, "FichaAtendimento")</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                              <FontSize>13pt</FontSize>
+                                                              <FontWeight>Bold</FontWeight>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <SpaceAfter>1pt</SpaceAfter>
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value />
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                              <FontSize>13pt</FontSize>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>NomeEmpresa</rd:DefaultName>
+                                                    <Left>3.675cm</Left>
+                                                    <Height>0.55cm</Height>
+                                                    <Width>12.5cm</Width>
+                                                    <ZIndex>7</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="NomeEmpresa7">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=First(Fields!Complemento.Value, "FichaAtendimento")</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <SpaceAfter>1pt</SpaceAfter>
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>NomeEmpresa</rd:DefaultName>
+                                                    <Top>0.55cm</Top>
+                                                    <Left>4.41501cm</Left>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>11cm</Width>
+                                                    <ZIndex>8</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox16">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>Hora Chegada:</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style />
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Top>0.55cm</Top>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>2.3cm</Width>
+                                                    <ZIndex>9</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                  <Textbox Name="Textbox75">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=First(Fields!DataHora_Chamada.Value, "FichaAtendimento")</Value>
+                                                            <Style>
+                                                              <FontFamily>Times New Roman</FontFamily>
+                                                              <Format>t</Format>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Left</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                                                    <Top>0.55583cm</Top>
+                                                    <Left>2.3cm</Left>
+                                                    <Height>0.45cm</Height>
+                                                    <Width>1.3cm</Width>
+                                                    <ZIndex>10</ZIndex>
+                                                    <Style>
+                                                      <Border>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <PaddingLeft>0cm</PaddingLeft>
+                                                      <PaddingRight>0cm</PaddingRight>
+                                                      <PaddingTop>0cm</PaddingTop>
+                                                      <PaddingBottom>0cm</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                </ReportItems>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Style>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
+                                                </Style>
+                                              </Rectangle>
+                                              <ColSpan>8</ColSpan>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell />
+                                          <TablixCell />
+                                          <TablixCell />
+                                          <TablixCell />
+                                          <TablixCell />
+                                          <TablixCell />
+                                          <TablixCell />
+                                        </TablixCells>
+                                      </TablixRow>
                                       <TablixRow>
                                         <Height>0.5cm</Height>
                                         <TablixCells>
@@ -4851,7 +5248,7 @@ IIF(Variables!Fone_Cel.Value = "", "", Variables!DDD_Cel.Value + " - " + Variabl
                                         </TablixCells>
                                       </TablixRow>
                                       <TablixRow>
-                                        <Height>0.97041cm</Height>
+                                        <Height>0.36187cm</Height>
                                         <TablixCells>
                                           <TablixCell>
                                             <CellContents>
@@ -5519,6 +5916,7 @@ IIF(Variables!Fone_Cel.Value = "", "", Variables!DDD_Cel.Value + " - " + Variabl
                                       <TablixMember />
                                       <TablixMember />
                                       <TablixMember />
+                                      <TablixMember />
                                     </TablixMembers>
                                   </TablixRowHierarchy>
                                   <KeepTogether>true</KeepTogether>
@@ -5526,7 +5924,7 @@ IIF(Variables!Fone_Cel.Value = "", "", Variables!DDD_Cel.Value + " - " + Variabl
                                   <PageBreak>
                                     <BreakLocation>Start</BreakLocation>
                                   </PageBreak>
-                                  <Height>12.37041cm</Height>
+                                  <Height>13.91187cm</Height>
                                   <Width>19.80001cm</Width>
                                   <Style>
                                     <Border>
@@ -5538,8 +5936,8 @@ IIF(Variables!Fone_Cel.Value = "", "", Variables!DDD_Cel.Value + " - " + Variabl
                                   <Source>Embedded</Source>
                                   <Value>Capturadetela20240617110803</Value>
                                   <Sizing>FitProportional</Sizing>
-                                  <Top>12.66201cm</Top>
-                                  <Left>0.24872cm</Left>
+                                  <Top>14.05298cm</Top>
+                                  <Left>0.24874cm</Left>
                                   <Height>2.76559cm</Height>
                                   <Width>2.94897cm</Width>
                                   <ZIndex>1</ZIndex>
@@ -5553,8 +5951,8 @@ IIF(Variables!Fone_Cel.Value = "", "", Variables!DDD_Cel.Value + " - " + Variabl
                                   <Source>Embedded</Source>
                                   <Value>Capturadetela20240617110935</Value>
                                   <Sizing>FitProportional</Sizing>
-                                  <Top>15.46288cm</Top>
-                                  <Left>0.00002cm</Left>
+                                  <Top>16.85385cm</Top>
+                                  <Left>0.00004cm</Left>
                                   <Height>2.76559cm</Height>
                                   <Width>3.67846cm</Width>
                                   <ZIndex>2</ZIndex>
@@ -5569,7 +5967,7 @@ IIF(Variables!Fone_Cel.Value = "", "", Variables!DDD_Cel.Value + " - " + Variabl
                                 <BreakLocation>Start</BreakLocation>
                               </PageBreak>
                               <KeepTogether>true</KeepTogether>
-                              <Height>18.22847cm</Height>
+                              <Height>19.61944cm</Height>
                               <Width>19.80001cm</Width>
                               <Style>
                                 <Border>
@@ -5619,7 +6017,17 @@ Nothing)</Value>
                   <TablixMembers>
                     <TablixMember>
                       <Visibility>
-                        <Hidden>=Fields!BexibeHistorico.Value = true</Hidden>
+                        <Hidden>=IIF(
+	Sum(
+		IIF(
+			Max(Fields!ambCodigo.Value, "grpModalidade") = 133 OR
+			Max(Fields!ambCodigo.Value, "grpModalidade") = 510 OR
+			Max(Fields!ambCodigo.Value, "grpModalidade") = 511 OR
+			Max(Fields!teCodigo.Value, "grpModalidade") = 10,
+			1,
+			0
+		)
+	) &gt; 0 and Fields!BexibeHistorico.Value = true, true, false)</Hidden>
                       </Visibility>
                     </TablixMember>
                     <TablixMember>
@@ -5651,7 +6059,7 @@ Nothing)</Value>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Height>29.979cm</Height>
+            <Height>31.36997cm</Height>
             <Width>19.85cm</Width>
             <Style>
               <Border>
@@ -5660,13 +6068,13 @@ Nothing)</Value>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>29.979cm</Height>
+        <Height>31.36997cm</Height>
         <Style />
       </Body>
       <Width>19.85cm</Width>
       <Page>
         <PageFooter>
-          <Height>9.24912cm</Height>
+          <Height>8.63996cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -6047,7 +6455,12 @@ Nothing)</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>="Para visualizar imagens e laudo desse exame e dos anteriores através da internet, acesse:&lt;br&gt;www.clinicaimagemtupa.com.br = &gt; Exames Online e insira seu ID: " + Cstr(First(Fields!pcCodigo.Value, "FichaAtendimento")) + " e número do exame: " + First(Fields!ACCESSION_NUMBER.Value, "FichaAtendimento")</Value>
+                          <Value>=iif(First(Fields!CPF.Value, "FichaAtendimento") = nothing or First(Fields!CPF.Value, "FichaAtendimento") = "",
+"Para visualizar imagens e laudo desse exame e dos anteriores através da internet, acesse:&lt;br&gt;" +
+"www.clinicaimagemtupa.com.br = &gt; Exames Online e insira seu usuário: pc" + Cstr(First(Fields!pcCodigo.Value, "FichaAtendimento")) + " e sua senha: " + Format(First(Fields!DataNasc.Value, "FichaAtendimento"),"ddMMyyyy"),
+"Para visualizar imagens e laudo desse exame e dos anteriores através da internet, acesse:&lt;br&gt;" +
+"www.clinicaimagemtupa.com.br = &gt; Exames Online e insira seu usuário: (seu cpf) e sua senha: " + Format(First(Fields!DataNasc.Value, "FichaAtendimento"),"ddMMyyyy")
+)</Value>
                           <MarkupType>HTML</MarkupType>
                           <Style>
                             <FontFamily>Times New Roman</FontFamily>
@@ -6064,7 +6477,7 @@ Nothing)</Value>
                   <rd:DefaultName>Textbox10</rd:DefaultName>
                   <Top>6.771cm</Top>
                   <Left>0.00001cm</Left>
-                  <Height>0.89cm</Height>
+                  <Height>1.26042cm</Height>
                   <Width>19.81936cm</Width>
                   <ZIndex>9</ZIndex>
                   <Style>
@@ -6251,77 +6664,6 @@ Nothing)</Value>
                     <PaddingBottom>2pt</PaddingBottom>
                   </Style>
                 </Textbox>
-                <Textbox Name="Textbox123">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Obs: </Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>11pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <SpaceBefore>0pt</SpaceBefore>
-                      <SpaceAfter>0pt</SpaceAfter>
-                      <Style>
-                        <TextAlign>Left</TextAlign>
-                      </Style>
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>    - Exame arquivado por 6 meses físico e por 20 anos digital</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>11pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <SpaceBefore>0pt</SpaceBefore>
-                      <SpaceAfter>0pt</SpaceAfter>
-                      <Style>
-                        <TextAlign>Left</TextAlign>
-                      </Style>
-                    </Paragraph>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>    - Retirada do exame somente com protocolo e documento pessoal com foto</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>11pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <SpaceBefore>0pt</SpaceBefore>
-                      <SpaceAfter>0pt</SpaceAfter>
-                      <Style>
-                        <TextAlign>Left</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox10</rd:DefaultName>
-                  <Top>7.661cm</Top>
-                  <Height>1.35cm</Height>
-                  <Width>19.74712cm</Width>
-                  <ZIndex>15</ZIndex>
-                  <Visibility>
-                    <Hidden>=IIF(First(Fields!lcCodigo.Value, "FichaAtendimento") = 4,false,true)</Hidden>
-                  </Visibility>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>5pt</PaddingLeft>
-                    <PaddingRight>0cm</PaddingRight>
-                    <PaddingTop>0cm</PaddingTop>
-                    <PaddingBottom>0cm</PaddingBottom>
-                  </Style>
-                </Textbox>
                 <Textbox Name="Textbox221">
                   <KeepTogether>true</KeepTogether>
                   <Paragraphs>
@@ -6345,7 +6687,7 @@ Nothing)</Value>
                   <Left>0.4952cm</Left>
                   <Height>0.80594cm</Height>
                   <Width>18.97083cm</Width>
-                  <ZIndex>16</ZIndex>
+                  <ZIndex>15</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -6376,7 +6718,7 @@ Nothing)</Value>
                   <Left>6.14923cm</Left>
                   <Height>0.7cm</Height>
                   <Width>6.09292cm</Width>
-                  <ZIndex>17</ZIndex>
+                  <ZIndex>16</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -6390,7 +6732,7 @@ Nothing)</Value>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Left>0.00001cm</Left>
-              <Height>9.011cm</Height>
+              <Height>8.03142cm</Height>
               <Width>19.81937cm</Width>
               <Style>
                 <Border>
