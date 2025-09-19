@@ -629,7 +629,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>8.9cm</Height>
+                  <Height>8.3cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1581,51 +1581,6 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.6cm</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox38">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>Autorizo a entrega do resultado para: </Value>
-                                                    <Style>
-                                                      <FontFamily>Verdana</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <TextAlign>Left</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox38</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>7</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell />
-                                      <TablixCell />
-                                      <TablixCell />
-                                      <TablixCell />
-                                      <TablixCell />
-                                      <TablixCell />
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
                                     <Height>0.2cm</Height>
                                     <TablixCells>
                                       <TablixCell>
@@ -2433,10 +2388,6 @@
                                     <RepeatOnNewPage>true</RepeatOnNewPage>
                                   </TablixMember>
                                   <TablixMember>
-                                    <KeepWithGroup>After</KeepWithGroup>
-                                    <RepeatOnNewPage>true</RepeatOnNewPage>
-                                  </TablixMember>
-                                  <TablixMember>
                                     <Group Name="grpSequencia1">
                                       <GroupExpressions>
                                         <GroupExpression>=Fields!Sequencia.Value</GroupExpression>
@@ -2459,7 +2410,7 @@
                               </TablixRowHierarchy>
                               <KeepTogether>true</KeepTogether>
                               <DataSetName>FichaAtendimento</DataSetName>
-                              <Height>8.9cm</Height>
+                              <Height>8.3cm</Height>
                               <Width>19.83784cm</Width>
                               <Style>
                                 <Border>
@@ -4082,7 +4033,7 @@ Nothing)</Value>
             <DataSetName>FichaAtendimento</DataSetName>
             <Top>0.635cm</Top>
             <Left>0.025cm</Left>
-            <Height>12.05cm</Height>
+            <Height>11.45cm</Height>
             <Width>19.83784cm</Width>
             <Style>
               <Border>
