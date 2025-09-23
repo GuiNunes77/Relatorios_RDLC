@@ -693,7 +693,6 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox1</rd:DefaultName>
-                              <Left>0.3175cm</Left>
                               <Height>0.6cm</Height>
                               <Width>4cm</Width>
                               <Style>
@@ -747,7 +746,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox1</rd:DefaultName>
-                              <Left>7.7cm</Left>
+                              <Left>7.3977cm</Left>
                               <Height>0.6cm</Height>
                               <Width>4.5cm</Width>
                               <ZIndex>1</ZIndex>
@@ -789,7 +788,7 @@
                                         <FontFamily>Times New Roman</FontFamily>
                                         <FontSize>14pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
-                                        <Format>g</Format>
+                                        <Format>#,0;(#,0)</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -833,25 +832,25 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>1cm</Width>
+                                    <Width>1.04536cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.5cm</Width>
+                                    <Width>0.54536cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.6cm</Width>
+                                    <Width>0.53953cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.8cm</Width>
+                                    <Width>0.84536cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.7cm</Width>
+                                    <Width>3.74536cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.57667cm</Width>
+                                    <Width>3.62203cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>5.02875cm</Width>
+                                    <Width>5.07411cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
@@ -866,7 +865,13 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>PACIENTE:</Value>
+                                                    <Value>PACIENTE: </Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>=Fields!Nome.Value</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -882,38 +887,12 @@
                                               </Border>
                                             </Style>
                                           </Textbox>
-                                          <ColSpan>3</ColSpan>
+                                          <ColSpan>7</ColSpan>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
                                       <TablixCell />
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox10">
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Nome.Value</Value>
-                                                    <Style>
-                                                      <FontFamily>Times New Roman</FontFamily>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox10</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>4</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
+                                      <TablixCell />
                                       <TablixCell />
                                       <TablixCell />
                                       <TablixCell />
@@ -930,31 +909,11 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>DN.:</Value>
+                                                    <Value>DN.: </Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
                                                   </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox5</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox7">
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!DataNasc.Value</Value>
                                                     <Style>
@@ -978,16 +937,17 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox7</rd:DefaultName>
+                                            <rd:DefaultName>Textbox5</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
                                               </Border>
                                             </Style>
                                           </Textbox>
-                                          <ColSpan>4</ColSpan>
+                                          <ColSpan>5</ColSpan>
                                         </CellContents>
                                       </TablixCell>
+                                      <TablixCell />
                                       <TablixCell />
                                       <TablixCell />
                                       <TablixCell />
@@ -1033,27 +993,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Textbox17">
+                                          <Textbox Name="Textbox12">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>TELEFONE: </Value>
-                                                    <Style>
-                                                      <FontFamily>Times New Roman</FontFamily>
-                                                    </Style>
-                                                  </TextRun>
-                                                  <TextRun>
-                                                    <Value>=IIF(
-	IsNothing(First(Fields!DDD_FoneCel.Value, "FichaAtendimento")) AND IsNothing(First(Fields!Fone_Celular.Value, "FichaAtendimento")),
-		IIF(
-			IsNothing(First(Fields!DDD_FoneRes.Value, "FichaAtendimento")) AND IsNothing(First(Fields!Fone_Residencial.Value, "FichaAtendimento")),
-			"",
-			"(" &amp; First(Fields!DDD_FoneRes.Value, "FichaAtendimento") &amp; ")" &amp; " " &amp; First(Fields!Fone_Residencial.Value, "FichaAtendimento")	
-		),
-		"(" &amp; First(Fields!DDD_FoneCel.Value, "FichaAtendimento") &amp; ")" &amp; " " &amp; First(Fields!Fone_Celular.Value, "FichaAtendimento") 
-)</Value>
+                                                    <Value />
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -1062,7 +1009,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox17</rd:DefaultName>
+                                            <rd:DefaultName>Textbox12</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -1084,7 +1031,13 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>CONV.:</Value>
+                                                    <Value>CONV.: </Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>=Fields!Convenio.Value</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -1100,37 +1053,11 @@
                                               </Border>
                                             </Style>
                                           </Textbox>
-                                          <ColSpan>2</ColSpan>
+                                          <ColSpan>5</ColSpan>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox20">
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Convenio.Value</Value>
-                                                    <Style>
-                                                      <FontFamily>Times New Roman</FontFamily>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox20</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>3</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
+                                      <TablixCell />
                                       <TablixCell />
                                       <TablixCell />
                                       <TablixCell>
@@ -1146,9 +1073,15 @@
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
                                                   </TextRun>
+                                                  <TextRun>
+                                                    <Value>=Fields!Indicacao.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
                                                 </TextRuns>
                                                 <Style>
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Left</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
@@ -1159,34 +1092,10 @@
                                               </Border>
                                             </Style>
                                           </Textbox>
+                                          <ColSpan>2</ColSpan>
                                         </CellContents>
                                       </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox24">
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Indicacao.Value</Value>
-                                                    <Style>
-                                                      <FontFamily>Times New Roman</FontFamily>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox24</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
+                                      <TablixCell />
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
@@ -1245,11 +1154,52 @@
                                               </Border>
                                             </Style>
                                           </Textbox>
-                                          <ColSpan>4</ColSpan>
+                                          <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
-                                      <TablixCell />
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox17">
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>TELEFONE: </Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value>=IIF(
+	IsNothing(First(Fields!DDD_FoneCel.Value, "FichaAtendimento")) AND IsNothing(First(Fields!Fone_Celular.Value, "FichaAtendimento")),
+		IIF(
+			IsNothing(First(Fields!DDD_FoneRes.Value, "FichaAtendimento")) AND IsNothing(First(Fields!Fone_Residencial.Value, "FichaAtendimento")),
+			"",
+			"(" &amp; First(Fields!DDD_FoneRes.Value, "FichaAtendimento") &amp; ")" &amp; " " &amp; First(Fields!Fone_Residencial.Value, "FichaAtendimento")	
+		),
+		"(" &amp; First(Fields!DDD_FoneCel.Value, "FichaAtendimento") &amp; ")" &amp; " " &amp; First(Fields!Fone_Celular.Value, "FichaAtendimento") 
+)</Value>
+                                                    <Style>
+                                                      <FontFamily>Times New Roman</FontFamily>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox17</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                            </Style>
+                                          </Textbox>
+                                          <ColSpan>2</ColSpan>
+                                        </CellContents>
+                                      </TablixCell>
                                       <TablixCell />
                                     </TablixCells>
                                   </TablixRow>
@@ -1481,9 +1431,8 @@
                               </TablixRowHierarchy>
                               <DataSetName>FichaAtendimento</DataSetName>
                               <Top>0.89641cm</Top>
-                              <Left>0.3175cm</Left>
                               <Height>3.5cm</Height>
-                              <Width>15.20542cm</Width>
+                              <Width>15.41711cm</Width>
                               <ZIndex>3</ZIndex>
                               <Style>
                                 <Border>
@@ -1825,7 +1774,7 @@
                               <DataSetName>FichaAtendimento</DataSetName>
                               <Top>4.3942cm</Top>
                               <Height>1cm</Height>
-                              <Width>19.40258cm</Width>
+                              <Width>19.40259cm</Width>
                               <ZIndex>6</ZIndex>
                               <Style>
                                 <Border>
@@ -1839,6 +1788,15 @@
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
+                                    <TextRun>
+                                      <Value>ID: </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>14pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>g</Format>
+                                      </Style>
+                                    </TextRun>
                                     <TextRun>
                                       <Value>=Fields!pcCodigo.Value</Value>
                                       <Style>
