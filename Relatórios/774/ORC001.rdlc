@@ -924,7 +924,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=UCase(First(Fields!nome_usuario.Value, "Cabecalho"))</Value>
+                      <Value>=UCase(First(Fields!NOME_USUARIO.Value, "Dados"))</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
@@ -954,7 +954,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Usuário</Value>
+                      <Value>Emissor</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>7pt</FontSize>
@@ -1137,7 +1137,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox11</rd:DefaultName>
-          <Top>0cm</Top>
           <Left>0.10001cm</Left>
           <Height>0.5cm</Height>
           <Width>19.65546cm</Width>
