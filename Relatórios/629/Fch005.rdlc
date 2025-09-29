@@ -1466,7 +1466,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.45cm</Height>
+                                    <Height>0.55cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1476,11 +1476,19 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Observação . . . . . . . . . .</Value>
+                                                    <Value>Observação</Value>
+                                                    <Style>
+                                                      <FontFamily>noto sans</FontFamily>
+                                                      <FontSize>12pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value> . . . . .</Value>
                                                     <Style>
                                                       <FontFamily>noto sans</FontFamily>
                                                       <FontSize>9pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
+                                                      <FontWeight>Normal</FontWeight>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1501,22 +1509,33 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox43">
+                                            <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value>:</Value>
                                                     <Style>
                                                       <FontFamily>noto sans</FontFamily>
                                                       <FontSize>9pt</FontSize>
+                                                      <FontWeight>Normal</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value xml:space="preserve"> </Value>
+                                                    <Style>
+                                                      <FontFamily>noto sans</FontFamily>
+                                                      <FontSize>12pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
                                                     <Value>=Fields!Suspeita.Value</Value>
                                                     <Style>
                                                       <FontFamily>noto sans</FontFamily>
-                                                      <FontSize>9pt</FontSize>
+                                                      <FontSize>12pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1990,7 +2009,7 @@
                               </TablixRowHierarchy>
                               <KeepTogether>true</KeepTogether>
                               <DataSetName>FichaAtendimento</DataSetName>
-                              <Height>5.55cm</Height>
+                              <Height>5.65cm</Height>
                               <Width>19.92819cm</Width>
                               <Style>
                                 <Border>
@@ -3613,7 +3632,7 @@ Nothing)</Value>
                   <Top>0.29709cm</Top>
                   <Left>1.20564cm</Left>
                   <Height>0.5cm</Height>
-                  <Width>4.46967cm</Width>
+                  <Width>3.91404cm</Width>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -3645,7 +3664,7 @@ Nothing)</Value>
                   <Top>0.89939cm</Top>
                   <Left>1.20564cm</Left>
                   <Height>0.5cm</Height>
-                  <Width>4.46967cm</Width>
+                  <Width>3.91404cm</Width>
                   <ZIndex>1</ZIndex>
                   <Style>
                     <Border>
@@ -3683,10 +3702,10 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox8</rd:DefaultName>
-                  <Top>0.90522cm</Top>
-                  <Left>6.53713cm</Left>
+                  <Top>0.88053cm</Top>
+                  <Left>6.01052cm</Left>
                   <Height>0.5cm</Height>
-                  <Width>5.14841cm</Width>
+                  <Width>5.88415cm</Width>
                   <ZIndex>2</ZIndex>
                   <Style>
                     <Border>
@@ -3700,8 +3719,8 @@ Nothing)</Value>
                   <Source>Embedded</Source>
                   <Value>engrenagemdousuario1</Value>
                   <Sizing>FitProportional</Sizing>
-                  <Top>0.90821cm</Top>
-                  <Left>5.9431cm</Left>
+                  <Top>0.88352cm</Top>
+                  <Left>5.41649cm</Left>
                   <Height>0.4cm</Height>
                   <Width>0.4cm</Width>
                   <ZIndex>3</ZIndex>
@@ -3745,8 +3764,8 @@ Nothing)</Value>
                   <Source>Embedded</Source>
                   <Value>editar1</Value>
                   <Sizing>FitProportional</Sizing>
-                  <Top>0.3671cm</Top>
-                  <Left>5.9431cm</Left>
+                  <Top>0.34241cm</Top>
+                  <Left>5.41649cm</Left>
                   <Height>0.4cm</Height>
                   <Width>0.4cm</Width>
                   <ZIndex>6</ZIndex>
@@ -3784,10 +3803,10 @@ Nothing)</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox8</rd:DefaultName>
-                  <Top>0.36994cm</Top>
-                  <Left>6.53713cm</Left>
+                  <Top>0.34525cm</Top>
+                  <Left>6.01052cm</Left>
                   <Height>0.5cm</Height>
-                  <Width>5.14841cm</Width>
+                  <Width>5.88415cm</Width>
                   <ZIndex>7</ZIndex>
                   <Style>
                     <Border>
@@ -3795,6 +3814,8 @@ Nothing)</Value>
                     </Border>
                     <PaddingLeft>2pt</PaddingLeft>
                     <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>1pt</PaddingTop>
+                    <PaddingBottom>1pt</PaddingBottom>
                   </Style>
                 </Textbox>
                 <Rectangle Name="Rectangle3">
@@ -4261,7 +4282,7 @@ Nothing)</Value>
               <rd:DefaultName>Textbox149</rd:DefaultName>
               <Top>3.39966cm</Top>
               <Height>0.38cm</Height>
-              <Width>12.46213cm</Width>
+              <Width>11.46355cm</Width>
               <ZIndex>1</ZIndex>
               <DataElementName>asd</DataElementName>
               <Style>
@@ -4299,7 +4320,7 @@ Nothing)</Value>
               <rd:DefaultName>Textbox11</rd:DefaultName>
               <Top>3.80672cm</Top>
               <Height>0.38cm</Height>
-              <Width>6.69916cm</Width>
+              <Width>11.46355cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -4393,18 +4414,18 @@ Nothing)</Value>
                     </TextRun>
                   </TextRuns>
                   <Style>
-                    <TextAlign>Right</TextAlign>
+                    <TextAlign>Center</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox24</rd:DefaultName>
-              <Top>3.09144cm</Top>
-              <Left>12.29239cm</Left>
+              <Top>2.65616cm</Top>
+              <Left>11.45651cm</Left>
               <Height>0.43528cm</Height>
-              <Width>7.65742cm</Width>
+              <Width>8.4933cm</Width>
               <ZIndex>4</ZIndex>
               <Visibility>
-                <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
+                <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S" AND First(Fields!teCodigo.Value, "FichaAtendimento") &lt;&gt; 18, False, True)</Hidden>
               </Visibility>
               <Style>
                 <Border>
@@ -4412,44 +4433,6 @@ Nothing)</Value>
                 </Border>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox149">
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Tipo do Exame: </Value>
-                      <Style>
-                        <FontFamily>noto sans</FontFamily>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>=First(Fields!TipoExame.Value, "FichaAtendimento")</Value>
-                      <Style>
-                        <FontFamily>noto sans</FontFamily>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>3.80672cm</Top>
-              <Left>6.69916cm</Left>
-              <Height>0.38cm</Height>
-              <Width>5.76297cm</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
               </Style>
             </Textbox>
             <Textbox Name="Textbox56">
@@ -4507,11 +4490,11 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>4.04672cm</Top>
-              <Left>12.46213cm</Left>
+              <Top>3.61144cm</Top>
+              <Left>11.45651cm</Left>
               <Height>0.9cm</Height>
-              <Width>7.53788cm</Width>
-              <ZIndex>6</ZIndex>
+              <Width>8.5435cm</Width>
+              <ZIndex>5</ZIndex>
               <Visibility>
                 <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
               </Visibility>
@@ -4531,7 +4514,7 @@ Nothing)</Value>
               <Left>0.70104cm</Left>
               <Height>2.16534cm</Height>
               <Width>6.48357cm</Width>
-              <ZIndex>7</ZIndex>
+              <ZIndex>6</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4559,11 +4542,11 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>3.52672cm</Top>
-              <Left>12.46213cm</Left>
+              <Top>3.09144cm</Top>
+              <Left>11.45651cm</Left>
               <Height>0.52cm</Height>
-              <Width>7.53788cm</Width>
-              <ZIndex>8</ZIndex>
+              <Width>8.5435cm</Width>
+              <ZIndex>7</ZIndex>
               <Visibility>
                 <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
               </Visibility>
@@ -4598,7 +4581,7 @@ Nothing)</Value>
               <Left>11.8006cm</Left>
               <Height>0.36119cm</Height>
               <Width>7.76418cm</Width>
-              <ZIndex>9</ZIndex>
+              <ZIndex>8</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4630,7 +4613,7 @@ Nothing)</Value>
               <Left>8.37128cm</Left>
               <Height>0.36119cm</Height>
               <Width>3.09227cm</Width>
-              <ZIndex>10</ZIndex>
+              <ZIndex>9</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4661,7 +4644,7 @@ Nothing)</Value>
               <Left>8.37128cm</Left>
               <Height>0.36825cm</Height>
               <Width>3.08522cm</Width>
-              <ZIndex>11</ZIndex>
+              <ZIndex>10</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4692,7 +4675,7 @@ Nothing)</Value>
               <Left>11.8006cm</Left>
               <Height>0.36472cm</Height>
               <Width>7.76418cm</Width>
-              <ZIndex>12</ZIndex>
+              <ZIndex>11</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4708,7 +4691,7 @@ Nothing)</Value>
               <Left>8.02128cm</Left>
               <Height>0.3612cm</Height>
               <Width>0.35cm</Width>
-              <ZIndex>13</ZIndex>
+              <ZIndex>12</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4723,7 +4706,7 @@ Nothing)</Value>
               <Left>8.02128cm</Left>
               <Height>0.36825cm</Height>
               <Width>0.35cm</Width>
-              <ZIndex>14</ZIndex>
+              <ZIndex>13</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4738,7 +4721,7 @@ Nothing)</Value>
               <Left>11.46355cm</Left>
               <Height>0.36472cm</Height>
               <Width>0.60472cm</Width>
-              <ZIndex>15</ZIndex>
+              <ZIndex>14</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4753,7 +4736,7 @@ Nothing)</Value>
               <Left>11.46355cm</Left>
               <Height>0.36119cm</Height>
               <Width>0.60472cm</Width>
-              <ZIndex>16</ZIndex>
+              <ZIndex>15</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4788,8 +4771,8 @@ Nothing)</Value>
               <rd:DefaultName>Textbox11</rd:DefaultName>
               <Top>4.18672cm</Top>
               <Height>0.38cm</Height>
-              <Width>12.46213cm</Width>
-              <ZIndex>17</ZIndex>
+              <Width>11.4565cm</Width>
+              <ZIndex>16</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4818,8 +4801,8 @@ Nothing)</Value>
               <rd:DefaultName>Textbox11</rd:DefaultName>
               <Top>4.56672cm</Top>
               <Height>0.38cm</Height>
-              <Width>12.46213cm</Width>
-              <ZIndex>18</ZIndex>
+              <Width>11.4565cm</Width>
+              <ZIndex>17</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4831,7 +4814,7 @@ Nothing)</Value>
               <Top>5.12311cm</Top>
               <Height>0cm</Height>
               <Width>20.02162cm</Width>
-              <ZIndex>19</ZIndex>
+              <ZIndex>18</ZIndex>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -4915,7 +4898,7 @@ Nothing)</Value>
               <Top>5.2995cm</Top>
               <Height>1.89646cm</Height>
               <Width>20.00001cm</Width>
-              <ZIndex>20</ZIndex>
+              <ZIndex>19</ZIndex>
               <Visibility>
                 <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "N", False, True)</Hidden>
               </Visibility>
@@ -5098,13 +5081,113 @@ Nothing)</Value>
               <Left>0.21559cm</Left>
               <Height>3.135cm</Height>
               <Width>19.34919cm</Width>
-              <ZIndex>21</ZIndex>
+              <ZIndex>20</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
               </Style>
             </Rectangle>
+            <Textbox Name="Textbox35">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>ACESSE AS IMAGENS PELO SITE:</Value>
+                      <Style>
+                        <FontFamily>noto sans</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>#231f20</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox24</rd:DefaultName>
+              <Top>2.63019cm</Top>
+              <Left>11.45651cm</Left>
+              <Height>0.43528cm</Height>
+              <Width>8.4933cm</Width>
+              <ZIndex>21</ZIndex>
+              <Visibility>
+                <Hidden>=IIF(First(Fields!teCodigo.Value, "FichaAtendimento") = 18, False, True)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox38">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>RETIRAR LAUDO A PARTIR DE:</Value>
+                      <Style>
+                        <FontFamily>noto sans</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>#231f20</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value xml:space="preserve"> </Value>
+                      <Style>
+                        <FontFamily>noto sans</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>#231f20</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value xml:space="preserve"> </Value>
+                      <Style>
+                        <FontFamily>noto sans</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>#231f20</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=IIF(First(Fields!DataEntregaExame.Value, "FichaAtendimento") = Nothing, "___/___/______", Last(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
+                      <Style>
+                        <FontFamily>noto sans</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>d</Format>
+                        <Color>#231f20</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox24</rd:DefaultName>
+              <Top>4.51144cm</Top>
+              <Left>11.4565cm</Left>
+              <Height>0.43528cm</Height>
+              <Width>8.4933cm</Width>
+              <ZIndex>22</ZIndex>
+              <Visibility>
+                <Hidden>=IIF(First(Fields!teCodigo.Value, "FichaAtendimento") = 18, False, True)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style>
             <Border>
