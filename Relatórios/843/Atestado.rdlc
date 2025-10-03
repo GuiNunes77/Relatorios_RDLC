@@ -559,7 +559,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=CStr(Fields!Cidade.Value &amp; "(" &amp; Fields!Estado.Value &amp; ")")</Value>
+                                  <Value>=CStr(Fields!SOFTCidade.Value &amp; "(" &amp; Fields!SOFTUF.Value &amp; ")")</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -892,9 +892,9 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>V. SANTOS DUMONT, 2626 - SALA 207 - ED. PLAZA TOWER - ALDEOTA.
+                      <Value>AV. SANTOS DUMONT, 2626 - SALA 207 - ED. PLAZA TOWER - ALDEOTA.
 CEP: 60150-161 FORTALEZA-CE
-FONE/ FAX: (85) 264.28.30 </Value>
+FONE/ FAX: (85) 3264-2830</Value>
                       <Style>
                         <FontFamily>Tahoma</FontFamily>
                         <FontSize>9pt</FontSize>
