@@ -57230,6 +57230,20 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnFANTASIA_PROCEDIMENTO;
             
+            private global::System.Data.DataColumn columnDDD_RES_PACIENTE;
+            
+            private global::System.Data.DataColumn columnDDD_TRAB_PACIENTE;
+            
+            private global::System.Data.DataColumn columnDDD_CEL_PACIENTE;
+            
+            private global::System.Data.DataColumn columnFONE_RES_PACIENTE;
+            
+            private global::System.Data.DataColumn columnFONE_TRAB_PACIENTE;
+            
+            private global::System.Data.DataColumn columnFONE_CEL_PACIENTE;
+            
+            private global::System.Data.DataColumn columnCPC_PACIENTE;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_ORC001DataTable() {
@@ -57385,6 +57399,62 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DDD_RES_PACIENTEColumn {
+                get {
+                    return this.columnDDD_RES_PACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DDD_TRAB_PACIENTEColumn {
+                get {
+                    return this.columnDDD_TRAB_PACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DDD_CEL_PACIENTEColumn {
+                get {
+                    return this.columnDDD_CEL_PACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FONE_RES_PACIENTEColumn {
+                get {
+                    return this.columnFONE_RES_PACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FONE_TRAB_PACIENTEColumn {
+                get {
+                    return this.columnFONE_TRAB_PACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FONE_CEL_PACIENTEColumn {
+                get {
+                    return this.columnFONE_CEL_PACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CPC_PACIENTEColumn {
+                get {
+                    return this.columnCPC_PACIENTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -57420,7 +57490,23 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PR_REL_ORC001Row AddPR_REL_ORC001Row(string DESCRICAO_LOCALATENDIMENTO, string PACIENTE, System.DateTime DATA, string NOME_CONVENIO, string CODIGO_AMB, string DESCRICAO_PROCEDIMENTO, decimal VALOR, string NOME_USUARIO, string FANTASIA_PROCEDIMENTO) {
+            public PR_REL_ORC001Row AddPR_REL_ORC001Row(
+                        string DESCRICAO_LOCALATENDIMENTO, 
+                        string PACIENTE, 
+                        System.DateTime DATA, 
+                        string NOME_CONVENIO, 
+                        string CODIGO_AMB, 
+                        string DESCRICAO_PROCEDIMENTO, 
+                        decimal VALOR, 
+                        string NOME_USUARIO, 
+                        string FANTASIA_PROCEDIMENTO, 
+                        string DDD_RES_PACIENTE, 
+                        string DDD_TRAB_PACIENTE, 
+                        string DDD_CEL_PACIENTE, 
+                        string FONE_RES_PACIENTE, 
+                        string FONE_TRAB_PACIENTE, 
+                        string FONE_CEL_PACIENTE, 
+                        string CPC_PACIENTE) {
                 PR_REL_ORC001Row rowPR_REL_ORC001Row = ((PR_REL_ORC001Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -57437,7 +57523,14 @@ namespace Relatorios_RDLC {
                         VALOR,
                         null,
                         NOME_USUARIO,
-                        FANTASIA_PROCEDIMENTO};
+                        FANTASIA_PROCEDIMENTO,
+                        DDD_RES_PACIENTE,
+                        DDD_TRAB_PACIENTE,
+                        DDD_CEL_PACIENTE,
+                        FONE_RES_PACIENTE,
+                        FONE_TRAB_PACIENTE,
+                        FONE_CEL_PACIENTE,
+                        CPC_PACIENTE};
                 rowPR_REL_ORC001Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_ORC001Row);
                 return rowPR_REL_ORC001Row;
@@ -57487,6 +57580,13 @@ namespace Relatorios_RDLC {
                 this.columnUSCODIGO = base.Columns["USCODIGO"];
                 this.columnNOME_USUARIO = base.Columns["NOME_USUARIO"];
                 this.columnFANTASIA_PROCEDIMENTO = base.Columns["FANTASIA_PROCEDIMENTO"];
+                this.columnDDD_RES_PACIENTE = base.Columns["DDD_RES_PACIENTE"];
+                this.columnDDD_TRAB_PACIENTE = base.Columns["DDD_TRAB_PACIENTE"];
+                this.columnDDD_CEL_PACIENTE = base.Columns["DDD_CEL_PACIENTE"];
+                this.columnFONE_RES_PACIENTE = base.Columns["FONE_RES_PACIENTE"];
+                this.columnFONE_TRAB_PACIENTE = base.Columns["FONE_TRAB_PACIENTE"];
+                this.columnFONE_CEL_PACIENTE = base.Columns["FONE_CEL_PACIENTE"];
+                this.columnCPC_PACIENTE = base.Columns["CPC_PACIENTE"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -57522,6 +57622,20 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnNOME_USUARIO);
                 this.columnFANTASIA_PROCEDIMENTO = new global::System.Data.DataColumn("FANTASIA_PROCEDIMENTO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFANTASIA_PROCEDIMENTO);
+                this.columnDDD_RES_PACIENTE = new global::System.Data.DataColumn("DDD_RES_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDDD_RES_PACIENTE);
+                this.columnDDD_TRAB_PACIENTE = new global::System.Data.DataColumn("DDD_TRAB_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDDD_TRAB_PACIENTE);
+                this.columnDDD_CEL_PACIENTE = new global::System.Data.DataColumn("DDD_CEL_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDDD_CEL_PACIENTE);
+                this.columnFONE_RES_PACIENTE = new global::System.Data.DataColumn("FONE_RES_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFONE_RES_PACIENTE);
+                this.columnFONE_TRAB_PACIENTE = new global::System.Data.DataColumn("FONE_TRAB_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFONE_TRAB_PACIENTE);
+                this.columnFONE_CEL_PACIENTE = new global::System.Data.DataColumn("FONE_CEL_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFONE_CEL_PACIENTE);
+                this.columnCPC_PACIENTE = new global::System.Data.DataColumn("CPC_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCPC_PACIENTE);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnSEQ_ORC,
                                 this.columnSEQ_ORCITEM,
@@ -57554,6 +57668,13 @@ namespace Relatorios_RDLC {
                 this.columnUSCODIGO.ReadOnly = true;
                 this.columnNOME_USUARIO.MaxLength = 80;
                 this.columnFANTASIA_PROCEDIMENTO.MaxLength = 80;
+                this.columnDDD_RES_PACIENTE.MaxLength = 2;
+                this.columnDDD_TRAB_PACIENTE.MaxLength = 2;
+                this.columnDDD_CEL_PACIENTE.MaxLength = 2;
+                this.columnFONE_RES_PACIENTE.MaxLength = 25;
+                this.columnFONE_TRAB_PACIENTE.MaxLength = 25;
+                this.columnFONE_CEL_PACIENTE.MaxLength = 25;
+                this.columnCPC_PACIENTE.MaxLength = 18;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -133843,6 +133964,118 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DDD_RES_PACIENTE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.DDD_RES_PACIENTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'DDD_RES_PACIENTE\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.DDD_RES_PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DDD_TRAB_PACIENTE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.DDD_TRAB_PACIENTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'DDD_TRAB_PACIENTE\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.DDD_TRAB_PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DDD_CEL_PACIENTE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.DDD_CEL_PACIENTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'DDD_CEL_PACIENTE\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.DDD_CEL_PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FONE_RES_PACIENTE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.FONE_RES_PACIENTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'FONE_RES_PACIENTE\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.FONE_RES_PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FONE_TRAB_PACIENTE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.FONE_TRAB_PACIENTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'FONE_TRAB_PACIENTE\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.FONE_TRAB_PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FONE_CEL_PACIENTE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.FONE_CEL_PACIENTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'FONE_CEL_PACIENTE\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.FONE_CEL_PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CPC_PACIENTE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_ORC001.CPC_PACIENTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CPC_PACIENTE\' na tabela \'PR_REL_ORC001\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_ORC001.CPC_PACIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDESCRICAO_LOCALATENDIMENTONull() {
                 return this.IsNull(this.tablePR_REL_ORC001.DESCRICAO_LOCALATENDIMENTOColumn);
             }
@@ -133947,6 +134180,90 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetFANTASIA_PROCEDIMENTONull() {
                 this[this.tablePR_REL_ORC001.FANTASIA_PROCEDIMENTOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDDD_RES_PACIENTENull() {
+                return this.IsNull(this.tablePR_REL_ORC001.DDD_RES_PACIENTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDDD_RES_PACIENTENull() {
+                this[this.tablePR_REL_ORC001.DDD_RES_PACIENTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDDD_TRAB_PACIENTENull() {
+                return this.IsNull(this.tablePR_REL_ORC001.DDD_TRAB_PACIENTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDDD_TRAB_PACIENTENull() {
+                this[this.tablePR_REL_ORC001.DDD_TRAB_PACIENTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDDD_CEL_PACIENTENull() {
+                return this.IsNull(this.tablePR_REL_ORC001.DDD_CEL_PACIENTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDDD_CEL_PACIENTENull() {
+                this[this.tablePR_REL_ORC001.DDD_CEL_PACIENTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFONE_RES_PACIENTENull() {
+                return this.IsNull(this.tablePR_REL_ORC001.FONE_RES_PACIENTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFONE_RES_PACIENTENull() {
+                this[this.tablePR_REL_ORC001.FONE_RES_PACIENTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFONE_TRAB_PACIENTENull() {
+                return this.IsNull(this.tablePR_REL_ORC001.FONE_TRAB_PACIENTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFONE_TRAB_PACIENTENull() {
+                this[this.tablePR_REL_ORC001.FONE_TRAB_PACIENTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFONE_CEL_PACIENTENull() {
+                return this.IsNull(this.tablePR_REL_ORC001.FONE_CEL_PACIENTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFONE_CEL_PACIENTENull() {
+                this[this.tablePR_REL_ORC001.FONE_CEL_PACIENTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCPC_PACIENTENull() {
+                return this.IsNull(this.tablePR_REL_ORC001.CPC_PACIENTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCPC_PACIENTENull() {
+                this[this.tablePR_REL_ORC001.CPC_PACIENTEColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -153063,6 +153380,13 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("USCODIGO", "USCODIGO");
             tableMapping.ColumnMappings.Add("NOME_USUARIO", "NOME_USUARIO");
             tableMapping.ColumnMappings.Add("FANTASIA_PROCEDIMENTO", "FANTASIA_PROCEDIMENTO");
+            tableMapping.ColumnMappings.Add("DDD_RES_PACIENTE", "DDD_RES_PACIENTE");
+            tableMapping.ColumnMappings.Add("DDD_TRAB_PACIENTE", "DDD_TRAB_PACIENTE");
+            tableMapping.ColumnMappings.Add("DDD_CEL_PACIENTE", "DDD_CEL_PACIENTE");
+            tableMapping.ColumnMappings.Add("FONE_RES_PACIENTE", "FONE_RES_PACIENTE");
+            tableMapping.ColumnMappings.Add("FONE_TRAB_PACIENTE", "FONE_TRAB_PACIENTE");
+            tableMapping.ColumnMappings.Add("FONE_CEL_PACIENTE", "FONE_CEL_PACIENTE");
+            tableMapping.ColumnMappings.Add("CPC_PACIENTE", "CPC_PACIENTE");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

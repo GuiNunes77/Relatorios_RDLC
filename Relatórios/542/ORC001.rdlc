@@ -1135,10 +1135,42 @@
           <DataField>NOME_USUARIO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="FANTASIA_PROCEDIMENTO">
+          <DataField>FANTASIA_PROCEDIMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DDD_RES_PACIENTE">
+          <DataField>DDD_RES_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DDD_TRAB_PACIENTE">
+          <DataField>DDD_TRAB_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DDD_CEL_PACIENTE">
+          <DataField>DDD_CEL_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FONE_RES_PACIENTE">
+          <DataField>FONE_RES_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FONE_TRAB_PACIENTE">
+          <DataField>FONE_TRAB_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FONE_CEL_PACIENTE">
+          <DataField>FONE_CEL_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CPC_PACIENTE">
+          <DataField>CPC_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csi29DataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Allan\Documents\Visual Studio 2019\Project\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_ORC001</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
