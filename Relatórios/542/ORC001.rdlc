@@ -552,6 +552,15 @@
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
+                            <TextRun>
+                              <Value>=IIF(IsNothing(Fields!CPF_PACIENTE.Value), "", 
+    Left(Fields!CPF_PACIENTE.Value, 3) &amp; "." &amp; Mid(Fields!CPF_PACIENTE.Value, 4, 3) &amp; "." &amp; Mid(Fields!CPF_PACIENTE.Value, 7, 3) &amp; "-" &amp; Right(Fields!CPF_PACIENTE.Value, 2))</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
@@ -598,6 +607,15 @@
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=First(Fields!DATANASC_PACIENTE.Value, "Dados")</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>dd/MM/yyyy</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1165,6 +1183,14 @@
         </Field>
         <Field Name="CPC_PACIENTE">
           <DataField>CPC_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATANASC_PACIENTE">
+          <DataField>DATANASC_PACIENTE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CPF_PACIENTE">
+          <DataField>CPF_PACIENTE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
