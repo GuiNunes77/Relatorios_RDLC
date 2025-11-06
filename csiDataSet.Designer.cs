@@ -49043,6 +49043,12 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnCPF_PACIENTE;
             
+            private global::System.Data.DataColumn columnSequencia;
+            
+            private global::System.Data.DataColumn columnambCodigo;
+            
+            private global::System.Data.DataColumn columnDescricaoExame;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_CXA011DataTable() {
@@ -49350,6 +49356,30 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SequenciaColumn {
+                get {
+                    return this.columnSequencia;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ambCodigoColumn {
+                get {
+                    return this.columnambCodigo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DescricaoExameColumn {
+                get {
+                    return this.columnDescricaoExame;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -49412,7 +49442,9 @@ namespace Relatorios_RDLC {
                         string Fone_Celular, 
                         string Fone_Residencial, 
                         string Fone_Trabalho, 
-                        string CPF_PACIENTE) {
+                        string CPF_PACIENTE, 
+                        decimal ambCodigo, 
+                        string DescricaoExame) {
                 PR_REL_CXA011Row rowPR_REL_CXA011Row = ((PR_REL_CXA011Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DescLançamento,
@@ -49448,7 +49480,10 @@ namespace Relatorios_RDLC {
                         Fone_Celular,
                         Fone_Residencial,
                         Fone_Trabalho,
-                        CPF_PACIENTE};
+                        CPF_PACIENTE,
+                        null,
+                        ambCodigo,
+                        DescricaoExame};
                 rowPR_REL_CXA011Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_CXA011Row);
                 return rowPR_REL_CXA011Row;
@@ -49505,6 +49540,9 @@ namespace Relatorios_RDLC {
                 this.columnFone_Residencial = base.Columns["Fone_Residencial"];
                 this.columnFone_Trabalho = base.Columns["Fone_Trabalho"];
                 this.columnCPF_PACIENTE = base.Columns["CPF_PACIENTE"];
+                this.columnSequencia = base.Columns["Sequencia"];
+                this.columnambCodigo = base.Columns["ambCodigo"];
+                this.columnDescricaoExame = base.Columns["DescricaoExame"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -49578,6 +49616,12 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnFone_Trabalho);
                 this.columnCPF_PACIENTE = new global::System.Data.DataColumn("CPF_PACIENTE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCPF_PACIENTE);
+                this.columnSequencia = new global::System.Data.DataColumn("Sequencia", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSequencia);
+                this.columnambCodigo = new global::System.Data.DataColumn("ambCodigo", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnambCodigo);
+                this.columnDescricaoExame = new global::System.Data.DataColumn("DescricaoExame", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescricaoExame);
                 this.columnDescLançamento.AllowDBNull = false;
                 this.columnDescLançamento.MaxLength = 100;
                 this.columnDebitoCredito.AllowDBNull = false;
@@ -49624,6 +49668,13 @@ namespace Relatorios_RDLC {
                 this.columnFone_Residencial.MaxLength = 25;
                 this.columnFone_Trabalho.MaxLength = 25;
                 this.columnCPF_PACIENTE.MaxLength = 18;
+                this.columnSequencia.AutoIncrement = true;
+                this.columnSequencia.AutoIncrementSeed = -1;
+                this.columnSequencia.AutoIncrementStep = -1;
+                this.columnSequencia.AllowDBNull = false;
+                this.columnSequencia.ReadOnly = true;
+                this.columnambCodigo.AllowDBNull = false;
+                this.columnDescricaoExame.MaxLength = 80;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -124140,6 +124191,44 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal Sequencia {
+                get {
+                    return ((decimal)(this[this.tablePR_REL_CXA011.SequenciaColumn]));
+                }
+                set {
+                    this[this.tablePR_REL_CXA011.SequenciaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal ambCodigo {
+                get {
+                    return ((decimal)(this[this.tablePR_REL_CXA011.ambCodigoColumn]));
+                }
+                set {
+                    this[this.tablePR_REL_CXA011.ambCodigoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DescricaoExame {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_CXA011.DescricaoExameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'DescricaoExame\' na tabela \'PR_REL_CXA011\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_CXA011.DescricaoExameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsEstornoNull() {
                 return this.IsNull(this.tablePR_REL_CXA011.EstornoColumn);
             }
@@ -124412,6 +124501,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetCPF_PACIENTENull() {
                 this[this.tablePR_REL_CXA011.CPF_PACIENTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDescricaoExameNull() {
+                return this.IsNull(this.tablePR_REL_CXA011.DescricaoExameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDescricaoExameNull() {
+                this[this.tablePR_REL_CXA011.DescricaoExameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -153604,6 +153705,9 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Fone_Residencial", "Fone_Residencial");
             tableMapping.ColumnMappings.Add("Fone_Trabalho", "Fone_Trabalho");
             tableMapping.ColumnMappings.Add("CPF_PACIENTE", "CPF_PACIENTE");
+            tableMapping.ColumnMappings.Add("Sequencia", "Sequencia");
+            tableMapping.ColumnMappings.Add("ambCodigo", "ambCodigo");
+            tableMapping.ColumnMappings.Add("DescricaoExame", "DescricaoExame");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
