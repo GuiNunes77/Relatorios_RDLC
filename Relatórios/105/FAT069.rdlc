@@ -2030,6 +2030,15 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>Dados</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!teCodigo.Value</FilterExpression>
+                <Operator>NotEqual</Operator>
+                <FilterValues>
+                  <FilterValue>=CDec(21)</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
             <Left>0.1cm</Left>
             <Height>2.9cm</Height>
             <Width>28.18327cm</Width>

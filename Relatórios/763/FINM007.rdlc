@@ -462,6 +462,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1416,7 +1417,7 @@
                       <Group Name="Detalhes" />
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!DATA_BAIXA.Value</Value>
+                          <Value>=Fields!DATA_PAGAMENTO.Value</Value>
                         </SortExpression>
                       </SortExpressions>
                     </TablixMember>

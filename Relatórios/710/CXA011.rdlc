@@ -97,6 +97,10 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="Seq_Lancamento">
+          <DataField>Seq_Lancamento</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="DescLançamento">
           <DataField>DescLançamento</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -217,6 +221,10 @@
           <DataField>DDD_FoneTrab</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CPF_PACIENTE">
+          <DataField>CPF_PACIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Fone_Celular">
           <DataField>Fone_Celular</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -229,10 +237,22 @@
           <DataField>Fone_Trabalho</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Sequencia">
+          <DataField>Sequencia</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ambCodigo">
+          <DataField>ambCodigo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DescricaoExame">
+          <DataField>DescricaoExame</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>csi29DataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Victor.NOTE18\Desktop\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_CXA011</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -1866,9 +1886,13 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(Fields!DebitoCredito.Value = "D",
-Fields!ValorCobrado.Value * (-1),
-Fields!ValorCobrado.Value)</Value>
+                                  <Value>=Sum(
+Max(
+IIF(Fields!DebitoCredito.Value = "D",
+       Fields!ValorCobrado.Value * (-1),
+       Fields!ValorCobrado.Value)
+, "grpLancamento")
+)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -2157,9 +2181,11 @@ Fields!ValorCobrado.Value)</Value>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(
+Max(
 IIF(Fields!DebitoCredito.Value = "D",
-Fields!ValorCobrado.Value * (-1),
-Fields!ValorCobrado.Value)
+       Fields!ValorCobrado.Value * (-1),
+       Fields!ValorCobrado.Value)
+, "grpLancamento")
 )</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
@@ -2452,9 +2478,11 @@ Fields!ValorCobrado.Value)
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(
+Max(
 IIF(Fields!DebitoCredito.Value = "D",
-Fields!ValorCobrado.Value * (-1),
-Fields!ValorCobrado.Value)
+       Fields!ValorCobrado.Value * (-1),
+       Fields!ValorCobrado.Value)
+, "grpLancamento")
 )</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
@@ -2747,9 +2775,11 @@ Fields!ValorCobrado.Value)
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(
+Max(
 IIF(Fields!DebitoCredito.Value = "D",
-Fields!ValorCobrado.Value * (-1),
-Fields!ValorCobrado.Value)
+       Fields!ValorCobrado.Value * (-1),
+       Fields!ValorCobrado.Value)
+, "grpLancamento")
 )</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
@@ -3042,9 +3072,11 @@ Fields!ValorCobrado.Value)
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(
+Max(
 IIF(Fields!DebitoCredito.Value = "D",
-Fields!ValorCobrado.Value * (-1),
-Fields!ValorCobrado.Value)
+       Fields!ValorCobrado.Value * (-1),
+       Fields!ValorCobrado.Value)
+, "grpLancamento")
 )</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
@@ -3156,7 +3188,16 @@ Fields!ValorCobrado.Value)
                                   <KeepWithGroup>After</KeepWithGroup>
                                 </TablixMember>
                                 <TablixMember>
-                                  <Group Name="Detalhes" />
+                                  <Group Name="grpLancamento">
+                                    <GroupExpressions>
+                                      <GroupExpression>=Fields!Seq_Lancamento.Value</GroupExpression>
+                                    </GroupExpressions>
+                                  </Group>
+                                  <SortExpressions>
+                                    <SortExpression>
+                                      <Value>=Fields!Seq_Lancamento.Value</Value>
+                                    </SortExpression>
+                                  </SortExpressions>
                                 </TablixMember>
                                 <TablixMember>
                                   <KeepWithGroup>Before</KeepWithGroup>
@@ -3192,10 +3233,7 @@ Fields!ValorCobrado.Value)
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.22641cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>7.1cm</Width>
+                  <Width>7.65274cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -3233,110 +3271,16 @@ Fields!ValorCobrado.Value)
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>2</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.49146cm</Height>
+                  <Height>0.2cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Tablix Name="Tablix5">
-                          <TablixBody>
-                            <TablixColumns>
-                              <TablixColumn>
-                                <Width>8.32641cm</Width>
-                              </TablixColumn>
-                            </TablixColumns>
-                            <TablixRows>
-                              <TablixRow>
-                                <Height>0.49146cm</Height>
-                                <TablixCells>
-                                  <TablixCell>
-                                    <CellContents>
-                                      <Textbox Name="Textbox296">
-                                        <CanGrow>true</CanGrow>
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value>=Fields!FormaPagamento.Value</Value>
-                                                <Style>
-                                                  <FontFamily>Verdana</FontFamily>
-                                                  <FontSize>8pt</FontSize>
-                                                  <FontWeight>Bold</FontWeight>
-                                                </Style>
-                                              </TextRun>
-                                              <TextRun>
-                                                <Value>: </Value>
-                                                <Style>
-                                                  <FontFamily>Verdana</FontFamily>
-                                                  <FontSize>8pt</FontSize>
-                                                  <FontWeight>Bold</FontWeight>
-                                                </Style>
-                                              </TextRun>
-                                              <TextRun>
-                                                <Value>=Sum(IIF(Fields!DebitoCredito.Value = "D", - Fields!ValorCobrado.Value, Fields!ValorCobrado.Value))</Value>
-                                                <Style>
-                                                  <FontFamily>Verdana</FontFamily>
-                                                  <FontSize>8pt</FontSize>
-                                                  <Format>0.00;(0.00)</Format>
-                                                </Style>
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style />
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <rd:DefaultName>Textbox294</rd:DefaultName>
-                                        <Style>
-                                          <Border>
-                                            <Style>Solid</Style>
-                                          </Border>
-                                          <PaddingLeft>2pt</PaddingLeft>
-                                          <PaddingRight>2pt</PaddingRight>
-                                          <PaddingTop>2pt</PaddingTop>
-                                          <PaddingBottom>2pt</PaddingBottom>
-                                        </Style>
-                                      </Textbox>
-                                    </CellContents>
-                                  </TablixCell>
-                                </TablixCells>
-                              </TablixRow>
-                            </TablixRows>
-                          </TablixBody>
-                          <TablixColumnHierarchy>
-                            <TablixMembers>
-                              <TablixMember />
-                            </TablixMembers>
-                          </TablixColumnHierarchy>
-                          <TablixRowHierarchy>
-                            <TablixMembers>
-                              <TablixMember />
-                            </TablixMembers>
-                          </TablixRowHierarchy>
-                          <DataSetName>Dados</DataSetName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                          </Style>
-                        </Tablix>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.07938cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox51">
+                        <Textbox Name="Textbox11">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3344,80 +3288,6 @@ Fields!ValorCobrado.Value)
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox51</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox188">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=IIF(Fields!DebitoCredito.Value = "D", - Fields!ValorCobrado.Value, Fields!ValorCobrado.Value)</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                    <Format>0.00;(0.00)</Format>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox188</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.09758cm</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox52">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Total:</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3428,7 +3298,7 @@ Fields!ValorCobrado.Value)
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox52</rd:DefaultName>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -3441,16 +3311,41 @@ Fields!ValorCobrado.Value)
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox190">
+                        <Textbox Name="Textbox296">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(IIF(Fields!DebitoCredito.Value = "D", - Fields!ValorCobrado.Value, Fields!ValorCobrado.Value))</Value>
+                                  <Value>=Fields!FormaPagamento.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>: </Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Sum(
+Max(
+IIF(Fields!DebitoCredito.Value = "D", - Fields!ValorCobrado.Value, Fields!ValorCobrado.Value)
+, "grpLancamento2")
+)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3458,15 +3353,13 @@ Fields!ValorCobrado.Value)
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox188</rd:DefaultName>
+                          <rd:DefaultName>Textbox294</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -3482,7 +3375,6 @@ Fields!ValorCobrado.Value)
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
@@ -3500,10 +3392,7 @@ Fields!ValorCobrado.Value)
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
-                    <TablixMember>
-                      <KeepWithGroup>After</KeepWithGroup>
-                      <RepeatOnNewPage>true</RepeatOnNewPage>
-                    </TablixMember>
+                    <TablixMember />
                     <TablixMember>
                       <Group Name="grpTipoPag">
                         <GroupExpressions>
@@ -3517,20 +3406,25 @@ Fields!ValorCobrado.Value)
                       </SortExpressions>
                       <TablixMembers>
                         <TablixMember>
-                          <KeepWithGroup>After</KeepWithGroup>
-                          <RepeatOnNewPage>true</RepeatOnNewPage>
-                        </TablixMember>
-                        <TablixMember>
-                          <Group Name="Details" />
+                          <TablixMembers>
+                            <TablixMember>
+                              <Group Name="grpLancamento2">
+                                <GroupExpressions>
+                                  <GroupExpression>=Fields!Seq_Lancamento.Value</GroupExpression>
+                                </GroupExpressions>
+                              </Group>
+                              <SortExpressions>
+                                <SortExpression>
+                                  <Value>=Fields!Seq_Lancamento.Value</Value>
+                                </SortExpression>
+                              </SortExpressions>
+                            </TablixMember>
+                          </TablixMembers>
                           <Visibility>
                             <Hidden>true</Hidden>
                           </Visibility>
                         </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>true</Hidden>
-                          </Visibility>
-                        </TablixMember>
+                        <TablixMember />
                       </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
@@ -3540,8 +3434,8 @@ Fields!ValorCobrado.Value)
             <DataSetName>Dados</DataSetName>
             <Top>6.68842cm</Top>
             <Left>0.14726cm</Left>
-            <Height>1.18375cm</Height>
-            <Width>8.32641cm</Width>
+            <Height>1.31533cm</Height>
+            <Width>7.65274cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -3550,7 +3444,7 @@ Fields!ValorCobrado.Value)
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>8.46483cm</Height>
+        <Height>8.00375cm</Height>
         <Style />
       </Body>
       <Width>19.95cm</Width>
@@ -3838,7 +3732,7 @@ Fields!ValorCobrado.Value)
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.6cm</Height>
+          <Height>0.7cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
