@@ -269,6 +269,10 @@
           <DataField>NomePaciente</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ProcedimentoAtend">
+          <DataField>ProcedimentoAtend</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>csiDataSet</rd:DataSetName>
@@ -1263,14 +1267,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TituloLaudo">
+                        <Textbox Name="ProcedimentoAtend">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TituloLaudo.Value</Value>
+                                  <Value>=Fields!ProcedimentoAtend.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -1282,7 +1286,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>TituloLaudo</rd:DefaultName>
+                          <rd:DefaultName>ProcedimentoAtend</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
