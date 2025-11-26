@@ -899,8 +899,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="USUÁRIO: UNICA" + cstr(Fields!pcCodigo.Value)
-+ "         "+"SENHA: " + format(Fields!DataNasc.Value, "ddMMyyyy")</Value>
+                                  <Value>="USUÁRIO: " + cstr(Fields!IDLogin.Value)
++ "         " + "SENHA: " + Cstr(Fields!Pwd_IDLogin.Value)</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
