@@ -573,7 +573,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>1.9cm</Height>
+                  <Height>1.8cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1068,7 +1068,7 @@ Nothing)</Value>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Height>1.9cm</Height>
+            <Height>1.8cm</Height>
             <Width>8.19958cm</Width>
             <Style>
               <Border>
@@ -1077,7 +1077,7 @@ Nothing)</Value>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.9cm</Height>
+        <Height>1.8cm</Height>
         <Style />
       </Body>
       <Width>8.19958cm</Width>
@@ -1107,15 +1107,14 @@ Nothing)</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.4593cm</Height>
+          <Height>1.25646cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Rectangle Name="Rectangle4">
               <KeepTogether>true</KeepTogether>
-              <Top>0.08819cm</Top>
-              <Height>1.34466cm</Height>
-              <Width>8.11799cm</Width>
+              <Height>1.25646cm</Height>
+              <Width>8.19958cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1189,9 +1188,8 @@ Nothing)</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>0.07056cm</Top>
-              <Height>1.36229cm</Height>
-              <Width>8.11799cm</Width>
+              <Height>1.25646cm</Height>
+              <Width>6.00618cm</Width>
               <ZIndex>1</ZIndex>
               <Visibility>
                 <Hidden>=IIF(First(Fields!Disponibilizar_Laudo_Web.Value, "FichaAtendimento") = "S", False, True)</Hidden>
