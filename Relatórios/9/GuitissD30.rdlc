@@ -620,7 +620,7 @@
                                                 </Style>
                                               </TextRun>
                                               <TextRun>
-                                                <Value>=First(Fields!NOME_LOCAL_ATENDIMENTO.Value, "Guia")</Value>
+                                                <Value>=First(Fields!NomeEmpresa.Value, "Guia")</Value>
                                                 <Style>
                                                   <FontSize>7pt</FontSize>
                                                 </Style>
