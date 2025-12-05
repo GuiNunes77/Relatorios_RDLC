@@ -64833,6 +64833,8 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnNUMEROREGISTRO;
             
+            private global::System.Data.DataColumn columnLogoConvenio;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_GUIA_TISSDataTable() {
@@ -65204,6 +65206,14 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LogoConvenioColumn {
+                get {
+                    return this.columnLogoConvenio;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -65281,7 +65291,8 @@ namespace Relatorios_RDLC {
                         string CODANVISA, 
                         string CODTABELATISS, 
                         decimal FATORREDACRESC, 
-                        long NUMEROREGISTRO) {
+                        long NUMEROREGISTRO, 
+                        byte[] LogoConvenio) {
                 PR_REL_GUIA_TISSRow rowPR_REL_GUIA_TISSRow = ((PR_REL_GUIA_TISSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         LCCODIGO,
@@ -65325,7 +65336,8 @@ namespace Relatorios_RDLC {
                         CODANVISA,
                         CODTABELATISS,
                         FATORREDACRESC,
-                        NUMEROREGISTRO};
+                        NUMEROREGISTRO,
+                        LogoConvenio};
                 rowPR_REL_GUIA_TISSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_GUIA_TISSRow);
                 return rowPR_REL_GUIA_TISSRow;
@@ -65390,6 +65402,7 @@ namespace Relatorios_RDLC {
                 this.columnCODTABELATISS = base.Columns["CODTABELATISS"];
                 this.columnFATORREDACRESC = base.Columns["FATORREDACRESC"];
                 this.columnNUMEROREGISTRO = base.Columns["NUMEROREGISTRO"];
+                this.columnLogoConvenio = base.Columns["LogoConvenio"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -65479,6 +65492,8 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnFATORREDACRESC);
                 this.columnNUMEROREGISTRO = new global::System.Data.DataColumn("NUMEROREGISTRO", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNUMEROREGISTRO);
+                this.columnLogoConvenio = new global::System.Data.DataColumn("LogoConvenio", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLogoConvenio);
                 this.columnCGC_LOCAL.MaxLength = 18;
                 this.columnCODIGOOPERADORALOCAL.MaxLength = 20;
                 this.columnNOME_LOCAL_ATENDIMENTO.MaxLength = 50;
@@ -65503,6 +65518,7 @@ namespace Relatorios_RDLC {
                 this.columnCODANVISA.MaxLength = 15;
                 this.columnCODTABELATISS.MaxLength = 2;
                 this.columnNUMEROREGISTRO.ReadOnly = true;
+                this.columnLogoConvenio.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -150209,6 +150225,22 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public byte[] LogoConvenio {
+                get {
+                    try {
+                        return ((byte[])(this[this.tablePR_REL_GUIA_TISS.LogoConvenioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'LogoConvenio\' na tabela \'PR_REL_GUIA_TISS\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_GUIA_TISS.LogoConvenioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsLCCODIGONull() {
                 return this.IsNull(this.tablePR_REL_GUIA_TISS.LCCODIGOColumn);
             }
@@ -150709,6 +150741,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetNUMEROREGISTRONull() {
                 this[this.tablePR_REL_GUIA_TISS.NUMEROREGISTROColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsLogoConvenioNull() {
+                return this.IsNull(this.tablePR_REL_GUIA_TISS.LogoConvenioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetLogoConvenioNull() {
+                this[this.tablePR_REL_GUIA_TISS.LogoConvenioColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -172083,6 +172127,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("CODTABELATISS", "CODTABELATISS");
             tableMapping.ColumnMappings.Add("FATORREDACRESC", "FATORREDACRESC");
             tableMapping.ColumnMappings.Add("NUMEROREGISTRO", "NUMEROREGISTRO");
+            tableMapping.ColumnMappings.Add("LogoConvenio", "LogoConvenio");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

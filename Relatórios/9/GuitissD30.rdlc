@@ -4164,7 +4164,7 @@ Sum(IIF(Fields!COD_DESPESAS.Value = "5",
             <TablixMember>
               <Group Name="grpAtendimento">
                 <GroupExpressions>
-                  <GroupExpression>=Fields!Numero.Value</GroupExpression>
+                  <GroupExpression>=Fields!NUMERO.Value</GroupExpression>
                   <GroupExpression>=Int((RowNumber(Nothing) -1)/10)</GroupExpression>
                 </GroupExpressions>
                 <PageBreak>
@@ -4270,12 +4270,12 @@ Sum(IIF(Fields!COD_DESPESAS.Value = "5",
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="lcCodigo">
-          <DataField>lcCodigo</DataField>
+        <Field Name="LCCODIGO">
+          <DataField>LCCODIGO</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="Numero">
-          <DataField>Numero</DataField>
+        <Field Name="NUMERO">
+          <DataField>NUMERO</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="CGC_LOCAL">
@@ -4290,8 +4290,8 @@ Sum(IIF(Fields!COD_DESPESAS.Value = "5",
           <DataField>NOME_LOCAL_ATENDIMENTO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="RegistroANS">
-          <DataField>RegistroANS</DataField>
+        <Field Name="REGISTROANS">
+          <DataField>REGISTROANS</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATAPROCEDF">
@@ -4310,12 +4310,72 @@ Sum(IIF(Fields!COD_DESPESAS.Value = "5",
           <DataField>CNES</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ambcodigo">
-          <DataField>ambcodigo</DataField>
+        <Field Name="DATA">
+          <DataField>DATA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CVCODIGO">
+          <DataField>CVCODIGO</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="sequencia">
-          <DataField>sequencia</DataField>
+        <Field Name="EXPMATMED">
+          <DataField>EXPMATMED</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_MATERIAL">
+          <DataField>COD_MATERIAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_MEDICAMENTO">
+          <DataField>COD_MEDICAMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_MEDICCONT">
+          <DataField>COD_MEDICCONT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTRASTE">
+          <DataField>CONTRASTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EXPBRAS">
+          <DataField>EXPBRAS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EXPFILME">
+          <DataField>EXPFILME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_FILME">
+          <DataField>COD_FILME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_FOD">
+          <DataField>COD_FOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VALORFILME">
+          <DataField>VALORFILME</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="QTDEFILME">
+          <DataField>QTDEFILME</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VALOR_FILME">
+          <DataField>VALOR_FILME</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AGRUPAR">
+          <DataField>AGRUPAR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AMBCODIGO">
+          <DataField>AMBCODIGO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SEQUENCIA">
+          <DataField>SEQUENCIA</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="LCCODIGOMATMED">
@@ -4374,69 +4434,9 @@ Sum(IIF(Fields!COD_DESPESAS.Value = "5",
           <DataField>FATORREDACRESC</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="DATA">
-          <DataField>DATA</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CVCODIGO">
-          <DataField>CVCODIGO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EXPMATMED">
-          <DataField>EXPMATMED</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="COD_MATERIAL">
-          <DataField>COD_MATERIAL</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="COD_MEDICAMENTO">
-          <DataField>COD_MEDICAMENTO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="COD_MEDICCONT">
-          <DataField>COD_MEDICCONT</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CONTRASTE">
-          <DataField>CONTRASTE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EXPBRAS">
-          <DataField>EXPBRAS</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EXPFILME">
-          <DataField>EXPFILME</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="COD_FILME">
-          <DataField>COD_FILME</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="COD_FOD">
-          <DataField>COD_FOD</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="VALORFILME">
-          <DataField>VALORFILME</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="QTDEFILME">
-          <DataField>QTDEFILME</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="VALOR_FILME">
-          <DataField>VALOR_FILME</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="AGRUPAR">
-          <DataField>AGRUPAR</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NumeroRegistro">
-          <DataField>NumeroRegistro</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="NUMEROREGISTRO">
+          <DataField>NUMEROREGISTRO</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
         <Field Name="LogoConvenio">
           <DataField>LogoConvenio</DataField>
@@ -4444,8 +4444,8 @@ Sum(IIF(Fields!COD_DESPESAS.Value = "5",
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csiDataSet6</rd:DataSetName>
-        <rd:SchemaPath>G:\Projetos Report View\WindowsFormsApplication1\WindowsFormsApplication1\csiDataSet6.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_GUIA_TISS</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
