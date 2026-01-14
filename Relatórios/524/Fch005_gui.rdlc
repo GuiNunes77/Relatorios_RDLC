@@ -12474,7 +12474,10 @@
                 </TablixMember>
                 <TablixMember>
                   <Visibility>
-                    <Hidden>=Variables!Procedimentos.Value</Hidden>
+                    <Hidden>=IIF(InStr(";" + Join(LookupSet(Fields!NumeroSelecionado.Value, Fields!Numero.Value, Fields!teCodigo.Value, "FichaAtendimento"), ";") + ";", ";16;"),
+false,
+true
+)</Hidden>
                   </Visibility>
                   <KeepWithGroup>Before</KeepWithGroup>
                 </TablixMember>
@@ -14222,7 +14225,10 @@ Fields!Fone_Trabalho.Value)</Value>
               <Width>19.76837cm</Width>
               <ZIndex>1</ZIndex>
               <Visibility>
-                <Hidden>=IIF(Globals!PageNumber = 1 AND Count(IIf(Fields!teCodigo.Value = 12, 1, Nothing), "FichaAtendimento") &gt; 0, false, true)</Hidden>
+                <Hidden>=IIF(Globals!PageNumber = 1 AND 
+     Count(IIf(Fields!teCodigo.Value = 12 AND Fields!DadosAtendSelecionado.Value = 1, 1, Nothing), "FichaAtendimento") &gt; 0, 
+     false, 
+     true)</Hidden>
               </Visibility>
               <Style>
                 <Border>
@@ -14615,12 +14621,6 @@ Fields!Fone_Celular.Value)</Value>
       <Value>=IIF(IsNothing(Fields!Fone_Trabalho.Value),
 "",
 Fields!Fone_Trabalho.Value)</Value>
-    </Variable>
-    <Variable Name="Procedimentos">
-      <Value>=IIF(InStr(";" + Join(LookupSet(Fields!NumeroSelecionado.Value, Fields!Numero.Value, Fields!teCodigo.Value, "FichaAtendimento"), ";") + ";", ";16;"),
-false,
-true
-)</Value>
     </Variable>
   </Variables>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>

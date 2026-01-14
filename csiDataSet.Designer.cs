@@ -66811,6 +66811,10 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnPORCPIS;
             
+            private global::System.Data.DataColumn columnVALOR_CHM_CONVENIO;
+            
+            private global::System.Data.DataColumn columnVALOR_CHO_CONVENIO;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_FAT010DataTable() {
@@ -67142,6 +67146,22 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VALOR_CHM_CONVENIOColumn {
+                get {
+                    return this.columnVALOR_CHM_CONVENIO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VALOR_CHO_CONVENIOColumn {
+                get {
+                    return this.columnVALOR_CHO_CONVENIO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -67214,7 +67234,9 @@ namespace Relatorios_RDLC {
                         decimal PORCCOFINS, 
                         decimal PORCCSLL, 
                         decimal PORCISS, 
-                        decimal PORCPIS) {
+                        decimal PORCPIS, 
+                        decimal VALOR_CHM_CONVENIO, 
+                        decimal VALOR_CHO_CONVENIO) {
                 PR_REL_FAT010Row rowPR_REL_FAT010Row = ((PR_REL_FAT010Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SEQUENCIA,
@@ -67253,7 +67275,9 @@ namespace Relatorios_RDLC {
                         PORCCOFINS,
                         PORCCSLL,
                         PORCISS,
-                        PORCPIS};
+                        PORCPIS,
+                        VALOR_CHM_CONVENIO,
+                        VALOR_CHO_CONVENIO};
                 rowPR_REL_FAT010Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_FAT010Row);
                 return rowPR_REL_FAT010Row;
@@ -67313,6 +67337,8 @@ namespace Relatorios_RDLC {
                 this.columnPORCCSLL = base.Columns["PORCCSLL"];
                 this.columnPORCISS = base.Columns["PORCISS"];
                 this.columnPORCPIS = base.Columns["PORCPIS"];
+                this.columnVALOR_CHM_CONVENIO = base.Columns["VALOR_CHM_CONVENIO"];
+                this.columnVALOR_CHO_CONVENIO = base.Columns["VALOR_CHO_CONVENIO"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -67392,6 +67418,10 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnPORCISS);
                 this.columnPORCPIS = new global::System.Data.DataColumn("PORCPIS", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPORCPIS);
+                this.columnVALOR_CHM_CONVENIO = new global::System.Data.DataColumn("VALOR_CHM_CONVENIO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVALOR_CHM_CONVENIO);
+                this.columnVALOR_CHO_CONVENIO = new global::System.Data.DataColumn("VALOR_CHO_CONVENIO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVALOR_CHO_CONVENIO);
                 this.columnSEQUENCIA.AllowDBNull = false;
                 this.columnLCCODIGO.AllowDBNull = false;
                 this.columnNOME_LOCAL_ATENDIMENTO.MaxLength = 50;
@@ -154602,6 +154632,38 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal VALOR_CHM_CONVENIO {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablePR_REL_FAT010.VALOR_CHM_CONVENIOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'VALOR_CHM_CONVENIO\' na tabela \'PR_REL_FAT010\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT010.VALOR_CHM_CONVENIOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal VALOR_CHO_CONVENIO {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablePR_REL_FAT010.VALOR_CHO_CONVENIOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'VALOR_CHO_CONVENIO\' na tabela \'PR_REL_FAT010\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT010.VALOR_CHO_CONVENIOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSEQ_FATURANull() {
                 return this.IsNull(this.tablePR_REL_FAT010.SEQ_FATURAColumn);
             }
@@ -154970,6 +155032,30 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetPORCPISNull() {
                 this[this.tablePR_REL_FAT010.PORCPISColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVALOR_CHM_CONVENIONull() {
+                return this.IsNull(this.tablePR_REL_FAT010.VALOR_CHM_CONVENIOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVALOR_CHM_CONVENIONull() {
+                this[this.tablePR_REL_FAT010.VALOR_CHM_CONVENIOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVALOR_CHO_CONVENIONull() {
+                return this.IsNull(this.tablePR_REL_FAT010.VALOR_CHO_CONVENIOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVALOR_CHO_CONVENIONull() {
+                this[this.tablePR_REL_FAT010.VALOR_CHO_CONVENIOColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -177142,6 +177228,8 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("PORCCSLL", "PORCCSLL");
             tableMapping.ColumnMappings.Add("PORCISS", "PORCISS");
             tableMapping.ColumnMappings.Add("PORCPIS", "PORCPIS");
+            tableMapping.ColumnMappings.Add("VALOR_CHM_CONVENIO", "VALOR_CHM_CONVENIO");
+            tableMapping.ColumnMappings.Add("VALOR_CHO_CONVENIO", "VALOR_CHO_CONVENIO");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

@@ -245,6 +245,14 @@
           <DataField>PORCPIS</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="VALOR_CHM_CONVENIO">
+          <DataField>VALOR_CHM_CONVENIO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VALOR_CHO_CONVENIO">
+          <DataField>VALOR_CHO_CONVENIO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>csiDataSet</rd:DataSetName>
@@ -1224,7 +1232,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1766,7 +1773,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!VALOR_CHO.Value</Value>
+                                  <Value>=Fields!VALOR_CHO_CONVENIO.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -3889,7 +3896,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value) * Fields!PORCIRRF.Value / 100</Value>
+                                  <Value>=Sum(Fields!TOTAL_PROCEDIMENTO.Value) * (Fields!PORCIRRF.Value / 100)</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -4887,94 +4894,73 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
                     <TablixMember>
-                      <KeepWithGroup>After</KeepWithGroup>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
+                      </Visibility>
                     </TablixMember>
                     <TablixMember>
-                      <KeepWithGroup>After</KeepWithGroup>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value = 0</Hidden>
+                      </Visibility>
                     </TablixMember>
                     <TablixMember>
-                      <Group Name="grpModalidade">
-                        <GroupExpressions>
-                          <GroupExpression>=Fields!TECODIGO.Value</GroupExpression>
-                        </GroupExpressions>
-                        <PageBreak>
-                          <BreakLocation>Between</BreakLocation>
-                        </PageBreak>
-                      </Group>
-                      <SortExpressions>
-                        <SortExpression>
-                          <Value>=Fields!NOME_TIPO_EXAME.Value</Value>
-                        </SortExpression>
-                      </SortExpressions>
-                      <TablixMembers>
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCCOFINS.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCCSLL.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCISS.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCPIS.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
-                          </Visibility>
-                        </TablixMember>
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                        <TablixMember />
-                      </TablixMembers>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCCOFINS.Value = 0</Hidden>
+                      </Visibility>
                     </TablixMember>
+                    <TablixMember>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCCSLL.Value = 0</Hidden>
+                      </Visibility>
+                    </TablixMember>
+                    <TablixMember>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCISS.Value = 0</Hidden>
+                      </Visibility>
+                    </TablixMember>
+                    <TablixMember>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCPIS.Value = 0</Hidden>
+                      </Visibility>
+                    </TablixMember>
+                    <TablixMember>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
+                      </Visibility>
+                    </TablixMember>
+                    <TablixMember>
+                      <Visibility>
+                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
+                      </Visibility>
+                    </TablixMember>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
                   </TablixMembers>
                 </TablixMember>
               </TablixMembers>
