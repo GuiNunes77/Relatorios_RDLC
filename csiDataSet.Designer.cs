@@ -62636,6 +62636,8 @@ namespace Relatorios_RDLC {
             
             private global::System.Data.DataColumn columnEndereco;
             
+            private global::System.Data.DataColumn columnGUIA;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PR_REL_FAT131DataTable() {
@@ -62935,6 +62937,14 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn GUIAColumn {
+                get {
+                    return this.columnGUIA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -63002,7 +63012,8 @@ namespace Relatorios_RDLC {
                         string Fone_Trabalho, 
                         string Fone_Celular, 
                         string NomeMae, 
-                        string Endereco) {
+                        string Endereco, 
+                        string GUIA) {
                 PR_REL_FAT131Row rowPR_REL_FAT131Row = ((PR_REL_FAT131Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         lcCodigo,
@@ -63037,7 +63048,8 @@ namespace Relatorios_RDLC {
                         Fone_Trabalho,
                         Fone_Celular,
                         NomeMae,
-                        Endereco};
+                        Endereco,
+                        GUIA};
                 rowPR_REL_FAT131Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPR_REL_FAT131Row);
                 return rowPR_REL_FAT131Row;
@@ -63093,6 +63105,7 @@ namespace Relatorios_RDLC {
                 this.columnFone_Celular = base.Columns["Fone_Celular"];
                 this.columnNomeMae = base.Columns["NomeMae"];
                 this.columnEndereco = base.Columns["Endereco"];
+                this.columnGUIA = base.Columns["GUIA"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -63164,6 +63177,8 @@ namespace Relatorios_RDLC {
                 base.Columns.Add(this.columnNomeMae);
                 this.columnEndereco = new global::System.Data.DataColumn("Endereco", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEndereco);
+                this.columnGUIA = new global::System.Data.DataColumn("GUIA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGUIA);
                 this.columnlcCodigo.AllowDBNull = false;
                 this.columnNOME_LOCAL_ATENDIMENTO.MaxLength = 50;
                 this.columnNumero.AllowDBNull = false;
@@ -63197,6 +63212,7 @@ namespace Relatorios_RDLC {
                 this.columnFone_Celular.MaxLength = 25;
                 this.columnNomeMae.MaxLength = 80;
                 this.columnEndereco.MaxLength = 80;
+                this.columnGUIA.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -149441,6 +149457,22 @@ namespace Relatorios_RDLC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string GUIA {
+                get {
+                    try {
+                        return ((string)(this[this.tablePR_REL_FAT131.GUIAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'GUIA\' na tabela \'PR_REL_FAT131\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePR_REL_FAT131.GUIAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNOME_LOCAL_ATENDIMENTONull() {
                 return this.IsNull(this.tablePR_REL_FAT131.NOME_LOCAL_ATENDIMENTOColumn);
             }
@@ -149749,6 +149781,18 @@ namespace Relatorios_RDLC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetEnderecoNull() {
                 this[this.tablePR_REL_FAT131.EnderecoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsGUIANull() {
+                return this.IsNull(this.tablePR_REL_FAT131.GUIAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetGUIANull() {
+                this[this.tablePR_REL_FAT131.GUIAColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -175537,6 +175581,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Fone_Celular", "Fone_Celular");
             tableMapping.ColumnMappings.Add("NomeMae", "NomeMae");
             tableMapping.ColumnMappings.Add("Endereco", "Endereco");
+            tableMapping.ColumnMappings.Add("GUIA", "GUIA");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

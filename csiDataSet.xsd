@@ -4510,6 +4510,7 @@
               <Mapping SourceColumn="Fone_Celular" DataSetColumn="Fone_Celular" />
               <Mapping SourceColumn="NomeMae" DataSetColumn="NomeMae" />
               <Mapping SourceColumn="Endereco" DataSetColumn="Endereco" />
+              <Mapping SourceColumn="GUIA" DataSetColumn="GUIA" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -18189,6 +18190,13 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="GUIA" msprop:Generator_ColumnPropNameInRow="GUIA" msprop:Generator_ColumnPropNameInTable="GUIAColumn" msprop:Generator_ColumnVarNameInTable="columnGUIA" msprop:Generator_UserColumnName="GUIA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -18797,108 +18805,108 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PR_REL_FAT010" msprop:Generator_RowClassName="PR_REL_FAT010Row" msprop:Generator_RowEvHandlerName="PR_REL_FAT010RowChangeEventHandler" msprop:Generator_RowDeletedName="PR_REL_FAT010RowDeleted" msprop:Generator_RowDeletingName="PR_REL_FAT010RowDeleting" msprop:Generator_RowEvArgName="PR_REL_FAT010RowChangeEvent" msprop:Generator_TablePropName="PR_REL_FAT010" msprop:Generator_RowChangedName="PR_REL_FAT010RowChanged" msprop:Generator_UserTableName="PR_REL_FAT010" msprop:Generator_RowChangingName="PR_REL_FAT010RowChanging" msprop:Generator_TableClassName="PR_REL_FAT010DataTable" msprop:Generator_TableVarName="tablePR_REL_FAT010">
+        <xs:element name="PR_REL_FAT010" msprop:Generator_RowEvHandlerName="PR_REL_FAT010RowChangeEventHandler" msprop:Generator_RowDeletedName="PR_REL_FAT010RowDeleted" msprop:Generator_RowDeletingName="PR_REL_FAT010RowDeleting" msprop:Generator_RowEvArgName="PR_REL_FAT010RowChangeEvent" msprop:Generator_TablePropName="PR_REL_FAT010" msprop:Generator_RowChangedName="PR_REL_FAT010RowChanged" msprop:Generator_UserTableName="PR_REL_FAT010" msprop:Generator_RowChangingName="PR_REL_FAT010RowChanging" msprop:Generator_RowClassName="PR_REL_FAT010Row" msprop:Generator_TableClassName="PR_REL_FAT010DataTable" msprop:Generator_TableVarName="tablePR_REL_FAT010">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="SEQUENCIA" msprop:Generator_UserColumnName="SEQUENCIA" msprop:Generator_ColumnPropNameInTable="SEQUENCIAColumn" msprop:Generator_ColumnPropNameInRow="SEQUENCIA" msprop:Generator_ColumnVarNameInTable="columnSEQUENCIA" type="xs:decimal" />
-              <xs:element name="SEQ_FATURA" msprop:Generator_UserColumnName="SEQ_FATURA" msprop:Generator_ColumnPropNameInTable="SEQ_FATURAColumn" msprop:Generator_ColumnPropNameInRow="SEQ_FATURA" msprop:Generator_ColumnVarNameInTable="columnSEQ_FATURA" type="xs:decimal" minOccurs="0" />
-              <xs:element name="LCCODIGO" msprop:Generator_UserColumnName="LCCODIGO" msprop:Generator_ColumnPropNameInTable="LCCODIGOColumn" msprop:Generator_ColumnPropNameInRow="LCCODIGO" msprop:Generator_ColumnVarNameInTable="columnLCCODIGO" type="xs:decimal" />
-              <xs:element name="NOME_LOCAL_ATENDIMENTO" msprop:Generator_UserColumnName="NOME_LOCAL_ATENDIMENTO" msprop:Generator_ColumnPropNameInTable="NOME_LOCAL_ATENDIMENTOColumn" msprop:Generator_ColumnPropNameInRow="NOME_LOCAL_ATENDIMENTO" msprop:Generator_ColumnVarNameInTable="columnNOME_LOCAL_ATENDIMENTO" minOccurs="0">
+              <xs:element name="SEQUENCIA" msprop:Generator_ColumnPropNameInTable="SEQUENCIAColumn" msprop:Generator_ColumnPropNameInRow="SEQUENCIA" msprop:Generator_UserColumnName="SEQUENCIA" msprop:Generator_ColumnVarNameInTable="columnSEQUENCIA" type="xs:decimal" />
+              <xs:element name="SEQ_FATURA" msprop:Generator_ColumnPropNameInTable="SEQ_FATURAColumn" msprop:Generator_ColumnPropNameInRow="SEQ_FATURA" msprop:Generator_UserColumnName="SEQ_FATURA" msprop:Generator_ColumnVarNameInTable="columnSEQ_FATURA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LCCODIGO" msprop:Generator_ColumnPropNameInTable="LCCODIGOColumn" msprop:Generator_ColumnPropNameInRow="LCCODIGO" msprop:Generator_UserColumnName="LCCODIGO" msprop:Generator_ColumnVarNameInTable="columnLCCODIGO" type="xs:decimal" />
+              <xs:element name="NOME_LOCAL_ATENDIMENTO" msprop:Generator_ColumnPropNameInTable="NOME_LOCAL_ATENDIMENTOColumn" msprop:Generator_ColumnPropNameInRow="NOME_LOCAL_ATENDIMENTO" msprop:Generator_UserColumnName="NOME_LOCAL_ATENDIMENTO" msprop:Generator_ColumnVarNameInTable="columnNOME_LOCAL_ATENDIMENTO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="NUMERO" msprop:Generator_UserColumnName="NUMERO" msprop:Generator_ColumnPropNameInTable="NUMEROColumn" msprop:Generator_ColumnPropNameInRow="NUMERO" msprop:Generator_ColumnVarNameInTable="columnNUMERO" type="xs:decimal" />
-              <xs:element name="DATA_ATENDIMENTO" msprop:Generator_UserColumnName="DATA_ATENDIMENTO" msprop:Generator_ColumnPropNameInTable="DATA_ATENDIMENTOColumn" msprop:Generator_ColumnPropNameInRow="DATA_ATENDIMENTO" msprop:Generator_ColumnVarNameInTable="columnDATA_ATENDIMENTO" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="DATA_FATURAMENTO" msprop:Generator_UserColumnName="DATA_FATURAMENTO" msprop:Generator_ColumnPropNameInTable="DATA_FATURAMENTOColumn" msprop:Generator_ColumnPropNameInRow="DATA_FATURAMENTO" msprop:Generator_ColumnVarNameInTable="columnDATA_FATURAMENTO" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="DATAINICIAL" msprop:Generator_UserColumnName="DATAINICIAL" msprop:Generator_ColumnPropNameInTable="DATAINICIALColumn" msprop:Generator_ColumnPropNameInRow="DATAINICIAL" msprop:Generator_ColumnVarNameInTable="columnDATAINICIAL" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="DATAFINAL" msprop:Generator_UserColumnName="DATAFINAL" msprop:Generator_ColumnPropNameInTable="DATAFINALColumn" msprop:Generator_ColumnPropNameInRow="DATAFINAL" msprop:Generator_ColumnVarNameInTable="columnDATAFINAL" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="PCCODIGO" msprop:Generator_UserColumnName="PCCODIGO" msprop:Generator_ColumnPropNameInTable="PCCODIGOColumn" msprop:Generator_ColumnPropNameInRow="PCCODIGO" msprop:Generator_ColumnVarNameInTable="columnPCCODIGO" type="xs:decimal" />
-              <xs:element name="NOME_PACIENTE" msprop:Generator_UserColumnName="NOME_PACIENTE" msprop:Generator_ColumnPropNameInTable="NOME_PACIENTEColumn" msprop:Generator_ColumnPropNameInRow="NOME_PACIENTE" msprop:Generator_ColumnVarNameInTable="columnNOME_PACIENTE" minOccurs="0">
+              <xs:element name="NUMERO" msprop:Generator_ColumnPropNameInTable="NUMEROColumn" msprop:Generator_ColumnPropNameInRow="NUMERO" msprop:Generator_UserColumnName="NUMERO" msprop:Generator_ColumnVarNameInTable="columnNUMERO" type="xs:decimal" />
+              <xs:element name="DATA_ATENDIMENTO" msprop:Generator_ColumnPropNameInTable="DATA_ATENDIMENTOColumn" msprop:Generator_ColumnPropNameInRow="DATA_ATENDIMENTO" msprop:Generator_UserColumnName="DATA_ATENDIMENTO" msprop:Generator_ColumnVarNameInTable="columnDATA_ATENDIMENTO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATA_FATURAMENTO" msprop:Generator_ColumnPropNameInTable="DATA_FATURAMENTOColumn" msprop:Generator_ColumnPropNameInRow="DATA_FATURAMENTO" msprop:Generator_UserColumnName="DATA_FATURAMENTO" msprop:Generator_ColumnVarNameInTable="columnDATA_FATURAMENTO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATAINICIAL" msprop:Generator_ColumnPropNameInTable="DATAINICIALColumn" msprop:Generator_ColumnPropNameInRow="DATAINICIAL" msprop:Generator_UserColumnName="DATAINICIAL" msprop:Generator_ColumnVarNameInTable="columnDATAINICIAL" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATAFINAL" msprop:Generator_ColumnPropNameInTable="DATAFINALColumn" msprop:Generator_ColumnPropNameInRow="DATAFINAL" msprop:Generator_UserColumnName="DATAFINAL" msprop:Generator_ColumnVarNameInTable="columnDATAFINAL" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PCCODIGO" msprop:Generator_ColumnPropNameInTable="PCCODIGOColumn" msprop:Generator_ColumnPropNameInRow="PCCODIGO" msprop:Generator_UserColumnName="PCCODIGO" msprop:Generator_ColumnVarNameInTable="columnPCCODIGO" type="xs:decimal" />
+              <xs:element name="NOME_PACIENTE" msprop:Generator_ColumnPropNameInTable="NOME_PACIENTEColumn" msprop:Generator_ColumnPropNameInRow="NOME_PACIENTE" msprop:Generator_UserColumnName="NOME_PACIENTE" msprop:Generator_ColumnVarNameInTable="columnNOME_PACIENTE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="TECODIGO" msprop:Generator_UserColumnName="TECODIGO" msprop:Generator_ColumnPropNameInTable="TECODIGOColumn" msprop:Generator_ColumnPropNameInRow="TECODIGO" msprop:Generator_ColumnVarNameInTable="columnTECODIGO" type="xs:decimal" />
-              <xs:element name="NOME_TIPO_EXAME" msprop:Generator_UserColumnName="NOME_TIPO_EXAME" msprop:Generator_ColumnPropNameInTable="NOME_TIPO_EXAMEColumn" msprop:Generator_ColumnPropNameInRow="NOME_TIPO_EXAME" msprop:Generator_ColumnVarNameInTable="columnNOME_TIPO_EXAME" minOccurs="0">
+              <xs:element name="TECODIGO" msprop:Generator_ColumnPropNameInTable="TECODIGOColumn" msprop:Generator_ColumnPropNameInRow="TECODIGO" msprop:Generator_UserColumnName="TECODIGO" msprop:Generator_ColumnVarNameInTable="columnTECODIGO" type="xs:decimal" />
+              <xs:element name="NOME_TIPO_EXAME" msprop:Generator_ColumnPropNameInTable="NOME_TIPO_EXAMEColumn" msprop:Generator_ColumnPropNameInRow="NOME_TIPO_EXAME" msprop:Generator_UserColumnName="NOME_TIPO_EXAME" msprop:Generator_ColumnVarNameInTable="columnNOME_TIPO_EXAME" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="CVCODIGO" msprop:Generator_UserColumnName="CVCODIGO" msprop:Generator_ColumnPropNameInTable="CVCODIGOColumn" msprop:Generator_ColumnPropNameInRow="CVCODIGO" msprop:Generator_ColumnVarNameInTable="columnCVCODIGO" type="xs:decimal" />
-              <xs:element name="NOME_CONVENIO" msprop:Generator_UserColumnName="NOME_CONVENIO" msprop:Generator_ColumnPropNameInTable="NOME_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="NOME_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnNOME_CONVENIO" minOccurs="0">
+              <xs:element name="CVCODIGO" msprop:Generator_ColumnPropNameInTable="CVCODIGOColumn" msprop:Generator_ColumnPropNameInRow="CVCODIGO" msprop:Generator_UserColumnName="CVCODIGO" msprop:Generator_ColumnVarNameInTable="columnCVCODIGO" type="xs:decimal" />
+              <xs:element name="NOME_CONVENIO" msprop:Generator_ColumnPropNameInTable="NOME_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="NOME_CONVENIO" msprop:Generator_UserColumnName="NOME_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnNOME_CONVENIO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="TIPO_CONVENIO" msprop:Generator_UserColumnName="TIPO_CONVENIO" msprop:Generator_ColumnPropNameInTable="TIPO_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="TIPO_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnTIPO_CONVENIO" minOccurs="0">
+              <xs:element name="TIPO_CONVENIO" msprop:Generator_ColumnPropNameInTable="TIPO_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="TIPO_CONVENIO" msprop:Generator_UserColumnName="TIPO_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnTIPO_CONVENIO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PLANO" msprop:Generator_UserColumnName="PLANO" msprop:Generator_ColumnPropNameInTable="PLANOColumn" msprop:Generator_ColumnPropNameInRow="PLANO" msprop:Generator_ColumnVarNameInTable="columnPLANO" minOccurs="0">
+              <xs:element name="PLANO" msprop:Generator_ColumnPropNameInTable="PLANOColumn" msprop:Generator_ColumnPropNameInRow="PLANO" msprop:Generator_UserColumnName="PLANO" msprop:Generator_ColumnVarNameInTable="columnPLANO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="MATRICULA" msprop:Generator_UserColumnName="MATRICULA" msprop:Generator_ColumnPropNameInTable="MATRICULAColumn" msprop:Generator_ColumnPropNameInRow="MATRICULA" msprop:Generator_ColumnVarNameInTable="columnMATRICULA" minOccurs="0">
+              <xs:element name="MATRICULA" msprop:Generator_ColumnPropNameInTable="MATRICULAColumn" msprop:Generator_ColumnPropNameInRow="MATRICULA" msprop:Generator_UserColumnName="MATRICULA" msprop:Generator_ColumnVarNameInTable="columnMATRICULA" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="GUIA" msprop:Generator_UserColumnName="GUIA" msprop:Generator_ColumnPropNameInTable="GUIAColumn" msprop:Generator_ColumnPropNameInRow="GUIA" msprop:Generator_ColumnVarNameInTable="columnGUIA" minOccurs="0">
+              <xs:element name="GUIA" msprop:Generator_ColumnPropNameInTable="GUIAColumn" msprop:Generator_ColumnPropNameInRow="GUIA" msprop:Generator_UserColumnName="GUIA" msprop:Generator_ColumnVarNameInTable="columnGUIA" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="CODIGO_PROCED_FATURA" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CODIGO_PROCED_FATURA" msprop:Generator_ColumnPropNameInTable="CODIGO_PROCED_FATURAColumn" msprop:Generator_ColumnPropNameInRow="CODIGO_PROCED_FATURA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_PROCED_FATURA" minOccurs="0">
+              <xs:element name="CODIGO_PROCED_FATURA" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="CODIGO_PROCED_FATURAColumn" msprop:Generator_ColumnPropNameInRow="CODIGO_PROCED_FATURA" msprop:Generator_UserColumnName="CODIGO_PROCED_FATURA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_PROCED_FATURA" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="14" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DESCRICAO_PROCEDIMENTO_ATEND" msprop:Generator_UserColumnName="DESCRICAO_PROCEDIMENTO_ATEND" msprop:Generator_ColumnPropNameInTable="DESCRICAO_PROCEDIMENTO_ATENDColumn" msprop:Generator_ColumnPropNameInRow="DESCRICAO_PROCEDIMENTO_ATEND" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_PROCEDIMENTO_ATEND" minOccurs="0">
+              <xs:element name="DESCRICAO_PROCEDIMENTO_ATEND" msprop:Generator_ColumnPropNameInTable="DESCRICAO_PROCEDIMENTO_ATENDColumn" msprop:Generator_ColumnPropNameInRow="DESCRICAO_PROCEDIMENTO_ATEND" msprop:Generator_UserColumnName="DESCRICAO_PROCEDIMENTO_ATEND" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_PROCEDIMENTO_ATEND" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="TABELA_CHO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TABELA_CHO" msprop:Generator_ColumnPropNameInTable="TABELA_CHOColumn" msprop:Generator_ColumnPropNameInRow="TABELA_CHO" msprop:Generator_ColumnVarNameInTable="columnTABELA_CHO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_CHO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VALOR_CHO" msprop:Generator_ColumnPropNameInTable="VALOR_CHOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="TABELA_CHM" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TABELA_CHM" msprop:Generator_ColumnPropNameInTable="TABELA_CHMColumn" msprop:Generator_ColumnPropNameInRow="TABELA_CHM" msprop:Generator_ColumnVarNameInTable="columnTABELA_CHM" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_CHM" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VALOR_CHM" msprop:Generator_ColumnPropNameInTable="VALOR_CHMColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHM" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHM" type="xs:decimal" minOccurs="0" />
-              <xs:element name="TABELA_QTDE_FILME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TABELA_QTDE_FILME" msprop:Generator_ColumnPropNameInTable="TABELA_QTDE_FILMEColumn" msprop:Generator_ColumnPropNameInRow="TABELA_QTDE_FILME" msprop:Generator_ColumnVarNameInTable="columnTABELA_QTDE_FILME" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_FILME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VALOR_FILME" msprop:Generator_ColumnPropNameInTable="VALOR_FILMEColumn" msprop:Generator_ColumnPropNameInRow="VALOR_FILME" msprop:Generator_ColumnVarNameInTable="columnVALOR_FILME" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_MATERIAL" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VALOR_MATERIAL" msprop:Generator_ColumnPropNameInTable="VALOR_MATERIALColumn" msprop:Generator_ColumnPropNameInRow="VALOR_MATERIAL" msprop:Generator_ColumnVarNameInTable="columnVALOR_MATERIAL" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_MEDICAMENTO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VALOR_MEDICAMENTO" msprop:Generator_ColumnPropNameInTable="VALOR_MEDICAMENTOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_MEDICAMENTO" msprop:Generator_ColumnVarNameInTable="columnVALOR_MEDICAMENTO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_COPARTICIPACAO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VALOR_COPARTICIPACAO" msprop:Generator_ColumnPropNameInTable="VALOR_COPARTICIPACAOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_COPARTICIPACAO" msprop:Generator_ColumnVarNameInTable="columnVALOR_COPARTICIPACAO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_AD_CONVENIO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VALOR_AD_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_AD_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_AD_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_AD_CONVENIO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="TOTAL_PROCEDIMENTO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TOTAL_PROCEDIMENTO" msprop:Generator_ColumnPropNameInTable="TOTAL_PROCEDIMENTOColumn" msprop:Generator_ColumnPropNameInRow="TOTAL_PROCEDIMENTO" msprop:Generator_ColumnVarNameInTable="columnTOTAL_PROCEDIMENTO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="PORCIRRF" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PORCIRRF" msprop:Generator_ColumnPropNameInTable="PORCIRRFColumn" msprop:Generator_ColumnPropNameInRow="PORCIRRF" msprop:Generator_ColumnVarNameInTable="columnPORCIRRF" type="xs:decimal" minOccurs="0" />
-              <xs:element name="PORCCOFINS" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PORCCOFINS" msprop:Generator_ColumnPropNameInTable="PORCCOFINSColumn" msprop:Generator_ColumnPropNameInRow="PORCCOFINS" msprop:Generator_ColumnVarNameInTable="columnPORCCOFINS" type="xs:decimal" minOccurs="0" />
-              <xs:element name="PORCCSLL" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PORCCSLL" msprop:Generator_ColumnPropNameInTable="PORCCSLLColumn" msprop:Generator_ColumnPropNameInRow="PORCCSLL" msprop:Generator_ColumnVarNameInTable="columnPORCCSLL" type="xs:decimal" minOccurs="0" />
-              <xs:element name="PORCISS" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PORCISS" msprop:Generator_ColumnPropNameInTable="PORCISSColumn" msprop:Generator_ColumnPropNameInRow="PORCISS" msprop:Generator_ColumnVarNameInTable="columnPORCISS" type="xs:decimal" minOccurs="0" />
-              <xs:element name="PORCPIS" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PORCPIS" msprop:Generator_ColumnPropNameInTable="PORCPISColumn" msprop:Generator_ColumnPropNameInRow="PORCPIS" msprop:Generator_ColumnVarNameInTable="columnPORCPIS" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_CHM_CONVENIO" msprop:Generator_ColumnPropNameInRow="VALOR_CHM_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHM_CONVENIOColumn" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHM_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHM_CONVENIO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_CHO_CONVENIO" msprop:Generator_ColumnPropNameInRow="VALOR_CHO_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHO_CONVENIOColumn" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHO_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHO_CONVENIO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TABELA_CHO" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="TABELA_CHOColumn" msprop:Generator_ColumnPropNameInRow="TABELA_CHO" msprop:Generator_UserColumnName="TABELA_CHO" msprop:Generator_ColumnVarNameInTable="columnTABELA_CHO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_CHO" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="VALOR_CHOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHO" msprop:Generator_UserColumnName="VALOR_CHO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TABELA_CHM" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="TABELA_CHMColumn" msprop:Generator_ColumnPropNameInRow="TABELA_CHM" msprop:Generator_UserColumnName="TABELA_CHM" msprop:Generator_ColumnVarNameInTable="columnTABELA_CHM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_CHM" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="VALOR_CHMColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHM" msprop:Generator_UserColumnName="VALOR_CHM" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TABELA_QTDE_FILME" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="TABELA_QTDE_FILMEColumn" msprop:Generator_ColumnPropNameInRow="TABELA_QTDE_FILME" msprop:Generator_UserColumnName="TABELA_QTDE_FILME" msprop:Generator_ColumnVarNameInTable="columnTABELA_QTDE_FILME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_FILME" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="VALOR_FILMEColumn" msprop:Generator_ColumnPropNameInRow="VALOR_FILME" msprop:Generator_UserColumnName="VALOR_FILME" msprop:Generator_ColumnVarNameInTable="columnVALOR_FILME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_MATERIAL" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="VALOR_MATERIALColumn" msprop:Generator_ColumnPropNameInRow="VALOR_MATERIAL" msprop:Generator_UserColumnName="VALOR_MATERIAL" msprop:Generator_ColumnVarNameInTable="columnVALOR_MATERIAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_MEDICAMENTO" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="VALOR_MEDICAMENTOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_MEDICAMENTO" msprop:Generator_UserColumnName="VALOR_MEDICAMENTO" msprop:Generator_ColumnVarNameInTable="columnVALOR_MEDICAMENTO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_COPARTICIPACAO" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="VALOR_COPARTICIPACAOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_COPARTICIPACAO" msprop:Generator_UserColumnName="VALOR_COPARTICIPACAO" msprop:Generator_ColumnVarNameInTable="columnVALOR_COPARTICIPACAO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_AD_CONVENIO" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="VALOR_AD_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_AD_CONVENIO" msprop:Generator_UserColumnName="VALOR_AD_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_AD_CONVENIO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_PROCEDIMENTO" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="TOTAL_PROCEDIMENTOColumn" msprop:Generator_ColumnPropNameInRow="TOTAL_PROCEDIMENTO" msprop:Generator_UserColumnName="TOTAL_PROCEDIMENTO" msprop:Generator_ColumnVarNameInTable="columnTOTAL_PROCEDIMENTO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PORCIRRF" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCIRRFColumn" msprop:Generator_ColumnPropNameInRow="PORCIRRF" msprop:Generator_UserColumnName="PORCIRRF" msprop:Generator_ColumnVarNameInTable="columnPORCIRRF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PORCCOFINS" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCCOFINSColumn" msprop:Generator_ColumnPropNameInRow="PORCCOFINS" msprop:Generator_UserColumnName="PORCCOFINS" msprop:Generator_ColumnVarNameInTable="columnPORCCOFINS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PORCCSLL" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCCSLLColumn" msprop:Generator_ColumnPropNameInRow="PORCCSLL" msprop:Generator_UserColumnName="PORCCSLL" msprop:Generator_ColumnVarNameInTable="columnPORCCSLL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PORCISS" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCISSColumn" msprop:Generator_ColumnPropNameInRow="PORCISS" msprop:Generator_UserColumnName="PORCISS" msprop:Generator_ColumnVarNameInTable="columnPORCISS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PORCPIS" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCPISColumn" msprop:Generator_ColumnPropNameInRow="PORCPIS" msprop:Generator_UserColumnName="PORCPIS" msprop:Generator_ColumnVarNameInTable="columnPORCPIS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_CHM_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHM_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHM_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHM_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHM_CONVENIO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_CHO_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHO_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHO_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHO_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHO_CONVENIO" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

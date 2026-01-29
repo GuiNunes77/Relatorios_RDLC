@@ -104,6 +104,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Relatórios\1002\Atestado.rdlc" />
+    <EmbeddedResource Include="Relatórios\1002\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\1002\Fch005.rdlc" />
     <EmbeddedResource Include="Relatórios\1003\FAT010.rdlc" />
     <EmbeddedResource Include="Relatórios\1003\FAT111.rdlc" />
@@ -307,6 +309,9 @@
     <EmbeddedResource Include="Relatórios\710\PGM002.rdlc" />
     <EmbeddedResource Include="Relatórios\710\PGM005.rdlc" />
     <EmbeddedResource Include="Relatórios\710\PGM015.rdlc" />
+    <EmbeddedResource Include="Relatórios\740\FAT124.rdlc" />
+    <EmbeddedResource Include="Relatórios\740\FAT131.rdlc" />
+    <EmbeddedResource Include="Relatórios\740\Fch005.rdlc" />
     <EmbeddedResource Include="Relatórios\744\FAT007.rdlc" />
     <EmbeddedResource Include="Relatórios\760\FAT007.rdlc" />
     <EmbeddedResource Include="Relatórios\763\Atestado.rdlc" />
@@ -394,6 +399,7 @@
     <EmbeddedResource Include="Relatórios\792\FAT111.rdlc" />
     <EmbeddedResource Include="Relatórios\792\FAT112 %281%29.rdlc" />
     <EmbeddedResource Include="Relatórios\792\FAT112.rdlc" />
+    <EmbeddedResource Include="Relatórios\792\FAT116.rdlc" />
     <EmbeddedResource Include="Relatórios\792\FAT123.rdlc" />
     <EmbeddedResource Include="Relatórios\792\FINM079.rdlc" />
     <EmbeddedResource Include="Relatórios\792\Personalizacao original\Atestado.rdlc" />
@@ -484,6 +490,7 @@
     <EmbeddedResource Include="Relatórios\857\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\857\Etq001.rdlc" />
     <EmbeddedResource Include="Relatórios\857\Fch005.rdlc" />
+    <EmbeddedResource Include="Relatórios\858\Fch005.rdlc" />
     <EmbeddedResource Include="Relatórios\864\Atestado.rdlc" />
     <EmbeddedResource Include="Relatórios\864\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\864\Etq001.rdlc" />
@@ -517,8 +524,11 @@
     <EmbeddedResource Include="Relatórios\917\Fch005_pro.rdlc" />
     <EmbeddedResource Include="Relatórios\923\FAT007.rdlc" />
     <EmbeddedResource Include="Relatórios\938\FAT018.rdlc" />
+    <EmbeddedResource Include="Relatórios\938\FAT062.rdlc" />
+    <EmbeddedResource Include="Relatórios\938\FAT064.rdlc" />
     <EmbeddedResource Include="Relatórios\938\Fch005.rdlc" />
     <EmbeddedResource Include="Relatórios\957\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\957\FAT007.rdlc" />
     <EmbeddedResource Include="Relatórios\957\Fch001.rdlc" />
     <EmbeddedResource Include="Relatórios\957\Guitiss30.rdlc" />
     <EmbeddedResource Include="Relatórios\965\AGD005.rdlc" />
@@ -555,7 +565,8 @@
     <EmbeddedResource Include="Relatórios\998\Atestado.rdlc" />
     <EmbeddedResource Include="Relatórios\998\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\998\CXA011.rdlc" />
-    <EmbeddedResource Include="Relatórios\998\Etq001.rdlc" />
+    <EmbeddedResource Include="Relatórios\998\Etq002.rdlc" />
+    <EmbeddedResource Include="Relatórios\998\Etq002_ind.rdlc" />
     <EmbeddedResource Include="Relatórios\998\Fch005.rdlc" />
     <EmbeddedResource Include="Relatórios\9\EST040.rdlc" />
     <EmbeddedResource Include="Relatórios\9\EST041.rdlc" />
@@ -598,6 +609,7 @@
     <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ027.rdlc" />
     <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ028.rdlc" />
     <EmbeddedResource Include="Relatórios\Central Tecnica\CTQ029.rdlc" />
+    <EmbeddedResource Include="Relatórios\Faturamento\FAT007.rdlc" />
     <EmbeddedResource Include="Relatórios\Faturamento\FAT026.rdlc" />
     <EmbeddedResource Include="Relatórios\Faturamento\FAT030.rdlc" />
     <EmbeddedResource Include="Relatórios\Faturamento\FAT052.rdlc" />
@@ -607,6 +619,7 @@
     <EmbeddedResource Include="Relatórios\Financeiro\FAT112.rdlc" />
     <EmbeddedResource Include="Relatórios\Financeiro\Fat124.rdlc" />
     <EmbeddedResource Include="Relatórios\Pagamento Médico\PGM006.rdlc" />
+    <EmbeddedResource Include="Relatórios\Pagamento Médico\PGM013.rdlc" />
     <EmbeddedResource Include="Relatórios\Pro\Atestado.rdlc" />
     <EmbeddedResource Include="Relatórios\Pro\AtestadoAcompanhante.rdlc" />
     <EmbeddedResource Include="Relatórios\rdlc\Doc001.rdlc" />
@@ -617,6 +630,7 @@
     <EmbeddedResource Include="Relatórios\Recepcao\Fch004.rdlc" />
     <EmbeddedResource Include="Relatórios\Recepcao\RCP027.rdlc" />
     <EmbeddedResource Include="Relatórios\Recepcao\Report1.rdlc" />
+    <EmbeddedResource Include="Relatórios\Recepcao\teste.rdlc" />
     <None Include="csiDataSet.xsc">
       <DependentUpon>csiDataSet.xsd</DependentUpon>
     </None>
