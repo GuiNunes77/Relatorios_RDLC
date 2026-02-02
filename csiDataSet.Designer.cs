@@ -168669,7 +168669,7 @@ namespace Relatorios_RDLC.csiDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual csiDataSet.PR_REL_EST006DataTable GetData(global::System.Nullable<global::System.DateTime> dataInicial, global::System.Nullable<global::System.DateTime> dataFinal, string CUnidadeEstoque, global::System.Nullable<bool> BExcecaoUnidadeEstoque, string CProduto, string CSetor, string CFornecedor, string CGrupoDeProdutos, global::System.Nullable<bool> BExcecaoGrupoDeProdutos) {
+        public virtual csiDataSet.PR_REL_EST006DataTable GetData(global::System.Nullable<global::System.DateTime> dataInicial, global::System.Nullable<global::System.DateTime> dataFinal, string CUnidadeEstoque, global::System.Nullable<bool> BExcecaoUnidadeEstoque, string CProduto, string CSetor, string CFornecedor, string CGrupoDeProdutos, global::System.Nullable<bool> BExcecaoGrupoDeProdutos, object value) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((dataInicial.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(dataInicial.Value));

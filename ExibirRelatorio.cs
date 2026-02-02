@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Relatorios_RDLC.DataSet1TableAdapters;
+using Relatorios_RDLC.csiDataSetTableAdapters;
 
 namespace Relatorios_RDLC
 {
@@ -52,7 +52,7 @@ namespace Relatorios_RDLC
             //Criação dos table adapters para pegar as informações para preencher os data tables.
             //cad_LOCALATENDIMENTOTableAdapter adpCabecalho = new cad_LOCALATENDIMENTOTableAdapter();
             PR_REL_CABECALHOTableAdapter adpCabecalho = new PR_REL_CABECALHOTableAdapter();
-            PR_REL_EST036TableAdapter adpDados = new PR_REL_EST036TableAdapter();
+            PR_REL_EST006TableAdapter adpDados = new PR_REL_EST006TableAdapter();
 
             //Data tables para retornar informações para o reportviewer
             DataTable dtCabecalho = adpCabecalho.GetData(1, 1, null, null, null, null, null, null, null, null, null, null);
