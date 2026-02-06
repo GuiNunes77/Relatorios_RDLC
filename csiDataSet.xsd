@@ -4840,6 +4840,7 @@
               <Mapping SourceColumn="PORCPIS" DataSetColumn="PORCPIS" />
               <Mapping SourceColumn="VALOR_CHM_CONVENIO" DataSetColumn="VALOR_CHM_CONVENIO" />
               <Mapping SourceColumn="VALOR_CHO_CONVENIO" DataSetColumn="VALOR_CHO_CONVENIO" />
+              <Mapping SourceColumn="VALOR_FILME_CONVENIO" DataSetColumn="VALOR_FILME_CONVENIO" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -18190,7 +18191,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="GUIA" msprop:Generator_ColumnPropNameInRow="GUIA" msprop:Generator_ColumnPropNameInTable="GUIAColumn" msprop:Generator_ColumnVarNameInTable="columnGUIA" msprop:Generator_UserColumnName="GUIA" minOccurs="0">
+              <xs:element name="GUIA" msprop:Generator_UserColumnName="GUIA" msprop:Generator_ColumnPropNameInTable="GUIAColumn" msprop:Generator_ColumnPropNameInRow="GUIA" msprop:Generator_ColumnVarNameInTable="columnGUIA" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
@@ -18905,8 +18906,9 @@
               <xs:element name="PORCCSLL" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCCSLLColumn" msprop:Generator_ColumnPropNameInRow="PORCCSLL" msprop:Generator_UserColumnName="PORCCSLL" msprop:Generator_ColumnVarNameInTable="columnPORCCSLL" type="xs:decimal" minOccurs="0" />
               <xs:element name="PORCISS" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCISSColumn" msprop:Generator_ColumnPropNameInRow="PORCISS" msprop:Generator_UserColumnName="PORCISS" msprop:Generator_ColumnVarNameInTable="columnPORCISS" type="xs:decimal" minOccurs="0" />
               <xs:element name="PORCPIS" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="PORCPISColumn" msprop:Generator_ColumnPropNameInRow="PORCPIS" msprop:Generator_UserColumnName="PORCPIS" msprop:Generator_ColumnVarNameInTable="columnPORCPIS" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_CHM_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHM_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHM_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHM_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHM_CONVENIO" type="xs:decimal" minOccurs="0" />
-              <xs:element name="VALOR_CHO_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHO_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHO_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHO_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHO_CONVENIO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_CHM_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHM_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHM_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHM_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHM_CONVENIO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_CHO_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_CHO_CONVENIOColumn" msprop:Generator_ColumnPropNameInRow="VALOR_CHO_CONVENIO" msprop:Generator_UserColumnName="VALOR_CHO_CONVENIO" msprop:Generator_ColumnVarNameInTable="columnVALOR_CHO_CONVENIO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VALOR_FILME_CONVENIO" msprop:Generator_ColumnPropNameInRow="VALOR_FILME_CONVENIO" msprop:Generator_ColumnPropNameInTable="VALOR_FILME_CONVENIOColumn" msprop:Generator_ColumnVarNameInTable="columnVALOR_FILME_CONVENIO" msprop:Generator_UserColumnName="VALOR_FILME_CONVENIO" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

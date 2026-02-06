@@ -245,10 +245,22 @@
           <DataField>PORCPIS</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="VALOR_CHM_CONVENIO">
+          <DataField>VALOR_CHM_CONVENIO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VALOR_CHO_CONVENIO">
+          <DataField>VALOR_CHO_CONVENIO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VALOR_FILME_CONVENIO">
+          <DataField>VALOR_FILME_CONVENIO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csi29DataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_FAT010</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -1180,14 +1192,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TABELA_CHM">
+                        <Textbox Name="VALOR_CHM_CONVENIO">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TABELA_CHM.Value</Value>
+                                  <Value>=Fields!VALOR_CHM_CONVENIO.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -1201,7 +1213,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>TABELA_CHM</rd:DefaultName>
+                          <rd:DefaultName>VALOR_CHM_CONVENIO</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1753,7 +1765,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TABELA_CHO.Value</Value>
+                                  <Value>=Fields!VALOR_CHO_CONVENIO.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -2744,7 +2756,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TABELA_QTDE_FILME.Value</Value>
+                                  <Value>=Fields!VALOR_FILME_CONVENIO.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -4889,11 +4901,20 @@
                     <TablixMember />
                     <TablixMember />
                     <TablixMember />
-                    <TablixMember>
-                      <Visibility>
-                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
-                      </Visibility>
-                    </TablixMember>
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
+                    <TablixMember />
                     <TablixMember>
                       <Visibility>
                         <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value = 0</Hidden>
@@ -4919,29 +4940,12 @@
                         <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCPIS.Value = 0</Hidden>
                       </Visibility>
                     </TablixMember>
+                    <TablixMember />
                     <TablixMember>
                       <Visibility>
                         <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
                       </Visibility>
                     </TablixMember>
-                    <TablixMember>
-                      <Visibility>
-                        <Hidden>=First(Fields!exibirImposto.Value, "Cabecalho") = "N" OR Fields!PORCIRRF.Value + Fields!PORCCOFINS.Value + Fields!PORCCSLL.Value + Fields!PORCISS.Value + Fields!PORCPIS.Value = 0</Hidden>
-                      </Visibility>
-                    </TablixMember>
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
-                    <TablixMember />
                     <TablixMember />
                   </TablixMembers>
                 </TablixMember>
