@@ -29,17 +29,13 @@ namespace Relatorios_RDLC
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
             // reportViewer
             // 
             this.reportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "FichaAtendimento";
-            this.reportViewer.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer.LocalReport.ReportEmbeddedResource = "Relatorios_RDLC.Relatórios.Plus.Fch004.rdlc";
+            this.reportViewer.LocalReport.ReportEmbeddedResource = "Relatorios_RDLC.Relatórios.740.Fch005.rdlc";
             this.reportViewer.Location = new System.Drawing.Point(0, 0);
             this.reportViewer.Name = "reportViewer";
             this.reportViewer.ServerReport.BearerToken = null;

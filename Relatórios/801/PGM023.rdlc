@@ -89,6 +89,10 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="TABELA">
+          <DataField>TABELA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="seq_PagtoMedico">
           <DataField>seq_PagtoMedico</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -265,18 +269,26 @@
           <DataField>NomePaciente</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="VALORRECEBIDO1">
-          <DataField>VALORRECEBIDO1</DataField>
+        <Field Name="seq_Receb">
+          <DataField>seq_Receb</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="seq_Receb_Proced">
+          <DataField>seq_Receb_Proced</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ValorReceb_Convenio">
+          <DataField>ValorReceb_Convenio</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Visual Studio 2019\Projects\Relatorios_CSPro\Relatorios_CSPro\DataSet.xsd</rd:SchemaPath>
-        <rd:TableName>PR_REL_PGM017</rd:TableName>
+        <rd:DataSetName>csi29DataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Allan\source\repos\Relatorios_RDLC\csi29DataSet.xsd</rd:SchemaPath>
+        <rd:TableName>PR_REL_PGM023</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>PR_REL_PGM017TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>PR_REL_PGM023TableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -1386,7 +1398,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Last(Fields!VALORRECEBIDO1.Value) + 0</Value>
+                                  <Value>=Max(Fields!ValorReceb_Convenio.Value) + 0</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -1640,7 +1652,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Last(Fields!VALORRECEBIDO1.Value, "grpSequencia")) + 0</Value>
+                                  <Value>=Sum(Max(Fields!ValorReceb_Convenio.Value, "grpSequencia")) + 0</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -4743,7 +4755,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Last(Fields!VALORRECEBIDO1.Value, "grpSequencia")) + 0</Value>
+                                  <Value>=Sum(Max(Fields!ValorReceb_Convenio.Value, "grpSequencia")) + 0</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -5858,7 +5870,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Last(Fields!VALORRECEBIDO1.Value, "grpSequencia")) + 0</Value>
+                                  <Value>=Sum(Max(Fields!ValorReceb_Convenio.Value, "grpSequencia")) + 0</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>

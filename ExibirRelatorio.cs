@@ -52,11 +52,11 @@ namespace Relatorios_RDLC
             //Criação dos table adapters para pegar as informações para preencher os data tables.
             //cad_LOCALATENDIMENTOTableAdapter adpCabecalho = new cad_LOCALATENDIMENTOTableAdapter();
             PR_REL_CABECALHOTableAdapter adpCabecalho = new PR_REL_CABECALHOTableAdapter();
-            PR_REL_EST006TableAdapter adpDados = new PR_REL_EST006TableAdapter();
+            PR_REL_FCH001TableAdapter adpDados = new PR_REL_FCH001TableAdapter();
 
             //Data tables para retornar informações para o reportviewer
             DataTable dtCabecalho = adpCabecalho.GetData(1, 1, null, null, null, null, null, null, null, null, null, null);
-            DataTable dtDados = adpDados.GetData(dataInicial, dataFinal,null, null, null, null, null, null, null, null, null, null);
+            DataTable dtDados = adpDados.GetData(1, 108223, null, null, null, null, null);
 
             //Imagens integradas
             reportViewer.LocalReport.EnableExternalImages = true;
@@ -70,7 +70,7 @@ namespace Relatorios_RDLC
             //reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("CadLocalAtendimento", dtCabecalho));
             //reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("FINM074", dtDados));
             reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("Cabecalho", dtCabecalho));
-            reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("Dados", dtDados));
+            reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("FichaAtendimento", dtDados));
 
             reportViewer.RefreshReport();
         }

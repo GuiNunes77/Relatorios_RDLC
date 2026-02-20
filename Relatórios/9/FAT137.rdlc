@@ -1746,16 +1746,19 @@ Fields!DESCRICAO_PROCEDIMENTO_ATEND.Value</Value>
                                             <Visibility>
                                               <Hidden>=Fields!DESCRICAO_CONSUMO.Value = Nothing</Hidden>
                                             </Visibility>
+                                            <KeepTogether>true</KeepTogether>
                                           </TablixMember>
                                           <TablixMember>
                                             <KeepWithGroup>Before</KeepWithGroup>
                                           </TablixMember>
                                         </TablixMembers>
+                                        <KeepTogether>true</KeepTogether>
                                       </TablixMember>
                                       <TablixMember>
                                         <KeepWithGroup>Before</KeepWithGroup>
                                       </TablixMember>
                                     </TablixMembers>
+                                    <KeepTogether>true</KeepTogether>
                                   </TablixMember>
                                 </TablixMembers>
                               </TablixRowHierarchy>
