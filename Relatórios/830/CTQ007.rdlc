@@ -780,6 +780,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1285,11 +1286,7 @@ IIF(Fields!TIPO.Value = 2, "Filme",
                           </SortExpressions>
                           <TablixMembers>
                             <TablixMember>
-                              <Group Name="Details">
-                                <GroupExpressions>
-                                  <GroupExpression>=Fields!TIPO.Value</GroupExpression>
-                                </GroupExpressions>
-                              </Group>
+                              <Group Name="Details" />
                               <SortExpressions>
                                 <SortExpression>
                                   <Value>=Fields!TIPO.Value</Value>
