@@ -1470,7 +1470,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>C.P.F. do Paciente . . . . </Value>
+                                                    <Value>C.P.F. do Paciente . . . . . </Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -1508,10 +1508,7 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Left(First(Fields!CPF.Value, "FichaAtendimento"),3) &amp; "." &amp;
-Mid(First(Fields!CPF.Value, "FichaAtendimento"),4,3) &amp; "." &amp;
-Mid(First(Fields!CPF.Value, "FichaAtendimento"),7,3) &amp; "-" &amp;
-Right(First(Fields!CPF.Value, "FichaAtendimento"),2)</Value>
+                                                    <Value>=First(Fields!CPF.Value, "FichaAtendimento")</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
@@ -1784,7 +1781,7 @@ Right(First(Fields!CPF.Value, "FichaAtendimento"),2)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Plano do convênio . . . . </Value>
+                                                    <Value>Plano do convênio . . . . .</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                     </Style>
