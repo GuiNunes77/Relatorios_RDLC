@@ -7603,35 +7603,6 @@ ReportItems!txt_Total_Gases_Medicinais.Value
                                           <PaddingTop>1pt</PaddingTop>
                                         </Style>
                                       </Textbox>
-                                      <Textbox Name="textbox_Assinatura_Contratado2">
-                                        <KeepTogether>true</KeepTogether>
-                                        <Paragraphs>
-                                          <Paragraph>
-                                            <TextRuns>
-                                              <TextRun>
-                                                <Value>=First(Fields!NomeUsuario.Value)</Value>
-                                                <Style>
-                                                  <FontWeight>Bold</FontWeight>
-                                                </Style>
-                                              </TextRun>
-                                            </TextRuns>
-                                            <Style>
-                                              <TextAlign>Center</TextAlign>
-                                            </Style>
-                                          </Paragraph>
-                                        </Paragraphs>
-                                        <Top>0.31cm</Top>
-                                        <Left>0.02289cm</Left>
-                                        <Height>0.49cm</Height>
-                                        <Width>9.16193cm</Width>
-                                        <ZIndex>1</ZIndex>
-                                        <Style>
-                                          <Border>
-                                            <Style>None</Style>
-                                          </Border>
-                                          <PaddingLeft>1pt</PaddingLeft>
-                                        </Style>
-                                      </Textbox>
                                     </ReportItems>
                                     <KeepTogether>true</KeepTogether>
                                     <ZIndex>11</ZIndex>
@@ -7918,693 +7889,173 @@ ReportItems!txt_Total_Gases_Medicinais.Value
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="lcCodigo">
-          <DataField>lcCodigo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="LCCODIGO">
+          <DataField>LCCODIGO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="Numero">
-          <DataField>Numero</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NomeEmpresa">
-          <DataField>NomeEmpresa</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NomeFantasia">
-          <DataField>NomeFantasia</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="NUMERO">
+          <DataField>NUMERO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="CGC_LOCAL">
           <DataField>CGC_LOCAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Complemento">
-          <DataField>Complemento</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TituloExtra">
-          <DataField>TituloExtra</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NomeCidade">
-          <DataField>NomeCidade</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Endereco">
-          <DataField>Endereco</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Bairro">
-          <DataField>Bairro</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cep">
-          <DataField>Cep</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Estado">
-          <DataField>Estado</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CODIGOOPERADORALOCAL">
           <DataField>CODIGOOPERADORALOCAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Data">
-          <DataField>Data</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Data_Faturamento">
-          <DataField>Data_Faturamento</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="cvCodigo">
-          <DataField>cvCodigo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="MRCODIGO">
-          <DataField>MRCODIGO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="NOME_LOCAL_ATENDIMENTO">
           <DataField>NOME_LOCAL_ATENDIMENTO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="pcCodigo">
-          <DataField>pcCodigo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="cdEmpresa">
-          <DataField>cdEmpresa</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="STATUS_ATENDIMENTO">
-          <DataField>STATUS_ATENDIMENTO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Matricula">
-          <DataField>Matricula</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Guia">
-          <DataField>Guia</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Responsavel">
-          <DataField>Responsavel</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NOME_MEDICO_REQUISITANTE">
-          <DataField>NOME_MEDICO_REQUISITANTE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Controle">
-          <DataField>Controle</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CID">
-          <DataField>CID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CodigoExterno">
-          <DataField>CodigoExterno</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CRM">
-          <DataField>CRM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Sexo">
-          <DataField>Sexo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Nome">
-          <DataField>Nome</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PAC_SEXO">
-          <DataField>PAC_SEXO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="DUM">
-          <DataField>DUM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="RG">
-          <DataField>RG</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CPF">
-          <DataField>CPF</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NomeMae">
-          <DataField>NomeMae</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PAC_DATANASC">
-          <DataField>PAC_DATANASC</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PAC_CEP">
-          <DataField>PAC_CEP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PAC_FONE">
-          <DataField>PAC_FONE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PAC_ENDERECO">
-          <DataField>PAC_ENDERECO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CNS">
-          <DataField>CNS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="seq_Tiss_atend">
-          <DataField>seq_Tiss_atend</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PLANO">
-          <DataField>PLANO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="GuiaPrincipal">
-          <DataField>GuiaPrincipal</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="DATA_AUTORIZACAO">
-          <DataField>DATA_AUTORIZACAO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="SENHA_AUTORIZACAO">
-          <DataField>SENHA_AUTORIZACAO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALIDADE_SENHA">
-          <DataField>VALIDADE_SENHA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="DATA_GUIA">
-          <DataField>DATA_GUIA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Estado_CRM">
-          <DataField>Estado_CRM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CPF_MED">
-          <DataField>CPF_MED</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="MSOL_CODIGO_EXTERNO">
-          <DataField>MSOL_CODIGO_EXTERNO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NomeConvenio">
-          <DataField>NomeConvenio</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="RegistroANS">
-          <DataField>RegistroANS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CONV_CODIGO_EXTERNO">
-          <DataField>CONV_CODIGO_EXTERNO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOSSOL">
-          <DataField>CBOSSOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOSSOL201">
-          <DataField>CBOSSOL201</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOSSOL202">
-          <DataField>CBOSSOL202</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOSSOL300">
-          <DataField>CBOSSOL300</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CNESSOL">
-          <DataField>CNESSOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODMEDSOLOPER">
-          <DataField>CODMEDSOLOPER</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="UF_MED">
-          <DataField>UF_MED</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALIDADECARTERINHA">
-          <DataField>VALIDADECARTERINHA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TIPO_DOCTO_MED">
-          <DataField>TIPO_DOCTO_MED</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODIGO_IBGE_MUNIC_MED_SOL">
-          <DataField>CODIGO_IBGE_MUNIC_MED_SOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="seq_Tiss_Part">
-          <DataField>seq_Tiss_Part</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Seq_Tiss_Acom">
-          <DataField>Seq_Tiss_Acom</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Reducao_Acrescimo">
-          <DataField>Reducao_Acrescimo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ExpMatMed">
-          <DataField>ExpMatMed</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_Material">
-          <DataField>Cod_Material</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_Medicamento">
-          <DataField>Cod_Medicamento</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ExpBras">
-          <DataField>ExpBras</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ExpFilme">
-          <DataField>ExpFilme</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_Filme">
-          <DataField>Cod_Filme</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_FOD">
-          <DataField>Cod_FOD</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Agrupar">
-          <DataField>Agrupar</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODIBGE">
-          <DataField>CODIBGE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODLCCNES">
-          <DataField>CODLCCNES</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Suspeita">
-          <DataField>Suspeita</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="END_NUMERO">
-          <DataField>END_NUMERO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Tipo_Docto">
-          <DataField>Tipo_Docto</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_MedicCont">
-          <DataField>Cod_MedicCont</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CodTabela">
-          <DataField>CodTabela</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CodTabelaMaterial">
-          <DataField>CodTabelaMaterial</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CodTabelaMedicamento">
-          <DataField>CodTabelaMedicamento</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODTABELAALUGUEL">
-          <DataField>CODTABELAALUGUEL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODTABELADIARIAS">
-          <DataField>CODTABELADIARIAS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODTABELAGASES">
-          <DataField>CODTABELAGASES</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODTABELAOPME">
-          <DataField>CODTABELAOPME</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODTABELATAXAS">
-          <DataField>CODTABELATAXAS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CONSELHO_MED_SOL">
-          <DataField>CONSELHO_MED_SOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_GasesMedicinais">
-          <DataField>Cod_GasesMedicinais</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_TaxasDiversas">
-          <DataField>Cod_TaxasDiversas</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_Diarias">
-          <DataField>Cod_Diarias</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_Alugueis">
-          <DataField>Cod_Alugueis</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cod_OPME">
-          <DataField>Cod_OPME</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CONTRATADOSOL">
-          <DataField>CONTRATADOSOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CPF_CONTRATADOSOL">
-          <DataField>CPF_CONTRATADOSOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CNESCONTRATADOSOL">
-          <DataField>CNESCONTRATADOSOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TIPO_DOCTO_CONTRATADOL">
-          <DataField>TIPO_DOCTO_CONTRATADOL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ValorFilme">
-          <DataField>ValorFilme</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ValorCHM">
-          <DataField>ValorCHM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ValorCHO">
-          <DataField>ValorCHO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Versao">
-          <DataField>Versao</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="AgruparExame">
-          <DataField>AgruparExame</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_NomeEmpresa">
-          <DataField>EOE_NomeEmpresa</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_NomeFantasia">
-          <DataField>EOE_NomeFantasia</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_CGC_LOCAL">
-          <DataField>EOE_CGC_LOCAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_NomeCidade">
-          <DataField>EOE_NomeCidade</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_ENDERECO">
-          <DataField>EOE_ENDERECO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_BAIRRO">
-          <DataField>EOE_BAIRRO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_CEP">
-          <DataField>EOE_CEP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_ESTADO">
-          <DataField>EOE_ESTADO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_CDIBGE">
-          <DataField>EOE_CDIBGE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_END_NUMERO">
-          <DataField>EOE_END_NUMERO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_Tipo_Docto">
-          <DataField>EOE_Tipo_Docto</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_CODIGOOPERADORALOCAL">
-          <DataField>EOE_CODIGOOPERADORALOCAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="EOE_CNES">
-          <DataField>EOE_CNES</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Sequencia">
-          <DataField>Sequencia</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ambcodigo">
-          <DataField>ambcodigo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="DESCRICAO_PROCEDIMENTO_ATEND">
-          <DataField>DESCRICAO_PROCEDIMENTO_ATEND</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALOR_CHO">
-          <DataField>VALOR_CHO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALOR_CHM">
-          <DataField>VALOR_CHM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ELTAGRUPAR">
-          <DataField>ELTAGRUPAR</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALOR_FILME">
-          <DataField>VALOR_FILME</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALOR_MATERIAL">
-          <DataField>VALOR_MATERIAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALOR_MEDICAMENTO">
-          <DataField>VALOR_MEDICAMENTO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALOR_AD_CONVENIO">
-          <DataField>VALOR_AD_CONVENIO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TOTAL_PROCEDIMENTO">
-          <DataField>TOTAL_PROCEDIMENTO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="STATUS_PROCED">
-          <DataField>STATUS_PROCED</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODIGO_PROCED_FATURA">
-          <DataField>CODIGO_PROCED_FATURA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODIGO_PROCED">
-          <DataField>CODIGO_PROCED</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NOME_PROCED">
-          <DataField>NOME_PROCED</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NOME_FANTASIA_PROCED">
-          <DataField>NOME_FANTASIA_PROCED</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="seq_SUS">
-          <DataField>seq_SUS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="seq_Filme">
-          <DataField>seq_Filme</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="teCodigo">
-          <DataField>teCodigo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NOME_TIPO_EXAME">
-          <DataField>NOME_TIPO_EXAME</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NOMEABREVIADO">
-          <DataField>NOMEABREVIADO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="MEDICO">
-          <DataField>MEDICO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CRM_MED_RESP">
-          <DataField>CRM_MED_RESP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CPF_MED_RESP">
-          <DataField>CPF_MED_RESP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="UF_MED_RESP">
-          <DataField>UF_MED_RESP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CONSELHO_MED_REP">
-          <DataField>CONSELHO_MED_REP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODIGO_IBGE_MUNIC">
-          <DataField>CODIGO_IBGE_MUNIC</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TIPO_DOCTO_MED_RESP">
-          <DataField>TIPO_DOCTO_MED_RESP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOS">
-          <DataField>CBOS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOS201">
-          <DataField>CBOS201</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOS202">
-          <DataField>CBOS202</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CBOS300">
-          <DataField>CBOS300</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CNES">
-          <DataField>CNES</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="UF_MED_RESP_CRM">
-          <DataField>UF_MED_RESP_CRM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CODIGO_IBGE_MUNIC_MED_RESP">
-          <DataField>CODIGO_IBGE_MUNIC_MED_RESP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="QtdeFilme">
-          <DataField>QtdeFilme</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PERC_REGRACHO">
-          <DataField>PERC_REGRACHO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PERC_REGRACHM">
-          <DataField>PERC_REGRACHM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PERC_REGRAFILME">
-          <DataField>PERC_REGRAFILME</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PERC_REGRAMATERIAL">
-          <DataField>PERC_REGRAMATERIAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PERC_REGRAMEDICAMENTO">
-          <DataField>PERC_REGRAMEDICAMENTO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="DATAPROCEDI">
-          <DataField>DATAPROCEDI</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REGISTROANS">
+          <DataField>REGISTROANS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATAPROCEDF">
           <DataField>DATAPROCEDF</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DATAPROCEDI">
+          <DataField>DATAPROCEDI</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="GUIA">
+          <DataField>GUIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CNES">
+          <DataField>CNES</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATA">
+          <DataField>DATA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CVCODIGO">
+          <DataField>CVCODIGO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="EXPMATMED">
+          <DataField>EXPMATMED</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_MATERIAL">
+          <DataField>COD_MATERIAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_MEDICAMENTO">
+          <DataField>COD_MEDICAMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_MEDICCONT">
+          <DataField>COD_MEDICCONT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTRASTE">
+          <DataField>CONTRASTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EXPBRAS">
+          <DataField>EXPBRAS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EXPFILME">
+          <DataField>EXPFILME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_FILME">
+          <DataField>COD_FILME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_FOD">
+          <DataField>COD_FOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VALORFILME">
+          <DataField>VALORFILME</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="QTDEFILME">
+          <DataField>QTDEFILME</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VALOR_FILME">
+          <DataField>VALOR_FILME</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AGRUPAR">
+          <DataField>AGRUPAR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AMBCODIGO">
+          <DataField>AMBCODIGO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SEQUENCIA">
+          <DataField>SEQUENCIA</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="LCCODIGOMATMED">
+          <DataField>LCCODIGOMATMED</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NUMEROMATMED">
+          <DataField>NUMEROMATMED</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="QTDEUTILIZADA">
+          <DataField>QTDEUTILIZADA</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="QTDECOBRADA">
+          <DataField>QTDECOBRADA</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VALORPAGO">
+          <DataField>VALORPAGO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VALORNORMAL">
+          <DataField>VALORNORMAL</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DESCRICAO">
+          <DataField>DESCRICAO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UNIDADE">
+          <DataField>UNIDADE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CATEGORIA">
+          <DataField>CATEGORIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CODBRASINDICE">
+          <DataField>CODBRASINDICE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_DESPESAS">
+          <DataField>COD_DESPESAS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CODANVISA">
+          <DataField>CODANVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CODTABELATISS">
           <DataField>CODTABELATISS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="QTDEEXAME">
-          <DataField>QTDEEXAME</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALORGASES">
-          <DataField>VALORGASES</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALORMATERIAL">
-          <DataField>VALORMATERIAL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALORTAXADIVERSA">
-          <DataField>VALORTAXADIVERSA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALORDIARIA">
-          <DataField>VALORDIARIA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALORALUGUEIS">
-          <DataField>VALORALUGUEIS</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALORTAXAALUGUEL">
-          <DataField>VALORTAXAALUGUEL</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALOROPME">
-          <DataField>VALOROPME</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="VALORMEDICAMENTO">
-          <DataField>VALORMEDICAMENTO</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="RECEMNASCIDO">
-          <DataField>RECEMNASCIDO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NumeroRegistro">
-          <DataField>NumeroRegistro</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="FATORREDACRESC">
+          <DataField>FATORREDACRESC</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NUMEROREGISTRO">
+          <DataField>NUMEROREGISTRO</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
         <Field Name="LogoConvenio">
           <DataField>LogoConvenio</DataField>
@@ -8616,8 +8067,8 @@ ReportItems!txt_Total_Gases_Medicinais.Value
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>csiDataSet1</rd:DataSetName>
-        <rd:SchemaPath>G:\Projetos Report View\WindowsFormsApplication1\WindowsFormsApplication1\csiDataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>csiDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Dev\Relatorios_RDLC\csiDataSet.xsd</rd:SchemaPath>
         <rd:TableName>PR_REL_GUIA_TISS</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
