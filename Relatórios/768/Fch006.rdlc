@@ -1304,8 +1304,42 @@
                               <Top>2.68972cm</Top>
                               <Left>3.73077cm</Left>
                               <Height>0.45cm</Height>
-                              <Width>15.26513cm</Width>
+                              <Width>10.3047cm</Width>
                               <ZIndex>19</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox71">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Usuário: </Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!Usuario.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox39</rd:DefaultName>
+                              <Top>2.68972cm</Top>
+                              <Left>14.03547cm</Left>
+                              <Height>0.45cm</Height>
+                              <Width>4.96043cm</Width>
+                              <ZIndex>20</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -1915,6 +1949,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>NomeEmpresa</rd:DefaultName>
+              <Top>0cm</Top>
               <Height>1.35292cm</Height>
               <Width>19.51073cm</Width>
               <Style>
@@ -2286,9 +2321,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
-              <Top>1.36444cm</Top>
+              <Top>1.35292cm</Top>
               <Left>15.9cm</Left>
-              <Height>0.5cm</Height>
+              <Height>0.58208cm</Height>
               <Width>3.61073cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
