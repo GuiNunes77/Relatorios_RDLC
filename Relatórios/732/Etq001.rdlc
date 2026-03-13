@@ -675,223 +675,235 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Rectangle Name="Rectangle1">
+                        <Rectangle Name="Rectangle3">
                           <ReportItems>
-                            <Tablix Name="Tablix2">
-                              <TablixBody>
-                                <TablixColumns>
-                                  <TablixColumn>
-                                    <Width>1.81137cm</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1.78204cm</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1.39646cm</Width>
-                                  </TablixColumn>
-                                </TablixColumns>
-                                <TablixRows>
-                                  <TablixRow>
-                                    <Height>0.3cm</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox6">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>RADIOLOGIA CLÍNICA ORLÂNDIA</Value>
+                            <Rectangle Name="Rectangle4">
+                              <ReportItems>
+                                <Tablix Name="Tablix4">
+                                  <TablixBody>
+                                    <TablixColumns>
+                                      <TablixColumn>
+                                        <Width>1.81137cm</Width>
+                                      </TablixColumn>
+                                      <TablixColumn>
+                                        <Width>1.78204cm</Width>
+                                      </TablixColumn>
+                                      <TablixColumn>
+                                        <Width>1.39646cm</Width>
+                                      </TablixColumn>
+                                    </TablixColumns>
+                                    <TablixRows>
+                                      <TablixRow>
+                                        <Height>0.3cm</Height>
+                                        <TablixCells>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="Textbox10">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>RADIOLOGIA CLÍNICA ORLÂNDIA</Value>
+                                                        <Style>
+                                                          <FontSize>6pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
                                                     <Style>
-                                                      <FontSize>6pt</FontSize>
+                                                      <TextAlign>Left</TextAlign>
                                                     </Style>
-                                                  </TextRun>
-                                                </TextRuns>
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox6</rd:DefaultName>
                                                 <Style>
-                                                  <TextAlign>Left</TextAlign>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
                                                 </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox6</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>3</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell />
-                                      <TablixCell />
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
-                                    <Height>0.3cm</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox4">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Nome.Value</Value>
+                                              </Textbox>
+                                              <ColSpan>3</ColSpan>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell />
+                                          <TablixCell />
+                                        </TablixCells>
+                                      </TablixRow>
+                                      <TablixRow>
+                                        <Height>0.3cm</Height>
+                                        <TablixCells>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="Textbox5">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>=Fields!Nome.Value</Value>
+                                                        <Style>
+                                                          <FontSize>6pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                      <TextRun>
+                                                        <Value xml:space="preserve"> </Value>
+                                                        <Style>
+                                                          <FontSize>6pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
                                                     <Style>
-                                                      <FontSize>6pt</FontSize>
+                                                      <TextAlign>Left</TextAlign>
                                                     </Style>
-                                                  </TextRun>
-                                                  <TextRun>
-                                                    <Value xml:space="preserve"> </Value>
-                                                    <Style>
-                                                      <FontSize>6pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox4</rd:DefaultName>
                                                 <Style>
-                                                  <TextAlign>Left</TextAlign>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
                                                 </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox4</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                          <ColSpan>3</ColSpan>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell />
-                                      <TablixCell />
-                                    </TablixCells>
-                                  </TablixRow>
-                                  <TablixRow>
-                                    <Height>0.3cm</Height>
-                                    <TablixCells>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox7">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Data.Value</Value>
+                                              </Textbox>
+                                              <ColSpan>3</ColSpan>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell />
+                                          <TablixCell />
+                                        </TablixCells>
+                                      </TablixRow>
+                                      <TablixRow>
+                                        <Height>0.3cm</Height>
+                                        <TablixCells>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="Textbox12">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>=Fields!Data.Value</Value>
+                                                        <Style>
+                                                          <FontSize>6pt</FontSize>
+                                                          <Format>dd/MM/yyyy</Format>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
                                                     <Style>
-                                                      <FontSize>6pt</FontSize>
-                                                      <Format>dd/MM/yyyy</Format>
+                                                      <TextAlign>Left</TextAlign>
                                                     </Style>
-                                                  </TextRun>
-                                                </TextRuns>
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox7</rd:DefaultName>
                                                 <Style>
-                                                  <TextAlign>Left</TextAlign>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
                                                 </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox7</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox14">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Idade.Value</Value>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="Textbox16">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>=Fields!Idade.Value</Value>
+                                                        <Style>
+                                                          <FontSize>6pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
                                                     <Style>
-                                                      <FontSize>6pt</FontSize>
+                                                      <TextAlign>Left</TextAlign>
                                                     </Style>
-                                                  </TextRun>
-                                                </TextRuns>
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox14</rd:DefaultName>
                                                 <Style>
-                                                  <TextAlign>Left</TextAlign>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
                                                 </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox14</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="Textbox8">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!Numero.Value</Value>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixCell>
+                                          <TablixCell>
+                                            <CellContents>
+                                              <Textbox Name="Textbox13">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>=Fields!Numero.Value</Value>
+                                                        <Style>
+                                                          <FontSize>6pt</FontSize>
+                                                        </Style>
+                                                      </TextRun>
+                                                    </TextRuns>
                                                     <Style>
-                                                      <FontSize>6pt</FontSize>
+                                                      <TextAlign>Left</TextAlign>
                                                     </Style>
-                                                  </TextRun>
-                                                </TextRuns>
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox8</rd:DefaultName>
                                                 <Style>
-                                                  <TextAlign>Left</TextAlign>
+                                                  <Border>
+                                                    <Style>None</Style>
+                                                  </Border>
                                                 </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>Textbox8</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Style>None</Style>
-                                              </Border>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                    </TablixCells>
-                                  </TablixRow>
-                                </TablixRows>
-                              </TablixBody>
-                              <TablixColumnHierarchy>
-                                <TablixMembers>
-                                  <TablixMember />
-                                  <TablixMember />
-                                  <TablixMember />
-                                </TablixMembers>
-                              </TablixColumnHierarchy>
-                              <TablixRowHierarchy>
-                                <TablixMembers>
-                                  <TablixMember />
-                                  <TablixMember />
-                                  <TablixMember />
-                                </TablixMembers>
-                              </TablixRowHierarchy>
-                              <Height>0.9cm</Height>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixCell>
+                                        </TablixCells>
+                                      </TablixRow>
+                                    </TablixRows>
+                                  </TablixBody>
+                                  <TablixColumnHierarchy>
+                                    <TablixMembers>
+                                      <TablixMember />
+                                      <TablixMember />
+                                      <TablixMember />
+                                    </TablixMembers>
+                                  </TablixColumnHierarchy>
+                                  <TablixRowHierarchy>
+                                    <TablixMembers>
+                                      <TablixMember />
+                                      <TablixMember />
+                                      <TablixMember />
+                                    </TablixMembers>
+                                  </TablixRowHierarchy>
+                                  <Height>0.9cm</Height>
+                                  <Width>4.98987cm</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Tablix>
+                              </ReportItems>
+                              <PageBreak>
+                                <BreakLocation>End</BreakLocation>
+                              </PageBreak>
+                              <KeepTogether>true</KeepTogether>
+                              <Height>2.46309cm</Height>
                               <Width>4.98987cm</Width>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
                               </Style>
-                            </Tablix>
+                            </Rectangle>
                           </ReportItems>
-                          <PageBreak>
-                            <BreakLocation>End</BreakLocation>
-                          </PageBreak>
                           <KeepTogether>true</KeepTogether>
                           <Style>
                             <Border>
@@ -907,7 +919,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>3.01137cm</Height>
+                  <Height>2.42929cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1222,11 +1234,12 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
                   <Group Name="grpModalidade">
                     <GroupExpressions>
-                      <GroupExpression>=IIF(Fields!BimprimirModalidadePorPagina.Value = true,
-Fields!teCodigo.Value,
-Nothing)</GroupExpression>
+                      <GroupExpression>=Fields!teCodigo.Value</GroupExpression>
                     </GroupExpressions>
                     <PageBreak>
                       <BreakLocation>Between</BreakLocation>
@@ -1234,24 +1247,17 @@ Nothing)</GroupExpression>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=IIF(Fields!teCodigo.Value &lt;&gt; 12,
-1,
-2)</Value>
+                      <Value>=Fields!teCodigo.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
-                    <TablixMember>
-                      <Visibility>
-                        <Hidden>=IIF(RowNumber("grpModalidade") &gt; 1, True, False)</Hidden>
-                      </Visibility>
-                    </TablixMember>
                     <TablixMember />
                   </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Height>5.47446cm</Height>
+            <Height>4.89238cm</Height>
             <Width>4.98986cm</Width>
             <Style>
               <Border>
@@ -1260,14 +1266,14 @@ Nothing)</GroupExpression>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.47446cm</Height>
+        <Height>4.89238cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>4.98986cm</Width>
+      <Width>4.98987cm</Width>
       <Page>
         <PageHeight>3cm</PageHeight>
         <PageWidth>5cm</PageWidth>
