@@ -687,8 +687,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>2.17458cm</Top>
-            <Left>16.07641cm</Left>
+            <Top>4.81336cm</Top>
+            <Left>16.07635cm</Left>
             <Height>0.6cm</Height>
             <Width>3.28567cm</Width>
             <Style>
@@ -718,8 +718,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>2.17458cm</Top>
-            <Left>4.3842cm</Left>
+            <Top>4.81336cm</Top>
+            <Left>4.38414cm</Left>
             <Height>0.6cm</Height>
             <Width>11.69221cm</Width>
             <ZIndex>1</ZIndex>
@@ -765,8 +765,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>1.57458cm</Top>
-            <Left>0.27913cm</Left>
+            <Top>4.21336cm</Top>
+            <Left>0.27907cm</Left>
             <Height>1.2cm</Height>
             <Width>3.92868cm</Width>
             <ZIndex>2</ZIndex>
@@ -982,8 +982,8 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>0.2033cm</Top>
-            <Left>12.95266cm</Left>
+            <Top>2.84208cm</Top>
+            <Left>12.9526cm</Left>
             <Height>1.62688cm</Height>
             <Width>6.40942cm</Width>
             <ZIndex>3</ZIndex>
@@ -1013,8 +1013,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>0.2033cm</Top>
-            <Left>12.95266cm</Left>
+            <Top>2.84208cm</Top>
+            <Left>12.9526cm</Left>
             <Height>0.4cm</Height>
             <Width>6.40942cm</Width>
             <ZIndex>4</ZIndex>
@@ -1049,8 +1049,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
-            <Top>0.2033cm</Top>
-            <Left>0.27913cm</Left>
+            <Top>2.84208cm</Top>
+            <Left>0.27907cm</Left>
             <Height>0.78521cm</Height>
             <Width>3.92868cm</Width>
             <ZIndex>5</ZIndex>
@@ -2430,10 +2430,10 @@
             </TablixRowHierarchy>
             <KeepTogether>true</KeepTogether>
             <DataSetName>FichaAtendimento</DataSetName>
-            <Top>3.21729cm</Top>
-            <Left>0.27915cm</Left>
+            <Top>5.85607cm</Top>
+            <Left>0.27909cm</Left>
             <Height>4.1cm</Height>
-            <Width>19.08295cm</Width>
+            <Width>19.08293cm</Width>
             <ZIndex>6</ZIndex>
             <Style>
               <Border>
@@ -2441,127 +2441,128 @@
               </Border>
             </Style>
           </Tablix>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Textbox Name="Textbox2">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Para retirar os seus laudos pela internet acesse</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontSize>11pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox2</rd:DefaultName>
+                <Top>0.47625cm</Top>
+                <Height>0.4cm</Height>
+                <Width>19.08297cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox3">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=First(Fields!Site.Value, "FichaAtendimento")</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>          Usuário: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=First(Fields!IDLogin.Value, "FichaAtendimento")</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>     Senha: </Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=First(Fields!Pwd_IDLogin.Value, "FichaAtendimento")</Value>
+                        <Style>
+                          <FontFamily>Times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox2</rd:DefaultName>
+                <Top>1.15583cm</Top>
+                <Left>0.00002cm</Left>
+                <Height>0.4cm</Height>
+                <Width>19.08297cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.28271cm</Top>
+            <Left>0.27915cm</Left>
+            <Height>1.83854cm</Height>
+            <Width>19.08299cm</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Line Name="Line1">
+            <Top>2.37808cm</Top>
+            <Left>0.27914cm</Left>
+            <Height>0cm</Height>
+            <Width>19.08289cm</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>Dashed</Style>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
-        <Height>7.51062cm</Height>
+        <Height>10.05062cm</Height>
         <Style />
       </Body>
       <Width>19.6412cm</Width>
       <Page>
-        <PageFooter>
-          <Height>2.54cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Rectangle Name="Rectangle2">
-              <ReportItems>
-                <Textbox Name="Textbox2">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>Para retirar os seus laudos pela internet acesse</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontSize>11pt</FontSize>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox2</rd:DefaultName>
-                  <Top>0.47625cm</Top>
-                  <Height>0.4cm</Height>
-                  <Width>19.08297cm</Width>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Textbox>
-                <Textbox Name="Textbox3">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=First(Fields!Site.Value, "FichaAtendimento")</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value>          Usuário: </Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value>=First(Fields!IDLogin.Value, "FichaAtendimento")</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value>     Senha: </Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                        <TextRun>
-                          <Value>=First(Fields!Pwd_IDLogin.Value, "FichaAtendimento")</Value>
-                          <Style>
-                            <FontFamily>Times New Roman</FontFamily>
-                            <FontWeight>Bold</FontWeight>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Center</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>Textbox2</rd:DefaultName>
-                  <Top>1.15583cm</Top>
-                  <Left>0.00002cm</Left>
-                  <Height>0.4cm</Height>
-                  <Width>19.08297cm</Width>
-                  <ZIndex>1</ZIndex>
-                  <Style>
-                    <Border>
-                      <Style>None</Style>
-                    </Border>
-                  </Style>
-                </Textbox>
-              </ReportItems>
-              <KeepTogether>true</KeepTogether>
-              <Top>0.35073cm</Top>
-              <Left>0.27911cm</Left>
-              <Height>1.83854cm</Height>
-              <Width>19.08299cm</Width>
-              <Style>
-                <Border>
-                  <Style>Solid</Style>
-                </Border>
-              </Style>
-            </Rectangle>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>1cm</LeftMargin>

@@ -703,7 +703,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Nome.Value</Value>
+                                  <Value>=IIF((Fields!NomeSocial.Value = Nothing or Fields!NomeSocial.Value=""), Fields!Nome.Value, Fields!NomeSocial.Value)</Value>
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>9pt</FontSize>

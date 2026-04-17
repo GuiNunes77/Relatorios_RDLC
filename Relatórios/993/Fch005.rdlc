@@ -1163,7 +1163,7 @@
                                       </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value>=Fields!Nome.Value</Value>
+                                      <Value>=IIF((Fields!NomeSocial.Value = Nothing or Fields!NomeSocial.Value=""), Fields!Nome.Value, Fields!NomeSocial.Value)</Value>
                                       <Style>
                                         <FontFamily>Verdana</FontFamily>
                                         <FontSize>8pt</FontSize>
@@ -1275,124 +1275,6 @@
                             <ColSpan>2</ColSpan>
                           </CellContents>
                         </TablixCell>
-                        <TablixCell />
-                      </TablixCells>
-                    </TablixRow>
-                    <TablixRow>
-                      <Height>0.5cm</Height>
-                      <TablixCells>
-                        <TablixCell>
-                          <CellContents>
-                            <Textbox Name="Textbox1">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value />
-                                      <Style>
-                                        <FontFamily>Verdana</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox1</rd:DefaultName>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                          </CellContents>
-                        </TablixCell>
-                        <TablixCell>
-                          <CellContents>
-                            <Textbox Name="Textbox152">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Nome Social . . . . . . . . .</Value>
-                                      <Style>
-                                        <FontFamily>Verdana</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox149</rd:DefaultName>
-                              <DataElementName>asd</DataElementName>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                          </CellContents>
-                        </TablixCell>
-                        <TablixCell>
-                          <CellContents>
-                            <Textbox Name="Textbox4">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>: </Value>
-                                      <Style>
-                                        <FontFamily>Verdana</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
-                                      <Value>=Fields!NomeSocial.Value</Value>
-                                      <Style>
-                                        <FontFamily>Verdana</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox4</rd:DefaultName>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <ColSpan>6</ColSpan>
-                          </CellContents>
-                        </TablixCell>
-                        <TablixCell />
-                        <TablixCell />
-                        <TablixCell />
-                        <TablixCell />
                         <TablixCell />
                       </TablixCells>
                     </TablixRow>
@@ -2401,11 +2283,6 @@
                       <TablixMembers>
                         <TablixMember />
                         <TablixMember />
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>=IIF(IsNothing(Fields!NomeSocial.Value), true, false)</Hidden>
-                          </Visibility>
-                        </TablixMember>
                         <TablixMember />
                         <TablixMember />
                         <TablixMember />
@@ -2417,7 +2294,8 @@
                 </TablixRowHierarchy>
                 <KeepTogether>true</KeepTogether>
                 <DataSetName>FichaAtendimento</DataSetName>
-                <Height>6.52838cm</Height>
+                <Left>0.08378cm</Left>
+                <Height>6.02838cm</Height>
                 <Width>19.97581cm</Width>
                 <Style>
                   <Border>
@@ -2802,7 +2680,7 @@
                 </TablixRowHierarchy>
                 <KeepTogether>true</KeepTogether>
                 <DataSetName>FichaAtendimento</DataSetName>
-                <Top>7.3175cm</Top>
+                <Top>6.66366cm</Top>
                 <Height>1cm</Height>
                 <Width>19.67722cm</Width>
                 <ZIndex>1</ZIndex>
@@ -2829,7 +2707,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox17</rd:DefaultName>
-                <Top>6.7175cm</Top>
+                <Top>6.06366cm</Top>
                 <Left>0.3cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
@@ -2847,8 +2725,8 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
-            <Height>8.3175cm</Height>
-            <Width>19.97581cm</Width>
+            <Height>7.66366cm</Height>
+            <Width>20.05959cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2856,8 +2734,8 @@
             </Style>
           </Rectangle>
           <Line Name="Line3">
-            <Top>8.31555cm</Top>
-            <Left>0.09416cm</Left>
+            <Top>7.99805cm</Top>
+            <Left>0.17794cm</Left>
             <Height>0cm</Height>
             <Width>19.58306cm</Width>
             <ZIndex>1</ZIndex>
@@ -2871,10 +2749,10 @@
             </Style>
           </Line>
         </ReportItems>
-        <Height>8.3551cm</Height>
+        <Height>8.05097cm</Height>
         <Style />
       </Body>
-      <Width>19.97581cm</Width>
+      <Width>20.05959cm</Width>
       <Page>
         <PageFooter>
           <Height>7.45703cm</Height>
@@ -2932,7 +2810,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox18</rd:DefaultName>
               <Top>0.33033cm</Top>
-              <Left>2.8cm</Left>
+              <Left>2.88378cm</Left>
               <Height>1.3069cm</Height>
               <Width>8.75708cm</Width>
               <Style>
@@ -2946,13 +2824,12 @@
               </Style>
             </Textbox>
             <Textbox Name="Textbox22">
-              <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Atendimento . . . . . . . :</Value>
+                      <Value>Atendimento . . . . . . . . ... . . . . . </Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2963,9 +2840,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox22</rd:DefaultName>
-              <Top>2.2316cm</Top>
-              <Left>0.3cm</Left>
-              <Height>0.45cm</Height>
+              <Top>2.20799cm</Top>
+              <Left>0.38378cm</Left>
+              <Height>0.4cm</Height>
               <Width>3.77cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
@@ -2980,7 +2857,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Nome do Paciente . . . :</Value>
+                      <Value>Nome do Paciente . . . . . . . . . . .</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2991,9 +2868,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox23</rd:DefaultName>
-              <Top>2.6816cm</Top>
-              <Left>0.3cm</Left>
-              <Height>0.45cm</Height>
+              <Top>2.60799cm</Top>
+              <Left>0.38378cm</Left>
+              <Height>0.4cm</Height>
               <Width>3.77cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
@@ -3003,13 +2880,12 @@
               </Style>
             </Textbox>
             <Textbox Name="Textbox28">
-              <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Convênio . . . . . . . . . :</Value>
+                      <Value>Convênio . . . . . . . . . . . . .</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3020,9 +2896,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
-              <Top>3.1316cm</Top>
-              <Left>0.3cm</Left>
-              <Height>0.45cm</Height>
+              <Top>3.4166cm</Top>
+              <Left>0.38378cm</Left>
+              <Height>0.4cm</Height>
               <Width>3.77cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
@@ -3064,10 +2940,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox37</rd:DefaultName>
-              <Top>4.4816cm</Top>
-              <Left>0.3cm</Left>
+              <Top>4.2341cm</Top>
+              <Left>0.38378cm</Left>
               <Height>0.9cm</Height>
-              <Width>11.68469cm</Width>
+              <Width>11.71997cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -3129,10 +3005,10 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox38</rd:DefaultName>
-              <Top>5.3816cm</Top>
-              <Left>0.3cm</Left>
+              <Top>5.1341cm</Top>
+              <Left>0.38378cm</Left>
               <Height>0.87919cm</Height>
-              <Width>11.68469cm</Width>
+              <Width>11.71997cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -3165,9 +3041,9 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox39</rd:DefaultName>
-              <Top>2.2316cm</Top>
-              <Left>4.07cm</Left>
-              <Height>0.45cm</Height>
+              <Top>2.20799cm</Top>
+              <Left>4.15378cm</Left>
+              <Height>0.4cm</Height>
               <Width>3.68861cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
@@ -3189,7 +3065,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>=Fields!Nome.Value</Value>
+                      <Value>=IIF((Fields!NomeSocial.Value = Nothing or Fields!NomeSocial.Value=""), Fields!Nome.Value, Fields!NomeSocial.Value)</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3200,9 +3076,9 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox41</rd:DefaultName>
-              <Top>2.6816cm</Top>
-              <Left>4.07cm</Left>
-              <Height>0.45cm</Height>
+              <Top>2.60799cm</Top>
+              <Left>4.15378cm</Left>
+              <Height>0.4cm</Height>
               <Width>7.48708cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
@@ -3236,10 +3112,10 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox42</rd:DefaultName>
-              <Top>3.1316cm</Top>
-              <Left>4.07cm</Left>
-              <Height>0.45cm</Height>
-              <Width>3.68861cm</Width>
+              <Top>3.4166cm</Top>
+              <Left>4.15378cm</Left>
+              <Height>0.4cm</Height>
+              <Width>7.48708cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
                 <Border>
@@ -3267,9 +3143,9 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox43</rd:DefaultName>
-              <Top>2.2316cm</Top>
-              <Left>7.75861cm</Left>
-              <Height>0.45cm</Height>
+              <Top>2.20799cm</Top>
+              <Left>7.84239cm</Left>
+              <Height>0.4cm</Height>
               <Width>0.94778cm</Width>
               <ZIndex>9</ZIndex>
               <Style>
@@ -3279,13 +3155,12 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox44">
-              <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Tipo de Exame . . . . . :</Value>
+                      <Value>Tipo de Exame . . . . . . . . .</Value>
                       <Style>
                         <FontFamily>Verdana</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3298,9 +3173,9 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox44</rd:DefaultName>
-              <Top>3.5816cm</Top>
-              <Left>0.3cm</Left>
-              <Height>0.45cm</Height>
+              <Top>3.8166cm</Top>
+              <Left>0.38378cm</Left>
+              <Height>0.4cm</Height>
               <Width>3.77cm</Width>
               <ZIndex>10</ZIndex>
               <Style>
@@ -3330,9 +3205,9 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox48</rd:DefaultName>
-              <Top>2.2316cm</Top>
-              <Left>8.70639cm</Left>
-              <Height>0.45cm</Height>
+              <Top>2.20799cm</Top>
+              <Left>8.79017cm</Left>
+              <Height>0.4cm</Height>
               <Width>2.85069cm</Width>
               <ZIndex>11</ZIndex>
               <Style>
@@ -3366,9 +3241,9 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox51</rd:DefaultName>
-              <Top>3.5816cm</Top>
-              <Left>4.07cm</Left>
-              <Height>0.9cm</Height>
+              <Top>3.8166cm</Top>
+              <Left>4.15378cm</Left>
+              <Height>0.4cm</Height>
               <Width>7.48708cm</Width>
               <ZIndex>12</ZIndex>
               <Style>
@@ -3480,9 +3355,9 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>1.69388cm</Top>
-              <Left>11.55708cm</Left>
-              <Height>2.52272cm</Height>
+              <Top>1.63723cm</Top>
+              <Left>11.64086cm</Left>
+              <Height>2.57937cm</Height>
               <Width>7.72844cm</Width>
               <ZIndex>13</ZIndex>
               <Style>
@@ -3497,7 +3372,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               <MIMEType>image/png</MIMEType>
               <Sizing>FitProportional</Sizing>
               <Top>4.2166cm</Top>
-              <Left>16.62782cm</Left>
+              <Left>16.7116cm</Left>
               <Height>2.36169cm</Height>
               <Width>2.6577cm</Width>
               <ZIndex>14</ZIndex>
@@ -3536,7 +3411,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>4.2166cm</Top>
-              <Left>12.01997cm</Left>
+              <Left>12.10375cm</Left>
               <Height>2.36169cm</Height>
               <Width>4.43146cm</Width>
               <ZIndex>15</ZIndex>
@@ -3555,7 +3430,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               <Value>logo1</Value>
               <Sizing>FitProportional</Sizing>
               <Top>0.33033cm</Top>
-              <Left>0.3cm</Left>
+              <Left>0.38378cm</Left>
               <Height>1.3069cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>16</ZIndex>
@@ -3616,7 +3491,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               </Paragraphs>
               <rd:DefaultName>Textbox18</rd:DefaultName>
               <Top>0.33033cm</Top>
-              <Left>14.05496cm</Left>
+              <Left>14.13874cm</Left>
               <Height>1.30689cm</Height>
               <Width>5.23056cm</Width>
               <ZIndex>17</ZIndex>
@@ -3635,7 +3510,7 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
               <Value>logo1</Value>
               <Sizing>FitProportional</Sizing>
               <Top>0.33033cm</Top>
-              <Left>11.55708cm</Left>
+              <Left>11.64086cm</Left>
               <Height>1.30689cm</Height>
               <Width>2.49788cm</Width>
               <ZIndex>18</ZIndex>
@@ -3645,6 +3520,69 @@ First(Fields!DataEntregaExame.Value, "FichaAtendimento"))</Value>
                 </Border>
               </Style>
             </Image>
+            <Textbox Name="Textbox24">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Código do Paciente . . . . . .</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox23</rd:DefaultName>
+              <Top>3.00799cm</Top>
+              <Left>0.38378cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.77cm</Width>
+              <ZIndex>19</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox45">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>: </Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Fields!pcCodigo.Value</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox41</rd:DefaultName>
+              <Top>3.00799cm</Top>
+              <Left>4.15378cm</Left>
+              <Height>0.4cm</Height>
+              <Width>7.48708cm</Width>
+              <ZIndex>20</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style>
             <Border>
