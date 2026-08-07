@@ -229,6 +229,14 @@
           <DataField>Endereco</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="GUIA">
+          <DataField>GUIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CPF">
+          <DataField>CPF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>csiDataSet</rd:DataSetName>
@@ -357,7 +365,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CNS</Value>
+                                  <Value>CPF</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>6pt</FontSize>
@@ -633,14 +641,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CNS">
+                        <Textbox Name="CPF">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CNS.Value</Value>
+                                  <Value>=Fields!CPF.Value</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>6pt</FontSize>
@@ -652,7 +660,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>CNS</rd:DefaultName>
+                          <rd:DefaultName>CPF</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>

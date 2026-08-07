@@ -479,10 +479,10 @@
                   <Width>0.07938cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.40854cm</Width>
+                  <Width>2.04354cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2cm</Width>
+                  <Width>1.365cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>6cm</Width>
@@ -494,7 +494,7 @@
                   <Width>6cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.3825cm</Width>
+                  <Width>5.42999cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.19417cm</Width>
@@ -549,14 +549,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox189">
+                        <Textbox Name="Textbox143">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Atend.</Value>
+                                  <Value>Data Atend.</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -569,7 +569,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox189</rd:DefaultName>
+                          <rd:DefaultName>Textbox142</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -592,7 +592,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Data Atend.</Value>
+                                  <Value>Atend.</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
@@ -929,36 +929,6 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Numero">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Numero.Value</Value>
-                                  <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>7pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Numero</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
                         <Textbox Name="Data">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -970,7 +940,7 @@
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <Format>d</Format>
+                                    <Format>dd/MM/yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -980,6 +950,37 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Data</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Numero.Value</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <Format>0;(0)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1152,7 +1153,7 @@
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
-                                    <Format>#,0.00;(#,0.00)</Format>
+                                    <Format>'R$'#,0.00;('R$'#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1166,6 +1167,8 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <PaddingLeft>5pt</PaddingLeft>
+                            <rd:FormatSymbolCulture>pt-BR</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -1407,12 +1410,12 @@
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>#,0.00;(#,0.00)</Format>
+                                    <Format>'R$'#,0.00;('R$'#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1421,6 +1424,8 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <PaddingLeft>5pt</PaddingLeft>
+                            <rd:FormatSymbolCulture>pt-BR</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -1662,12 +1667,12 @@
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>#,0.00;(#,0.00)</Format>
+                                    <Format>'R$'#,0.00;('R$'#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1676,6 +1681,8 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <PaddingLeft>5pt</PaddingLeft>
+                            <rd:FormatSymbolCulture>pt-BR</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -1744,7 +1751,7 @@
             <DataSetName>Dados</DataSetName>
             <Left>0.1cm</Left>
             <Height>2cm</Height>
-            <Width>28.1825cm</Width>
+            <Width>27.23cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1755,7 +1762,7 @@
         <Height>2cm</Height>
         <Style />
       </Body>
-      <Width>28.36188cm</Width>
+      <Width>27.46229cm</Width>
       <Page>
         <PageHeader>
           <Height>6.7cm</Height>
@@ -1813,7 +1820,7 @@
               <Top>0.1cm</Top>
               <Left>0.1cm</Left>
               <Height>3.2cm</Height>
-              <Width>23.7cm</Width>
+              <Width>22.7475cm</Width>
               <Style>
                 <Border>
                   <Color>DimGray</Color>
@@ -1856,7 +1863,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.1cm</Top>
-              <Left>23.9cm</Left>
+              <Left>22.9475cm</Left>
               <Height>1cm</Height>
               <Width>2.60611cm</Width>
               <ZIndex>1</ZIndex>
@@ -1901,7 +1908,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.1cm</Top>
-              <Left>26.6825cm</Left>
+              <Left>25.73cm</Left>
               <Height>1cm</Height>
               <Width>1.6cm</Width>
               <ZIndex>2</ZIndex>
@@ -1946,7 +1953,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>1.2cm</Top>
-              <Left>23.9cm</Left>
+              <Left>22.9475cm</Left>
               <Height>1cm</Height>
               <Width>4.3825cm</Width>
               <ZIndex>3</ZIndex>
@@ -1991,7 +1998,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>2.3cm</Top>
-              <Left>23.9cm</Left>
+              <Left>22.9475cm</Left>
               <Height>1cm</Height>
               <Width>4.3825cm</Width>
               <ZIndex>4</ZIndex>
@@ -2029,7 +2036,7 @@
               <Top>3.4cm</Top>
               <Left>0.1cm</Left>
               <Height>0.7cm</Height>
-              <Width>28.1825cm</Width>
+              <Width>27.23cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -2267,7 +2274,7 @@
               <Top>4.2cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>24.8825cm</Width>
+              <Width>23.93cm</Width>
               <ZIndex>12</ZIndex>
               <Style>
                 <Border>
@@ -2300,7 +2307,7 @@
               <Top>4.6cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>24.8825cm</Width>
+              <Width>23.93cm</Width>
               <ZIndex>13</ZIndex>
               <Style>
                 <Border>
@@ -2333,7 +2340,7 @@
               <Top>5cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>24.8825cm</Width>
+              <Width>23.93cm</Width>
               <ZIndex>14</ZIndex>
               <Style>
                 <Border>
@@ -2366,7 +2373,7 @@
               <Top>5.4cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>24.8825cm</Width>
+              <Width>23.93cm</Width>
               <ZIndex>15</ZIndex>
               <Style>
                 <Border>
@@ -2399,7 +2406,7 @@
               <Top>5.8cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>24.8825cm</Width>
+              <Width>23.93cm</Width>
               <ZIndex>16</ZIndex>
               <Style>
                 <Border>
@@ -2432,7 +2439,7 @@
               <Top>6.2cm</Top>
               <Left>3.4cm</Left>
               <Height>0.4cm</Height>
-              <Width>24.8825cm</Width>
+              <Width>23.93cm</Width>
               <ZIndex>17</ZIndex>
               <Style>
                 <Border>
@@ -2512,7 +2519,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox555</rd:DefaultName>
               <Top>0.1cm</Top>
-              <Left>23.6cm</Left>
+              <Left>22.6475cm</Left>
               <Height>0.5cm</Height>
               <Width>4.6825cm</Width>
               <ZIndex>1</ZIndex>

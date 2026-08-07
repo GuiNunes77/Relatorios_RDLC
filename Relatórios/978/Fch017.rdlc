@@ -3982,7 +3982,7 @@ Nothing)</Value>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>9.4146cm</Height>
+          <Height>11.45297cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -4705,7 +4705,7 @@ Nothing)</Value>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Replace(Replace(Variables!ListaExames.Value, "123replaace123", ""), ";", "&lt;br&gt;")</Value>
+                              <Value>=Replace(Replace(Variables!ListaExames.Value, "123replaace123;", ""), ";", "&lt;br&gt;")</Value>
                               <MarkupType>HTML</MarkupType>
                               <Style>
                                 <FontFamily>TIMEs New Roman</FontFamily>
@@ -4759,11 +4759,101 @@ Nothing)</Value>
                     </RightBorder>
                   </Style>
                 </Rectangle>
+                <Rectangle Name="Rectangle12">
+                  <ReportItems>
+                    <Textbox Name="Textbox2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Autorizo o(a) _____________________________________________, portador(a) do RG/CPF nº ____________________________,</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>a retirar meus exames e resultados em meu nome.</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Assinatura do Paciente ou Responsável: ___________________________________________</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <Top>0.17065cm</Top>
+                      <Left>0.13478cm</Left>
+                      <Height>2.03831cm</Height>
+                      <Width>19.57212cm</Width>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                  <KeepTogether>true</KeepTogether>
+                  <Top>8.87184cm</Top>
+                  <Left>0.51108cm</Left>
+                  <Height>2.20896cm</Height>
+                  <Width>19.7069cm</Width>
+                  <ZIndex>4</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>Solid</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>None</Style>
+                    </TopBorder>
+                  </Style>
+                </Rectangle>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>0.00176cm</Top>
-              <Height>9.30701cm</Height>
-              <Width>20.19846cm</Width>
+              <Height>11.45121cm</Height>
+              <Width>20.21798cm</Width>
               <Visibility>
                 <Hidden>=Globals!PageNumber &gt; 1</Hidden>
               </Visibility>
